@@ -1,4 +1,3 @@
-local logic_processor = {
 -- craftar itens
 data:extend({{
     type = "recipe",
@@ -25,5 +24,3 @@ data:extend({{
     icon_mipmaps = 4,
     stack_size = 64
 }})
-
-}

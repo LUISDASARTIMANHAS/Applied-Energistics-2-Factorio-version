@@ -1,3 +1,5 @@
+local engineering_processor = require("__Applied-Energistics-2__/data/items/engineering_processor.lua")
+
 -- craftar itens
 data:extend({{
     type = "recipe",
@@ -6,7 +8,7 @@ data:extend({{
         enabled = true,
         ingredients = {
             {"iron-plate", 4},
-            {"Engineering Processor", 2}
+            {engineering_processor, 2}
         },
         result = "label:server-item"
     }

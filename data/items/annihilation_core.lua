@@ -1,5 +1,6 @@
 -- craftar itens
-require(logic_processor.lua)
+local logic_processor = require("__Applied-Energistics-2__/data/items/logic_processor.lua")
+local charged_certus_quartz_crystal = require("data/items/charged_certus_quartz_crystal.lua")
 
 data:extend({{
     type = "recipe",
@@ -9,7 +10,7 @@ data:extend({{
         ingredients = {
             {logic_processor, 1},
             {"copper-cable", 5},
-            {"charged-certus-quartz-crystal-item",1}
+            {charged_certus_quartz_crystal,1}
         },
         result = "label:annihilation-core-item"
     }

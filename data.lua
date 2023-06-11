@@ -2,7 +2,6 @@ require("data/entities.lua")
 require("data/AE2_autocraft.lua")
 require("data/AE2_pesquisa.lua")
 require("graficos/style.lua")
-require("control/server.lua")
 
 -- itens craftaveis e colocaveis
 require("data/items/server.lua")
