@@ -17,13 +17,13 @@ function guis.addCloseButtonTitleBar(frame, caption)
     
     bar.add({
         type = "empty-widget",
-        style = "digistore:titlebar-filler",
+        style = "label:titlebar-filler",
         ignored_by_interaction = true
     })
     
     bar.add({
         type = "sprite-button",
-        name = "digistore:close-opened-gui",
+        name = "label:close-opened-gui",
         style = "frame_action_button",
         sprite = "utility/close_white",
         hovered_sprite = "utility/close_black",
@@ -34,7 +34,7 @@ end
 
 util.AddEventHandler(defines.events.on_gui_click,
     function(event)
-        if event.element and event.element.name == "digistore:close-opened-gui" then
+        if event.element and event.element.name == "label:close-opened-gui" then
             game.get_player(event.player_index).opened = nil
         end
     end

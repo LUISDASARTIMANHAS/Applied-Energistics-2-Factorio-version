@@ -47,7 +47,7 @@ function util.OverwriteGui(entityName, buildGui, redrawFunctionFactory)
     util.AddEventHandler(
         defines.events.on_gui_opened,
         function(event)
-            if event.entity == nil or event.entity.name ~= entityName or (event.element ~= nil and util.StartsWith(event.element.name, "digistore:")) then
+            if event.entity == nil or event.entity.name ~= entityName or (event.element ~= nil and util.StartsWith(event.element.name, "label:")) then
                 -- either not our entity's GUI, or not the one we are trying to intercept (and instead the one we created)
                 return
             end
@@ -68,7 +68,7 @@ end
 util.AddEventHandler(
         defines.events.on_gui_closed,
         function(e)
-            if e.element and util.StartsWith(e.element.name, "digistore:") then
+            if e.element and util.StartsWith(e.element.name, "label:") then
                 gc.closeActiveGui()
             end
         end
