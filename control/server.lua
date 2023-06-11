@@ -25,8 +25,7 @@ local function NetworkCreationGui(info)
         direction = "vertical",
         style = "label:content-flow"
     })
-
-    -- TODO!
+    
     local statusIndicatorFlow = content.add({
         type = "flow",
         name = "label:network-ui-status-flow",
