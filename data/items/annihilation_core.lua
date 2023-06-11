@@ -1,11 +1,13 @@
 -- craftar itens
+require(logic_processor.lua)
+
 data:extend({{
     type = "recipe",
     name = "label:annihilation-core-recipe",
     normal = {
         enabled = true,
         ingredients = {
-            {"logic-processor-item", 1},
+            {logic_processor, 1},
             {"copper-cable", 5},
             {"charged-certus-quartz-crystal-item",1}
         },

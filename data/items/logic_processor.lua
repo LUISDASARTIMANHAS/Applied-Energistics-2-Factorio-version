@@ -1,3 +1,4 @@
+local logic_processor = {
 -- craftar itens
 data:extend({{
     type = "recipe",
@@ -11,7 +12,7 @@ data:extend({{
         },
         result = "label:logic-processor-item"
     }
-}})
+}});
 
 
 -- colocar itens
@@ -24,3 +25,5 @@ data:extend({{
     icon_mipmaps = 4,
     stack_size = 64
 }})
+
+}
