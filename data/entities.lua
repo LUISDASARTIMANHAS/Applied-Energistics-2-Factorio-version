@@ -1,6 +1,6 @@
 data:extend({{
     type = "electric-energy-interface",
-    name = "digistore:server-entity",
+    name = "label:server-entity",
     
     energy_source = {
         type = "electric",
@@ -24,10 +24,10 @@ data:extend({{
 
     minable = {
         mining_time = 5,
-        result = "digistore:server-item"
+        result = "label:server-item"
     },
     placeable_by = {
-        item = "digistore:server-item",
+        item = "label:server-item",
         count = 1
     },
 

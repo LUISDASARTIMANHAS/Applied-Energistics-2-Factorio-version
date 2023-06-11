@@ -1,14 +1,14 @@
 -- craftar itens
 data:extend({{
     type = "recipe",
-    name = "digistore:server-recipe",
+    name = "label:server-recipe",
     normal = {
         enabled = true,
         ingredients = {
             {"iron-plate", 4},
             {"Engineering Processor", 2}
         },
-        result = "digistore:server-item"
+        result = "label:server-item"
     }
 }})
 
@@ -16,12 +16,12 @@ data:extend({{
 -- colocar itens
 data:extend({{
     type = "item",
-    name = "digistore:server-item",
+    name = "label:server-item",
 
     icon = "__Applied-Energistics-2__/graficos/items/network-server.png",
     icon_size = 126,
     icon_mipmaps = 4,
 
-    place_result = 'digistore:server-entity',
-    stack_size = 50
+    place_result = 'label:server-entity',
+    stack_size = 1
 }})
