@@ -79,7 +79,7 @@ data:extend({ {
             { "logistic-science-pack", 1},
             { "chemical-science-pack", 1}
         },
-        order = "1"
+        order = "AE2"
     }
 }
 })
@@ -130,7 +130,7 @@ data:extend({ {
             { "chemical-science-pack", 1},
             {"production-science-pack",1}
         },
-        order = "3"
+        order = "AE2"
     }
 }
 })
@@ -182,7 +182,7 @@ data:extend({ {
             {"production-science-pack",5},
             {"singularidade",1}
         },
-        order = "2"
+        order = "AE2"
     }
 }
 })

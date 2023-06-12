@@ -1,3 +1,15 @@
+data:extend(
+{
+  {
+    type = "item-group",
+    name = "AE2-group",
+    order = "AE2",
+    icon = "__Applied-Energistics-2__/graficos/technology/AE2.png",
+    icon_size = 128,
+    icon_mipmaps = 2
+  },
+-- AE2 GRUPO DE ITENS---
+})
 
 data:extend({
 -- definindo o item
@@ -6,7 +18,7 @@ data:extend({
     name = "server-item",
     icon = "__Applied-Energistics-2__/graficos/items/network-server.png",
     icon_size = 126,
-    order = "f[server]",
+    order = "AE2[server]",
     stack_size = 1,
 },
 -- receita
@@ -31,7 +43,7 @@ data:extend({
     name = "engineering-processor",
     icon = "__Applied-Energistics-2__/graficos/items/engineering_processor.png",
     icon_size = 128,
-    order = "f[engineering-processor]",
+    order = "AE2[engineering-processor]",
     stack_size = 64,
 },
 -- receita
@@ -58,7 +70,7 @@ data:extend({
     name = "annihilation-core",
     icon = "__Applied-Energistics-2__/graficos/items/annihilation_core.png",
     icon_size = 128,
-    order = "f[annihilation-core]",
+    order = "AE2[annihilation-core]",
     stack_size = 64,
 },
 -- receita
@@ -85,7 +97,7 @@ data:extend({
     name = "blank-pattern",
     icon = "__Applied-Energistics-2__/graficos/items/blank_pattern.png",
     icon_size = 128,
-    order = "f[blank-pattern]",
+    order = "AE2[blank-pattern]",
     stack_size = 64,
 },
 -- receita
@@ -112,7 +124,7 @@ data:extend({
     name = "calculation-processor-press",
     icon = "__Applied-Energistics-2__/graficos/items/calculation_processor_press.png",
     icon_size = 128,
-    order = "f[calculation-processor-press]",
+    order = "AE2[calculation-processor-press]",
     stack_size = 1,
 },
 -- receita
@@ -137,7 +149,7 @@ data:extend({
     name = "calculation-processor",
     icon = "__Applied-Energistics-2__/graficos/items/calculation_processor.png",
     icon_size = 128,
-    order = "f[calculation-processor]",
+    order = "AE2[calculation-processor]",
     stack_size = 64,
 },
 -- receita
@@ -163,7 +175,7 @@ data:extend({
     name = "cell-component-1k",
     icon = "__Applied-Energistics-2__/graficos/items/cell_component_1k.png",
     icon_size = 128,
-    order = "f[cell-component-1k]",
+    order = "AE2[cell-component-1k]",
     stack_size = 64,
 },
 -- receita
@@ -190,7 +202,7 @@ data:extend({
     name = "cell-component-4k",
     icon = "__Applied-Energistics-2__/graficos/items/cell_component_4k.png",
     icon_size = 128,
-    order = "f[cell-component-4k]",
+    order = "AE2[cell-component-4k]",
     stack_size = 64,
 },
 -- receita
@@ -217,7 +229,7 @@ data:extend({
     name = "cell-component-16k",
     icon = "__Applied-Energistics-2__/graficos/items/cell_component_16k.png",
     icon_size = 128,
-    order = "f[cell-component-16k]",
+    order = "AE2[cell-component-16k]",
     stack_size = 64,
 },
 -- receita
@@ -244,7 +256,7 @@ data:extend({
     name = "cell-component-64k",
     icon = "__Applied-Energistics-2__/graficos/items/cell_component_64k.png",
     icon_size = 128,
-    order = "f[cell-component-64k]",
+    order = "AE2[cell-component-64k]",
     stack_size = 64,
 },
 -- receita
@@ -270,7 +282,7 @@ data:extend({
     name = "charged-certus-quartz-crystal",
     icon = "__Applied-Energistics-2__/graficos/items/charged_certus_quartz_crystal.png",
     icon_size = 128,
-    order = "f[charged-certus-quartz-crystal]",
+    order = "AE2[charged-certus-quartz-crystal]",
     stack_size = 64,
 },
 -- receita
@@ -294,7 +306,7 @@ data:extend({
     name = "engineering-processor-press",
     icon = "__Applied-Energistics-2__/graficos/items/engineering_processor_press.png",
     icon_size = 128,
-    order = "f[engineering-processor-press]",
+    order = "AE2[engineering-processor-press]",
     stack_size = 64,
 },
 -- receita
@@ -320,7 +332,7 @@ data:extend({
     name = "formation-core",
     icon = "__Applied-Energistics-2__/graficos/items/formation_core.png",
     icon_size = 128,
-    order = "f[formation-core]",
+    order = "AE2[formation-core]",
     stack_size = 64,
 },
 -- receita
@@ -347,7 +359,7 @@ data:extend({
     name = "item-cell-housing",
     icon = "__Applied-Energistics-2__/graficos/items/item_cell_housing.png",
     icon_size = 128,
-    order = "f[item-cell-housing]",
+    order = "AE2[item-cell-housing]",
     stack_size = 1,
 },
 -- receita
@@ -373,7 +385,7 @@ data:extend({
     name = "item-storage-cell-1k",
     icon = "__Applied-Energistics-2__/graficos/items/item_storage_cell_1k.png",
     icon_size = 128,
-    order = "f[item-storage-cell-1k]",
+    order = "AE2[item-storage-cell-1k]",
     stack_size = 1,
 },
 -- receita
@@ -400,7 +412,7 @@ data:extend({
     name = "item-storage-cell-4k",
     icon = "__Applied-Energistics-2__/graficos/items/item_storage_cell_4k.png",
     icon_size = 128,
-    order = "f[item-storage-cell-4k]",
+    order = "AE2[item-storage-cell-4k]",
     stack_size = 1,
 },
 -- receita
@@ -427,7 +439,7 @@ data:extend({
     name = "item-storage-cell-16k",
     icon = "__Applied-Energistics-2__/graficos/items/item_storage_cell_16k.png",
     icon_size = 128,
-    order = "f[item-storage-cell-16k]",
+    order = "AE2[item-storage-cell-16k]",
     stack_size = 1,
 },
 -- receita
@@ -454,7 +466,7 @@ data:extend({
     name = "item-storage-cell-64k",
     icon = "__Applied-Energistics-2__/graficos/items/item_storage_cell_64k.png",
     icon_size = 128,
-    order = "f[item-storage-cell-64k]",
+    order = "AE2[item-storage-cell-64k]",
     stack_size = 1,
 },
 -- receita
@@ -481,7 +493,7 @@ data:extend({
     name = "logic-processor-press",
     icon = "__Applied-Energistics-2__/graficos/items/logic_processor_press.png",
     icon_size = 128,
-    order = "f[logic-processor-press]",
+    order = "AE2[logic-processor-press]",
     stack_size = 1,
 },
 -- receita
@@ -507,7 +519,7 @@ data:extend({
     name = "logic-processor",
     icon = "__Applied-Energistics-2__/graficos/items/logic_processor.png",
     icon_size = 128,
-    order = "f[logic-processor]",
+    order = "AE2[logic-processor]",
     stack_size = 64,
 },
 -- receita
@@ -534,7 +546,7 @@ data:extend({
     name = "semi-dark-monitor",
     icon = "__Applied-Energistics-2__/graficos/items/semi_dark_monitor.png",
     icon_size = 128,
-    order = "f[semi-dark-monitor]",
+    order = "AE2[semi-dark-monitor]",
     stack_size = 1,
 },
 -- receita
@@ -561,7 +573,7 @@ data:extend({
     name = "silicon-press",
     icon = "__Applied-Energistics-2__/graficos/items/silicon_press.png",
     icon_size = 128,
-    order = "f[silicon-press]",
+    order = "AE2[silicon-press]",
     stack_size = 1,
 },
 -- receita
@@ -589,7 +601,7 @@ data:extend({
     icon = "__Applied-Energistics-2__/graficos/items/singularity.png",
     icon_size = 128,
     subgroup = "science-pack",
-    order = "a[singularidade]",
+    order = "AE2[singularidade]",
     stack_size = 1,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
@@ -632,7 +644,7 @@ data:extend({
     name = "iron-block",
     icon = "__Applied-Energistics-2__/graficos/items/iron_block.png",
     icon_size = 128,
-    order = "f[iron-block]",
+    order = "AE2[iron-block]",
     stack_size = 64,
 },
 -- receita
