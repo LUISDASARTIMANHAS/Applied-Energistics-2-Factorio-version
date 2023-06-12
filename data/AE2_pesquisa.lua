@@ -11,135 +11,67 @@ data:extend({ {
     {
         {
             type = "unlock-recipe",
-            recipe = "1k-crafting-storage",
+            recipe = "annihilation-core-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "4k-crafting-storage",
+            recipe = "blank-pattern-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "16k-crafting-storage",
+            recipe = "calculation-processor-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "64k-crafting-storage",
+            recipe = "cell-component-1k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "annihilation-core",
+            recipe = "cell-component-4k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "blank-pattern",
+            recipe = "cell-component-16k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "cable-pattern-provider",
+            recipe = "cell-component-64k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "calculation-processor",
+            recipe = "engineering-processor-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "cell-component-1k",
+            recipe = "formation-core-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "cell-component-4k",
+            recipe = "item-cell-housing-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "cell-component-16k",
+            recipe = "item-storage-cell-1k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "cell-component-64k",
+            recipe = "item-storage-cell-4k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "crafting-co-processing-unit",
+            recipe = "item-storage-cell-16k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "crafting-monitor",
+            recipe = "item-storage-cell-64k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "crafting-terminal",
+            recipe = "logic-processor-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "crafting-unit",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "drive",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "engineering-processor",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "formation-core",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "inscriber",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "interface",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "item-cell-housing",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "item-storage-cell-1k",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "item-storage-cell-4k",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "item-storage-cell-16k",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "item-storage-cell-64k",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "logic-processor",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "molecular-assembler",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "pattern-access-terminal",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "pattern-provider",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "semi-dark-monitor",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "storage-monitor",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "terminal",
+            recipe = "semi-dark-monitor-recipe",
         },
 
     },
@@ -170,19 +102,27 @@ data:extend({ {
     {
         -- {
         --     type = "unlock-recipe",
-        --     recipe = "1k-crafting-storage",
+        --     recipe = "1k-crafting-storage-recipe",
         -- },
         -- {
         --     type = "unlock-recipe",
-        --     recipe = "4k-crafting-storage",
+        --     recipe = "4k-crafting-storage-recipe",
         -- },
         -- {
         --     type = "unlock-recipe",
-        --     recipe = "16k-crafting-storage",
+        --     recipe = "16k-crafting-storage-recipe",
         -- },
         -- {
         --     type = "unlock-recipe",
-        --     recipe = "64k-crafting-storage",
+        --     recipe = "64k-crafting-storage-recipe",
+        -- },
+        -- {
+        --     type = "unlock-recipe",
+        --     recipe = "crafting-terminal-recipe",
+        -- },
+        -- {
+        --     type = "unlock-recipe",
+        --     recipe = "crafting-monitor-recipe",
         -- },
     },
     unit = {
