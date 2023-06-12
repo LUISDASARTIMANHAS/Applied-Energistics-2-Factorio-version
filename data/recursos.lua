@@ -4,8 +4,8 @@ data:extend(
     type = "item-group",
     name = "AE2-group",
     order = "AE2",
-    icon = "__Applied-Energistics-2__/graficos/technology/AE2.png",
-    icon_size = 128,
+    icon = "__Applied-Energistics-2__/graficos/technology/AE2-block.png",
+    icon_size = 126,
     icon_mipmaps = 2
   },
 -- AE2 GRUPO DE ITENS---
