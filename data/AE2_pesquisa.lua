@@ -19,10 +19,6 @@ data:extend({ {
         },
         {
             type = "unlock-recipe",
-            recipe = "calculation-processor-recipe",
-        },
-        {
-            type = "unlock-recipe",
             recipe = "cell-component-1k-recipe",
         },
         {
@@ -36,10 +32,6 @@ data:extend({ {
         {
             type = "unlock-recipe",
             recipe = "cell-component-64k-recipe",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "engineering-processor-recipe",
         },
         {
             type = "unlock-recipe",
@@ -67,12 +59,16 @@ data:extend({ {
         },
         {
             type = "unlock-recipe",
-            recipe = "logic-processor-recipe",
+            recipe = "semi-dark-monitor-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "semi-dark-monitor-recipe",
+            recipe = "singularidade-recipe"
         },
+        {
+            type = "unlock-recipe",
+            recipe = "singularidade-alternative-iron-recipe"
+        }
 
     },
     unit = {
@@ -95,8 +91,8 @@ data:extend({ {
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
-        "plastics",
-        "AE2"
+        "AE2",
+        "AE2-advanced-eletronic"
     },
     effects =
     {
@@ -126,13 +122,65 @@ data:extend({ {
         -- },
     },
     unit = {
-        count = 1000,
+        count = 750,
         time = 30,
         ingredients = {
-            { "automation-science-pack", 1},
-            { "logistic-science-pack", 1},
+            { "automation-science-pack", 2},
+            { "logistic-science-pack", 2},
             { "chemical-science-pack", 1},
             {"production-science-pack",1}
+        },
+        order = "3"
+    }
+}
+})
+
+
+data:extend({ {
+    type = "technology",
+    name = "AE2-advanced-eletronic",
+    icon = "__Applied-Energistics-2__/graficos/technology/silicon_press.png",
+    icon_size = 128,
+    icon_mipmaps = 4,
+    prerequisites = {
+        "AE2"
+    },
+    effects =
+    {
+        {
+            type = "unlock-recipe",
+            recipe = "logic-processor-advanced-press-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "engineering-processor-advanced-press-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "calculation-processor-advanced-press-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "calculation-processor-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "engineering-processor-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "logic-processor-recipe",
+        },
+    },
+    unit = {
+        count = 200,
+        time = 30,
+        ingredients = {
+            { "automation-science-pack", 5},
+            { "logistic-science-pack", 5},
+            { "chemical-science-pack", 5},
+            {"production-science-pack",5},
+            {"singularidade",1}
         },
         order = "2"
     }

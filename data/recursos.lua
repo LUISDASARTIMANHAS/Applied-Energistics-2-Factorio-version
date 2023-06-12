@@ -1,3 +1,4 @@
+
 data:extend({
 -- definindo o item
 {
@@ -121,11 +122,10 @@ data:extend({
     category = "crafting",
     enabled = true,
     ingredients = {
-        {"calculation-processor-press", 64},
-        {"iron-block", 9}
+        {"advanced-circuit", 64},
+        {"iron-block", 20}
     },
-    energy_required = 120,
-    result_count = 2,
+    energy_required = 180,
     result = "calculation-processor-press",
 },
 })
@@ -304,11 +304,10 @@ data:extend({
     category = "crafting",
     enabled = true,
     ingredients = {
-        {"engineering-processor-press",1},
-        {"iron-block",9}
+        {"processing-unit",64},
+        {"iron-block",20}
     },
-    energy_required = 120,
-    result_count = 2,
+    energy_required = 180,
     result = "engineering-processor-press",
 },
 })
@@ -492,11 +491,10 @@ data:extend({
     category = "crafting",
     enabled = true,
     ingredients = {
-        {"logic-processor-press",64},
-        {"iron-block",9}
+        {"electronic-circuit",64},
+        {"iron-block",20}
     },
-    energy_required = 120,
-    result_count = 2,
+    energy_required = 180,
     result = "logic-processor-press",
 },
 })
@@ -579,6 +577,50 @@ data:extend({
     energy_required = 120,
     result_count = 2,
     result = "silicon-press",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "tool",
+    name = "singularidade",
+    icon = "__Applied-Energistics-2__/graficos/items/singularity.png",
+    icon_size = 128,
+    subgroup = "science-pack",
+    order = "a[singularidade]",
+    stack_size = 1,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+-- receita
+{
+    type = "recipe",
+    name = "singularidade-recipe",
+    category = "crafting",
+    enabled = false,
+    ingredients = {
+        {"iron-block",7111},
+        {"landfill",64000},
+        {"stone-brick",64000},
+        {"plastic-bar",64000},
+    },
+    energy_required = 120,
+    result = "singularidade",
+},
+{
+    type = "recipe",
+    name = "singularidade-alternative-iron-recipe",
+    category = "crafting",
+    enabled = false,
+    ingredients = {
+        {"iron-block",28445},
+        {"iron-plate",4}
+    },
+    energy_required = 120,
+    result = "singularidade",
 },
 })
 
