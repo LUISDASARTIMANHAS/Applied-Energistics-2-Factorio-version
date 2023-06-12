@@ -38,7 +38,7 @@ data:extend({
     type = "recipe",
     name = "engineering-processor-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"engineering-processor-press",1},
         {"silicon-press",1},
@@ -64,7 +64,7 @@ data:extend({
     type = "recipe",
     name = "annihilation-core-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"logic-processor", 1},
         {"copper-cable", 5},
@@ -90,7 +90,7 @@ data:extend({
     type = "recipe",
     name = "blank-pattern-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"iron-plate", 4},
         {"annihilation-core", 1},
@@ -121,7 +121,7 @@ data:extend({
         {"calculation-processor-press", 64},
         {"iron-block", 9}
     },
-    count = 2,
+    result_count = 2,
     result = "calculation-processor-press",
 },
 })
@@ -141,7 +141,7 @@ data:extend({
     type = "recipe",
     name = "calculation-processor-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"calculation-processor-press",1},
         {"silicon-press",1},
@@ -166,7 +166,7 @@ data:extend({
     type = "recipe",
     name = "cell-component-1k-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"charged-certus-quartz-crystal", 4},
         {"copper-cable", 4},
@@ -192,7 +192,7 @@ data:extend({
     type = "recipe",
     name = "cell-component-4k-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"calculation-processor", 1},
         {"copper-cable", 5},
@@ -218,7 +218,7 @@ data:extend({
     type = "recipe",
     name = "cell-component-16k-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"calculation-processor", 10},
         {"copper-cable", 5},
@@ -244,7 +244,7 @@ data:extend({
     type = "recipe",
     name = "cell-component-64k-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"calculation-processor", 1},
         {"copper-cable", 5},
@@ -269,7 +269,7 @@ data:extend({
     type = "recipe",
     name = "charged-certus-quartz-crystal-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
     },
     result = "charged-certus-quartz-crystal",
@@ -292,12 +292,12 @@ data:extend({
     type = "recipe",
     name = "engineering-processor-press-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"engineering-processor-press",1},
         {"iron-block",9}
     },
-    count = 2,
+    result_count = 2,
     result = "engineering-processor-press",
 },
 })
@@ -318,7 +318,7 @@ data:extend({
     type = "recipe",
     name = "formation-core-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"logic-processor", 2},
         {"copper-cable", 10},
@@ -344,7 +344,7 @@ data:extend({
     type = "recipe",
     name = "item-cell-housing-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"iron-plate", 4},
         {"copper-cable", 4}
@@ -369,7 +369,7 @@ data:extend({
     type = "recipe",
     name = "item-storage-cell-1k-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"iron-plate", 4},
         {"cell-component-1k",1},
@@ -395,7 +395,7 @@ data:extend({
     type = "recipe",
     name = "item-storage-cell-4k-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"iron-plate", 4},
         {"cell-component-4k",1},
@@ -421,7 +421,7 @@ data:extend({
     type = "recipe",
     name = "item-storage-cell-16k-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"iron-plate", 4},
         {"cell-component-16k",1},
@@ -447,7 +447,7 @@ data:extend({
     type = "recipe",
     name = "item-storage-cell-64k-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"iron-plate", 4},
         {"cell-component-64k",1},
@@ -473,12 +473,12 @@ data:extend({
     type = "recipe",
     name = "logic-processor-press-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"logic-processor-press",64},
         {"iron-block",9}
     },
-    count = 2,
+    result_count = 2,
     result = "logic-processor-press",
 },
 })
@@ -499,7 +499,7 @@ data:extend({
     type = "recipe",
     name = "logic-processor-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"logic-processor-press",1},
         {"silicon-press",1},
@@ -525,7 +525,7 @@ data:extend({
     type = "recipe",
     name = "semi-dark-monitor-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"iron-plate", 1},
         {"copper-cable", 3},
@@ -551,11 +551,12 @@ data:extend({
     type = "recipe",
     name = "silicon-press-recipe",
     category = "crafting",
-    enabled = true,
+    enabled = false,
     ingredients = {
         {"iron-block", 1},
         {"charged-certus-quartz-crystal",2}
     },
+    result_count = 2,
     result = "silicon-press",
 },
 })
@@ -580,7 +581,7 @@ data:extend({
     ingredients = {
         {"iron-plate",9}
     },
-    result = "iron-block",
+    result = "iron-block"
 },
 })
 
@@ -595,7 +596,7 @@ data:extend({
         ingredients = {
             {"iron-block",1}
         },
-        coutn = 9,
+        result_count = 9,
         result = "iron-plate",
     },
     })

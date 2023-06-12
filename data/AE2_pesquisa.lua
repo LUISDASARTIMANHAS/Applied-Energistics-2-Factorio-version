@@ -19,12 +19,14 @@ data:extend({ {
         -- },
     },
     unit = {
-        count = 150,
+        count = 100,
         time = 30,
         ingredients = {
-            { "automation-science-pack", 500}
+            { "automation-science-pack", 1},
+            { "logistic-science-pack", 1},
+            { "chemical-science-pack", 1}
         },
-        order = ""
+        order = "1"
     }
 }
 })
@@ -51,12 +53,15 @@ data:extend({ {
         -- },
     },
     unit = {
-        count = 150,
+        count = 1500,
         time = 30,
         ingredients = {
-            { "automation-science-pack", 500}
+            { "automation-science-pack", 1},
+            { "logistic-science-pack", 1},
+            { "chemical-science-pack", 1},
+            {"production-science-pack",1}
         },
-        order = ""
+        order = "2"
     }
 }
 })
