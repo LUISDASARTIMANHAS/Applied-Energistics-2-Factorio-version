@@ -12,7 +12,7 @@ data:extend(
   {
     type = "item-subgroup",
     name = "AE2-group",
-    group = "AE2",
+    group = "AE2-group",
     order = "z"
   },
 -- AE2 GRUPO DE ITENS---
