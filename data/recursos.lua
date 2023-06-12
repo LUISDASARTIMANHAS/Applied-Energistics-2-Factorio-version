@@ -3,10 +3,17 @@ data:extend(
   {
     type = "item-group",
     name = "AE2-group",
-    order = "AE2",
+    order = "z",
     icon = "__Applied-Energistics-2__/graficos/technology/AE2-block.png",
     icon_size = 126,
     icon_mipmaps = 2
+  },
+
+  {
+    type = "item-subgroup",
+    name = "AE2-group",
+    group = "AE2",
+    order = "z"
   },
 -- AE2 GRUPO DE ITENS---
 })
