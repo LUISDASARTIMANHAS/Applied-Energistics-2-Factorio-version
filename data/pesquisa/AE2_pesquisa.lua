@@ -168,7 +168,7 @@ data:extend({ {
 data:extend({ {
     type = "technology",
     name = "AE2-autocraft",
-    icon = "__Applied-Energistics-2__/graficos/technology/64k_crafting_storage.png",
+    icon = "graficos/technology/molecular_assembler.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
