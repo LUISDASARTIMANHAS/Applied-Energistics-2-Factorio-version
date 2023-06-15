@@ -201,6 +201,10 @@ data:extend({ {
         --     type = "unlock-recipe",
         --     recipe = "crafting-monitor-recipe",
         -- },
+        -- {
+        --     type = "unlock-recipe",
+        --     recipe = "molecular-assembler-recipe",
+        -- },
     },
     unit = {
         count = 10,
