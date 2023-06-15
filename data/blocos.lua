@@ -24,10 +24,10 @@ data:extend({{
 
     minable = {
         mining_time = 5,
-        result = "server-block"
+        result = "server-item"
     },
     placeable_by = {
-        item = "server-block",
+        item = "server-item",
         count = 1
     },
 

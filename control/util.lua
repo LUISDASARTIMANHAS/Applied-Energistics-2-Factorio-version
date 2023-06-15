@@ -1,13 +1,10 @@
-local gc = require("control/guiControl.lua")
+local guiCtrl = require("control/guiControl.lua")
 
 local util = {}
 
--- dictionary of arrays of event handlers, where the key is the event being raised.
+
 local handlers = {}
 
--- surely there's a better way to have multiple event handlers than this?
--- we can't use filters: as the docs state, 
---      "Each mod can only register once for every event. [...] This holds true even if different filters are used for subsequent registrations."
 function util.AddEventHandler(events, handler, fireLast)
     if type(events) == "table" then
         for _, event in pairs(events) do
@@ -59,7 +56,7 @@ function util.OverwriteGui(entityName, buildGui, redrawFunctionFactory)
             }
             local new_gui = buildGui(info)
             info.element = new_gui
-            gc.setActiveGui(new_gui, redrawFunctionFactory(info), event.entity)
+            guiCtrl.setActiveGui(new_gui, redrawFunctionFactory(info), event.entity)
             player.opened = new_gui
         end
     )
@@ -69,7 +66,7 @@ util.AddEventHandler(
         defines.events.on_gui_closed,
         function(e)
             if e.element and util.StartsWith(e.element.name, "label:") then
-                gc.closeActiveGui()
+                guiCtrl.closeActiveGui()
             end
         end
     )
@@ -77,15 +74,15 @@ util.AddEventHandler(
 util.AddEventHandler(
         {defines.events.on_entity_died, defines.events.on_player_mined_entity, defines.events.on_robot_mined_entity},
         function(e)
-            if gc.currentGui and e.entity.unit_number == gc.currentGui.entity.unit_number then
-                gc.closeActiveGui()
+            if guiCtrl.currentGui and e.entity.unit_number == guiCtrl.currentGui.entity.unit_number then
+                guiCtrl.closeActiveGui()
             end
         end
     )
 
 util.AddEventHandler(
         defines.events.on_tick,
-        gc.redrawGui
+        guiCtrl.redrawGui
     )
 
 return util
