@@ -434,7 +434,7 @@ data:extend({
     category = "crafting",
     enabled = true,
     ingredients = {
-        {"logic1processor", 1},
+        {"logic-processor", 1},
         {"formation-core", 1},
         {"annihilation-core",1},
         {"semi-dark-monitor",1}
