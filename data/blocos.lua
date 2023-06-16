@@ -9,11 +9,11 @@ data:extend({{
     },
 
     picture = {
-        filename = "__Applied-Energistics-2__/graficos/blocos/network-server.png",
+        filename = "Applied-Energistics-2/graficos/blocos/network-server.png",
         size = 126,
         scale = 1.0/2.0
     },
-    icon = "__Applied-Energistics-2__/graficos/items/network-server.png",
+    icon = "Applied-Energistics-2/graficos/items/network-server.png",
     icon_size = 126,
     icon_mipmaps = 4,
     drawing_box = {{-1, -1}, {1, 1}},

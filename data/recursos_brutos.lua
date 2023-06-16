@@ -3,7 +3,7 @@ data:extend({
 {
     type = "item",
     name = "charged-certus-quartz-crystal",
-    icon = "/graficos/items/charged_certus_quartz_crystal.png",
+    icon = "Applied-Energistics-2/graficos/items/charged_certus_quartz_crystal.png",
     icon_size = 128,
     subgroup = "resources-generated",
     order = "AE2-resources-generated[charged-certus-quartz-crystal]",
@@ -15,7 +15,7 @@ data:extend({
     {
     type = "item",
     name = "fluix-crystal",
-    icon = "/graficos/items/fluix_crystal.png",
+    icon = "Applied-Energistics-2/graficos/items/fluix_crystal.png",
     icon_size = 128,
     subgroup = "resources-generated",
     order = "AE2-resources-generated[fluix-crystal]",
@@ -40,7 +40,7 @@ data:extend({
 {
     type = "item",
     name = "silicon-press",
-    icon = "/graficos/items/silicon_press.png",
+    icon = "Applied-Energistics-2/graficos/items/silicon_press.png",
     icon_size = 128,
     subgroup = "processing",
     order = "AE2-processing[silicon-press]",
@@ -67,7 +67,7 @@ data:extend({
 {
     type = "item",
     name = "engineering-processor-press",
-    icon = "/graficos/items/engineering_processor_press.png",
+    icon = "Applied-Energistics-2/graficos/items/engineering_processor_press.png",
     icon_size = 128,
     subgroup = "processing",
     order = "AE2-processing[engineering-processor-press]",
@@ -94,7 +94,7 @@ data:extend({
 {
     type = "item",
     name = "logic-processor-press",
-    icon = "/graficos/items/logic_processor_press.png",
+    icon = "Applied-Energistics-2/graficos/items/logic_processor_press.png",
     icon_size = 128,
     subgroup = "processing",
     order = "AE2-processing[logic-processor-press]",
@@ -121,7 +121,7 @@ data:extend({
 {
     type = "item",
     name = "iron-block",
-    icon = "/graficos/items/iron_block.png",
+    icon = "Applied-Energistics-2/graficos/items/iron_block.png",
     icon_size = 128,
     subgroup = "component",
     order = "AE2-component[iron-block]",
@@ -148,7 +148,7 @@ data:extend({
 {
     type = "item",
     name = "compressed-iron-block",
-    icon = "/graficos/items/compressed_iron_block.png",
+    icon = "Applied-Energistics-2/graficos/items/compressed_iron_block.png",
     icon_size = 128,
     subgroup = "component",
     order = "AE2-component[compressed-iron-block]",
@@ -174,7 +174,7 @@ data:extend({
 {
     type = "item",
     name = "calculation-processor-press",
-    icon = "/graficos/items/calculation_processor_press.png",
+    icon = "Applied-Energistics-2/graficos/items/calculation_processor_press.png",
     icon_size = 128,
     subgroup = "processing",
     order = "AE2-processing[calculation-processor-press]",

@@ -1,7 +1,7 @@
 data:extend({ {
     type = "technology",
     name = "AE2",
-    icon = "/graficos/technology/AE2.png",
+    icon = "Applied-Energistics-2/graficos/technology/AE2.png",
     icon_size = 126,
     icon_mipmaps = 4,
     prerequisites = {
@@ -80,7 +80,7 @@ data:extend({ {
 data:extend({ {
     type = "technology",
     name = "AE2-singularidade",
-    icon = "/graficos/technology/singularity.png",
+    icon = "Applied-Energistics-2/graficos/technology/singularity.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
@@ -115,7 +115,7 @@ data:extend({ {
 data:extend({ {
     type = "technology",
     name = "AE2-advanced-eletronic",
-    icon = "/graficos/technology/advanced_eletronic.png",
+    icon = "Applied-Energistics-2/graficos/technology/advanced_eletronic.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
@@ -168,7 +168,7 @@ data:extend({ {
 data:extend({ {
     type = "technology",
     name = "AE2-autocraft",
-    icon = "/graficos/technology/autocraft.png",
+    icon = "Applied-Energistics-2/graficos/technology/autocraft.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {

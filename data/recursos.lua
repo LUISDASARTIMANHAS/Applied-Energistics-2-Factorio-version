@@ -3,7 +3,7 @@ data:extend({
 {
     type = "item",
     name = "drive",
-    icon = "/graficos/blocos/drive.png",
+    icon = "Applied-Energistics-2/graficos/blocos/drive.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[drive]",
@@ -29,7 +29,7 @@ data:extend({
 {
     type = "item",
     name = "1k-crafting-storage",
-    icon = "/graficos/Blocos/1k_crafting_storage.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/1k_crafting_storage.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[1k-crafting-storage]",
@@ -53,7 +53,7 @@ data:extend({
 {
     type = "item",
     name = "4k-crafting-storage",
-    icon = "/graficos/Blocos/4k_crafting_storage.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/4k_crafting_storage.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[4k-crafting-storage]",
@@ -77,7 +77,7 @@ data:extend({
 {
     type = "item",
     name = "16k-crafting-storage",
-    icon = "/graficos/Blocos/16k_crafting_storage.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/16k_crafting_storage.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[16k-crafting-storage]",
@@ -101,7 +101,7 @@ data:extend({
 {
     type = "item",
     name = "64k-crafting-storage",
-    icon = "/graficos/Blocos/64k_crafting_storage.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/64k_crafting_storage.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[64k-crafting-storage]",
@@ -125,7 +125,7 @@ data:extend({
 {
     type = "item",
     name = "cable-pattern-provider",
-    icon = "/graficos/Blocos/cable_pattern_provider.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/cable_pattern_provider.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[cable-pattern-provider]",
@@ -152,7 +152,7 @@ data:extend({
 {
     type = "item",
     name = "crafting-co-processing-unit",
-    icon = "/graficos/Blocos/crafting_co_processing_unit.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/crafting_co_processing_unit.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-co-processing-unit]",
@@ -178,7 +178,7 @@ data:extend({
 {
     type = "item",
     name = "crafting-monitor",
-    icon = "/graficos/Blocos/crafting_monitor.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/crafting_monitor.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-monitor]",
@@ -204,7 +204,7 @@ data:extend({
 {
     type = "item",
     name = "crafting-terminal",
-    icon = "/graficos/Blocos/crafting_terminal.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/crafting_terminal.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-terminal]",
@@ -231,7 +231,7 @@ data:extend({
 {
     type = "item",
     name = "crafting-unit",
-    icon = "/graficos/Blocos/crafting_unit.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/crafting_unit.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-unit]",
@@ -258,7 +258,7 @@ data:extend({
 {
     type = "item",
     name = "inscriber",
-    icon = "/graficos/Blocos/inscriber.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/inscriber.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[inscriber]",
@@ -285,7 +285,7 @@ data:extend({
 {
     type = "item",
     name = "interface",
-    icon = "/graficos/Blocos/interface.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/interface.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[interface]",
@@ -312,7 +312,7 @@ data:extend({
 {
     type = "item",
     name = "molecular-assembler",
-    icon = "/graficos/Blocos/molecular_assembler.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/molecular_assembler.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[molecular-assembler]",
@@ -340,7 +340,7 @@ data:extend({
 {
     type = "item",
     name = "pattern-access-terminal",
-    icon = "/graficos/Blocos/pattern_access_terminal.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/pattern_access_terminal.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[pattern-access-terminal]",
@@ -367,7 +367,7 @@ data:extend({
 {
     type = "item",
     name = "pattern-provider",
-    icon = "/graficos/Blocos/pattern_provider.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/pattern_provider.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[pattern-provider]",
@@ -394,7 +394,7 @@ data:extend({
 {
     type = "item",
     name = "storage-monitor",
-    icon = "/graficos/Blocos/storage_monitor.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/storage_monitor.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[storage-monitor]",
@@ -421,7 +421,7 @@ data:extend({
 {
     type = "item",
     name = "terminal",
-    icon = "/graficos/Blocos/terminal.png",
+    icon = "Applied-Energistics-2/graficos/Blocos/terminal.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[terminal]",
@@ -452,7 +452,7 @@ data:extend({
 {
     type = "item",
     name = "engineering-processor",
-    icon = "/graficos/items/engineering_processor.png",
+    icon = "Applied-Energistics-2/graficos/items/engineering_processor.png",
     icon_size = 128,
     subgroup = "processing",
     order = "AE2-processing[engineering-processor]",
@@ -466,7 +466,7 @@ data:extend({
 {
     type = "item",
     name = "annihilation-core",
-    icon = "/graficos/items/annihilation_core.png",
+    icon = "Applied-Energistics-2/graficos/items/annihilation_core.png",
     icon_size = 128,
     subgroup = "component",
     order = "AE2-component[annihilation-core]",
@@ -494,7 +494,7 @@ data:extend({
 {
     type = "item",
     name = "blank-pattern",
-    icon = "/graficos/items/blank_pattern.png",
+    icon = "Applied-Energistics-2/graficos/items/blank_pattern.png",
     icon_size = 128,
     subgroup = "auto-craft",
     order = "AE2-auto-craft[blank-pattern]",
@@ -522,7 +522,7 @@ data:extend({
 {
     type = "item",
     name = "calculation-processor",
-    icon = "/graficos/items/calculation_processor.png",
+    icon = "Applied-Energistics-2/graficos/items/calculation_processor.png",
     icon_size = 128,
     subgroup = "processing",
     order = "AE2-processing[calculation-processor]",
@@ -535,7 +535,7 @@ data:extend({
 {
     type = "item",
     name = "cell-component-1k",
-    icon = "/graficos/items/cell_component_1k.png",
+    icon = "Applied-Energistics-2/graficos/items/cell_component_1k.png",
     icon_size = 128,
     subgroup = "component",
     order = "AE2-component[cell-component-1k]",
@@ -563,7 +563,7 @@ data:extend({
 {
     type = "item",
     name = "cell-component-4k",
-    icon = "/graficos/items/cell_component_4k.png",
+    icon = "Applied-Energistics-2/graficos/items/cell_component_4k.png",
     icon_size = 128,
     subgroup = "component",
     order = "AE2-component[cell-component-4k]",
@@ -591,7 +591,7 @@ data:extend({
 {
     type = "item",
     name = "cell-component-16k",
-    icon = "/graficos/items/cell_component_16k.png",
+    icon = "Applied-Energistics-2/graficos/items/cell_component_16k.png",
     icon_size = 128,
     subgroup = "component",
     order = "AE2-component[cell-component-16k]",
@@ -619,7 +619,7 @@ data:extend({
 {
     type = "item",
     name = "cell-component-64k",
-    icon = "/graficos/items/cell_component_64k.png",
+    icon = "Applied-Energistics-2/graficos/items/cell_component_64k.png",
     icon_size = 128,
     subgroup = "component",
     order = "AE2-component[cell-component-64k]",
@@ -651,7 +651,7 @@ data:extend({
 {
     type = "item",
     name = "formation-core",
-    icon = "/graficos/items/formation_core.png",
+    icon = "Applied-Energistics-2/graficos/items/formation_core.png",
     icon_size = 128,
     subgroup = "component",
     order = "AE2-component[formation-core]",
@@ -679,7 +679,7 @@ data:extend({
 {
     type = "item",
     name = "item-cell-housing",
-    icon = "/graficos/items/item_cell_housing.png",
+    icon = "Applied-Energistics-2/graficos/items/item_cell_housing.png",
     icon_size = 128,
     subgroup = "storage-ME",
     order = "AE2-storage-ME[item-cell-housing]",
@@ -706,7 +706,7 @@ data:extend({
 {
     type = "item",
     name = "storage-ME-cell-1k",
-    icon = "/graficos/items/storage_me_cell_1k.png",
+    icon = "Applied-Energistics-2/graficos/items/storage_me_cell_1k.png",
     icon_size = 128,
     subgroup = "storage-ME",
     order = "AE2-storage-ME[storage-ME-cell-1k]",
@@ -734,7 +734,7 @@ data:extend({
 {
     type = "item",
     name = "storage-ME-cell-4k",
-    icon = "/graficos/items/storage_me_cell_4k.png",
+    icon = "Applied-Energistics-2/graficos/items/storage_me_cell_4k.png",
     icon_size = 128,
     subgroup = "storage-ME",
     order = "AE2-storage-ME[storage-ME-cell-4k]",
@@ -762,7 +762,7 @@ data:extend({
 {
     type = "item",
     name = "storage-ME-cell-16k",
-    icon = "/graficos/items/storage_me_cell_16k.png",
+    icon = "Applied-Energistics-2/graficos/items/storage_me_cell_16k.png",
     icon_size = 128,
     subgroup = "storage-ME",
     order = "AE2-storage-ME[storage-ME-cell-16k]",
@@ -790,7 +790,7 @@ data:extend({
 {
     type = "item",
     name = "storage-ME-cell-64k",
-    icon = "/graficos/items/storage_me_cell_64k.png",
+    icon = "Applied-Energistics-2/graficos/items/storage_me_cell_64k.png",
     icon_size = 128,
     subgroup = "storage-ME",
     order = "AE2-storage-ME[storage-ME-cell-64k]",
@@ -818,7 +818,7 @@ data:extend({
 {
     type = "item",
     name = "logic-processor",
-    icon = "/graficos/items/logic_processor.png",
+    icon = "Applied-Energistics-2/graficos/items/logic_processor.png",
     icon_size = 128,
     subgroup = "processing",
     order = "AE2-processing[logic-processor]",
@@ -832,7 +832,7 @@ data:extend({
 {
     type = "item",
     name = "semi-dark-monitor",
-    icon = "/graficos/items/semi_dark_monitor.png",
+    icon = "Applied-Energistics-2/graficos/items/semi_dark_monitor.png",
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[semi-dark-monitor]",
@@ -860,7 +860,7 @@ data:extend({
 {
     type = "tool",
     name = "singularidade",
-    icon = "/graficos/items/singularity.png",
+    icon = "Applied-Energistics-2/graficos/items/singularity.png",
     icon_size = 128,
     subgroup = "resources-generated",
     order = "AE2-resources-generated[singularidade]",
