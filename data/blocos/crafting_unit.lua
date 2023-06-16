@@ -4,11 +4,7 @@ data:extend({{
     name = "label:crafting-unit-recipe",
     normal = {
         enabled = true,
-        ingredients = {
-            {"iron-plate", 6},
-            {"logic-processor", 1},
-            {"calculation-processor",2}
-        },
+        
         result = "label:crafting-unit-item"
     }
 }})

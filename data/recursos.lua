@@ -226,6 +226,33 @@ data:extend({
 })
 
 
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "crafting-unit",
+    icon = "graficos/Blocos/crafting_unit.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[crafting-unit]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "crafting-unit-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"iron-plate", 6},
+        {"logic-processor", 1},
+        {"calculation-processor",2}
+    },
+    result = "crafting-unit",
+},
+})
+
+
 --------------------- fim dos blocos------------------------
 
 
