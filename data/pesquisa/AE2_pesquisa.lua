@@ -8,13 +8,11 @@ data:extend({ {
     icon_mipmaps = 4,
     prerequisites = {
         "plastics",
-        "Automation",
-        "Advanced-electronics",
-        "Electric-energy-accumulators",
-        "Logistics",
-        "Advanced-material-processing",
-        "Electric-energy-distribution-1",
-        "Electronics"
+        "automation",
+        "alectric-energy-accumulators",
+        "logistics",
+        "advanced-material-processing",
+        "electric-energy-distribution-1"
     },
     effects =
     {
@@ -129,7 +127,9 @@ data:extend({ {
     icon_mipmaps = 4,
     prerequisites = {
         "AE2",
-        "AE2-singularidade"
+        "AE2-singularidade",
+        "electronics",
+        "advanced-electronics"
     },
     effects =
     {
