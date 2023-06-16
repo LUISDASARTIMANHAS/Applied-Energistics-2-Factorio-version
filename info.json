@@ -6,6 +6,6 @@
     "contact": "luisaugustodesouza785@gmail.com",
     "homepage": "https://github.com/LUISDASARTIMANHAS/Applied-Energistics-2-Factorio-version/",
     "description": "Mod que importa as mecanicas do Applied Energistics 2, inspirado (mas não afiliado ao mod Minecraft Applied Energistics 2).",
-    "factorio_version": "1.1.79",
-    "dependencies": ["base >= 1.1.79"]
+    "factorio_version": "1.1",
+    "dependencies": ["base >= 1.1.69"]
 }
