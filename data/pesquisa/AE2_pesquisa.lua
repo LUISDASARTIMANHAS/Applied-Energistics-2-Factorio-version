@@ -3,7 +3,7 @@ local path_main = "__Applied-Energistics-2_0.4.0__/"
 data:extend({ {
     type = "technology",
     name = "AE2",
-    icon = path_main.. "graficos/technology/AE2.png",
+    icon = "/graficos/technology/AE2.png",
     icon_size = 126,
     icon_mipmaps = 4,
     prerequisites = {
@@ -82,7 +82,7 @@ data:extend({ {
 data:extend({ {
     type = "technology",
     name = "AE2-singularidade",
-    icon = path_main.. "graficos/technology/singularity.png",
+    icon = "/graficos/technology/singularity.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
@@ -117,7 +117,7 @@ data:extend({ {
 data:extend({ {
     type = "technology",
     name = "AE2-advanced-eletronic",
-    icon = path_main.. "graficos/technology/advanced_eletronic.png",
+    icon = "/graficos/technology/advanced_eletronic.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
@@ -170,7 +170,7 @@ data:extend({ {
 data:extend({ {
     type = "technology",
     name = "AE2-autocraft",
-    icon = path_main.. "graficos/technology/autocraft.png",
+    icon = "/graficos/technology/autocraft.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
