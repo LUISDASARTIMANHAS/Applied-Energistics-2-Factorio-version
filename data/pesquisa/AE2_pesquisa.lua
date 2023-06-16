@@ -1,4 +1,4 @@
-local path_main = "__Applied-Energistics-2__/"
+local path_main = "__Applied-Energistics-2_0.4.0__/"
 
 data:extend({ {
     type = "technology",

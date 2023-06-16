@@ -1,4 +1,4 @@
-local path_main = "__Applied-Energistics-2__"
+local path_main = "__Applied-Energistics-2_0.4.0__"
 local path_grafico = path_main.. "/graphics/"
 
 -- recursos e itens
