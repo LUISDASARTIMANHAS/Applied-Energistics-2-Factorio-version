@@ -43,19 +43,19 @@ data:extend({ {
         },
         {
             type = "unlock-recipe",
-            recipe = "item-storage-cell-1k-recipe",
+            recipe = "storage-ME-cell-1k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "item-storage-cell-4k-recipe",
+            recipe = "storage-ME-cell-4k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "item-storage-cell-16k-recipe",
+            recipe = "storage-ME-cell-16k-recipe",
         },
         {
             type = "unlock-recipe",
-            recipe = "item-storage-cell-64k-recipe",
+            recipe = "storage-ME-cell-64k-recipe",
         },
         {
             type = "unlock-recipe",

@@ -705,17 +705,17 @@ data:extend({
 -- definindo o item
 {
     type = "item",
-    name = "item-storage-ME-cell-1k",
-    icon = "graficos/items/item_storage-ME_cell_1k.png",
+    name = "storage-ME-cell-1k",
+    icon = "graficos/items/storage_me_cell_1k.png",
     icon_size = 128,
     subgroup = "storage-ME",
-    order = "AE2-storage-ME[item-storage-ME-cell-1k]",
+    order = "AE2-storage-ME[storage-ME-cell-1k]",
     stack_size = 1,
 },
 -- receita
 {
     type = "recipe",
-    name = "item-storage-ME-cell-1k-recipe",
+    name = "storage-ME-cell-1k-recipe",
     category = "crafting",
     enabled = false,
     ingredients = {
@@ -724,7 +724,7 @@ data:extend({
         {"copper-cable",4}
     },
     energy_required = 160,
-    result = "item-storage-ME-cell-1k",
+    result = "storage-ME-cell-1k",
 },
 })
 
@@ -733,17 +733,17 @@ data:extend({
 -- definindo o item
 {
     type = "item",
-    name = "item-storage-ME-cell-4k",
-    icon = "graficos/items/item_storage-ME_cell_4k.png",
+    name = "storage-ME-cell-4k",
+    icon = "graficos/items/storage_me_cell_4k.png",
     icon_size = 128,
     subgroup = "storage-ME",
-    order = "AE2-storage-ME[item-storage-ME-cell-4k]",
+    order = "AE2-storage-ME[storage-ME-cell-4k]",
     stack_size = 1,
 },
 -- receita
 {
     type = "recipe",
-    name = "item-storage-ME-cell-4k-recipe",
+    name = "storage-ME-cell-4k-recipe",
     category = "crafting",
     enabled = false,
     ingredients = {
@@ -752,7 +752,7 @@ data:extend({
         {"copper-cable",4}
     },
     energy_required = 160,
-    result = "item-storage-ME-cell-4k",
+    result = "storage-ME-cell-4k",
 },
 })
 
@@ -761,17 +761,17 @@ data:extend({
 -- definindo o item
 {
     type = "item",
-    name = "item-storage-ME-cell-16k",
-    icon = "graficos/items/item_storage-ME_cell_16k.png",
+    name = "storage-ME-cell-16k",
+    icon = "graficos/items/storage_me_cell_16k.png",
     icon_size = 128,
     subgroup = "storage-ME",
-    order = "AE2-storage-ME[item-storage-ME-cell-16k]",
+    order = "AE2-storage-ME[storage-ME-cell-16k]",
     stack_size = 1,
 },
 -- receita
 {
     type = "recipe",
-    name = "item-storage-ME-cell-16k-recipe",
+    name = "storage-ME-cell-16k-recipe",
     category = "crafting",
     enabled = false,
     ingredients = {
@@ -780,7 +780,7 @@ data:extend({
         {"copper-cable",4}
     },
     energy_required = 170,
-    result = "item-storage-ME-cell-16k",
+    result = "storage-ME-cell-16k",
 },
 })
 
@@ -789,17 +789,17 @@ data:extend({
 -- definindo o item
 {
     type = "item",
-    name = "item-storage-ME-cell-64k",
-    icon = "graficos/items/item_storage-ME_cell_64k.png",
+    name = "storage-ME-cell-64k",
+    icon = "graficos/items/storage_me_cell_64k.png",
     icon_size = 128,
     subgroup = "storage-ME",
-    order = "AE2-storage-ME[item-storage-ME-cell-64k]",
+    order = "AE2-storage-ME[storage-ME-cell-64k]",
     stack_size = 1,
 },
 -- receita
 {
     type = "recipe",
-    name = "item-storage-ME-cell-64k-recipe",
+    name = "storage-ME-cell-64k-recipe",
     category = "crafting",
     enabled = false,
     ingredients = {
@@ -808,7 +808,7 @@ data:extend({
         {"copper-cable",4}
     },
     energy_required = 180,
-    result = "item-storage-ME-cell-64k",
+    result = "storage-ME-cell-64k",
 },
 })
 
