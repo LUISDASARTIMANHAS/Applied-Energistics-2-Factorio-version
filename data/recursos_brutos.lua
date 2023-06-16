@@ -167,3 +167,30 @@ data:extend({
     result = "compressed-iron-block"
 },
 })
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "calculation-processor-press",
+    icon = "graficos/items/calculation_processor_press.png",
+    icon_size = 128,
+    subgroup = "processing",
+    order = "AE2-processing[calculation-processor-press]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "calculation-processor-press-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"advanced-circuit", 64},
+        {"iron-block", 20}
+    },
+    energy_required = 180,
+    result = "calculation-processor-press",
+},
+})
