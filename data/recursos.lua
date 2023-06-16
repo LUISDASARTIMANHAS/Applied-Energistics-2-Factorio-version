@@ -311,6 +311,34 @@ data:extend({
 -- definindo o item
 {
     type = "item",
+    name = "molecular-assembler",
+    icon = "graficos/Blocos/molecular_assembler.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[molecular-assembler]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "molecular-assembler-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"iron-plate", 6},
+        {"annihilation-core", 1},
+        {"formation-core",1},
+        {"crafting-terminal",1}
+    },
+    result = "molecular-assembler",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
     name = "",
     icon = "graficos/Blocos/.png",
     icon_size = 128,
