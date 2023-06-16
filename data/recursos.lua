@@ -339,22 +339,107 @@ data:extend({
 -- definindo o item
 {
     type = "item",
-    name = "",
-    icon = "graficos/Blocos/.png",
+    name = "pattern-access-terminal",
+    icon = "graficos/Blocos/pattern_access_terminal.png",
     icon_size = 128,
     subgroup = "data-terminal",
-    order = "AE2-data-terminal[]",
+    order = "AE2-data-terminal[pattern-access-terminal]",
     stack_size = 1,
 },
 -- receita
 {
     type = "recipe",
-    name = "-recipe",
+    name = "pattern-access-terminal-recipe",
     category = "crafting",
     enabled = true,
     ingredients = {
+        {"semi-dark-monitor", 1},
+        {"engineering-processor", 1},
+        {"pattern-provider",1}
     },
-    result = "",
+    result = "pattern-access-terminal",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "pattern-provider",
+    icon = "graficos/Blocos/pattern_provider.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[pattern-provider]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "pattern-provider-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"iron-plate", 4},
+        {"copper-cable", 4},
+        {"charged-certus-quartz-crystal",1}
+    },
+    result = "pattern-provider",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "storage-monitor",
+    icon = "graficos/Blocos/storage_monitor.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[storage-monitor]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "storage-monitor-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"semi-dark-monitor", 1},
+        {"annihilation-core", 1},
+        {"formation-core",1}
+    },
+    result = "storage-monitor",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "terminal",
+    icon = "graficos/Blocos/terminal.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[terminal]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "terminal-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"logic1processor", 1},
+        {"formation-core", 1},
+        {"annihilation-core",1},
+        {"semi-dark-monitor",1}
+    },
+    result = "terminal",
 },
 })
 
