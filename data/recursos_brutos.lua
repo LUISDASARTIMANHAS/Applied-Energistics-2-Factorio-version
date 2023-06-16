@@ -3,23 +3,36 @@ data:extend({
 {
     type = "item",
     name = "charged-certus-quartz-crystal",
-    icon = "__Applied-Energistics-2__/graficos/items/charged_certus_quartz_crystal.png",
+    icon = "graficos/items/charged_certus_quartz_crystal.png",
     icon_size = 128,
     subgroup = "resources-generated",
     order = "AE2-resources-generated[charged-certus-quartz-crystal]",
     stack_size = 64,
-},
--- receita
-{
+}
+})
+data:extend({
+-- definindo o item
+    {
+    type = "item",
+    name = "fluix-crystal",
+    icon = "graficos/items/fluix_crystal.png",
+    icon_size = 128,
+    subgroup = "resources-generated",
+    order = "AE2-resources-generated[fluix-crystal]",
+    stack_size = 64,
+    },
+    -- receita
+    {
     type = "recipe",
-    name = "charged-certus-quartz-crystal-recipe",
+    name = "fluix-crystal-recipe",
     category = "crafting",
     enabled = true,
     ingredients = {
+        {"charged-certus-quartz-crystal",1}
     },
     energy_required = 60,
-    result = "charged-certus-quartz-crystal",
-},
+    result = "fluix-crystal",
+    },
 })
 
 data:extend({
@@ -27,7 +40,7 @@ data:extend({
 {
     type = "item",
     name = "silicon-press",
-    icon = "__Applied-Energistics-2__/graficos/items/silicon_press.png",
+    icon = "graficos/items/silicon_press.png",
     icon_size = 128,
     subgroup = "processing",
     order = "AE2-processing[silicon-press]",

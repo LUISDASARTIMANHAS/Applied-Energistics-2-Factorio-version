@@ -1,3 +1,4 @@
+require("data/recursos_brutos.lua")
 require("data/recursos.lua")
 -- require("data/entities.lua")
 require("data/pesquisa/AE2_pesquisa.lua")
