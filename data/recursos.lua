@@ -129,7 +129,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[cable-pattern-provider]",
-    stack_size = 1,
+    stack_size = 64,
 },
 -- receita
 {
@@ -138,8 +138,90 @@ data:extend({
     category = "crafting",
     enabled = true,
     ingredients = {
+        {"iron-plate", 10},
+        {"copper-cable", 5},
+        {"processing-unit",30}
     },
     result = "cable-pattern-provider",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "crafting-co-processing-unit",
+    icon = "graficos/Blocos/crafting_co_processing_unit.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[crafting-co-processing-unit]",
+    stack_size = 64,
+},
+-- receita
+{
+    type = "recipe",
+    name = "crafting-co-processing-unit-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"engineering-processor", 1},
+        {"crafting-unit", 1}
+    },
+    result = "crafting-co-processing-unit",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "crafting-monitor",
+    icon = "graficos/Blocos/crafting_monitor.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[crafting-monitor]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "crafting-monitor-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"storage", 1},
+        {"crafting-unit", 1}
+    },
+    result = "crafting-monitor",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "crafting-terminal",
+    icon = "graficos/Blocos/crafting_terminal.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[crafting-terminal]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "crafting-terminal-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"calculation-processor", 1},
+        {"terminal", 1},
+        {"copper-cable",7}
+    },
+    result = "crafting-terminal",
 },
 })
 
