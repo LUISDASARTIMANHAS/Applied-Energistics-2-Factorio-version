@@ -9,7 +9,7 @@ data:extend({ {
     prerequisites = {
         "plastics",
         "automation",
-        "alectric-energy-accumulators",
+        "electric-energy-accumulators",
         "logistics",
         "advanced-material-processing",
         "electric-energy-distribution-1"
