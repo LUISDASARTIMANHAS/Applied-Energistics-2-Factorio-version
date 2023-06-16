@@ -2,11 +2,11 @@ data:extend({
 -- definindo o item
 {
     type = "item",
-    name = "drive-item",
+    name = "drive",
     icon = "graficos/blocos/drive.png",
-    icon_size = 126,
+    icon_size = 128,
     subgroup = "data-terminal",
-    order = "AE2-data-terminal[drive-item]",
+    order = "AE2-data-terminal[drive]",
     stack_size = 1,
 },
 -- receita
@@ -19,9 +19,132 @@ data:extend({
         {"iron-plate", 4},
         {"engineering-processor", 2}
     },
-    result = "drive-item",
+    result = "drive",
 },
 })
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "1k-crafting-storage",
+    icon = "graficos/Blocos/1k_crafting_storage.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[1k-crafting-storage]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "1k-crafting-storage-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+    },
+    result = "1k-crafting-storage",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "4k-crafting-storage",
+    icon = "graficos/Blocos/4k_crafting_storage.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[4k-crafting-storage]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "4k-crafting-storage-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+    },
+    result = "4k-crafting-storage",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "16k-crafting-storage",
+    icon = "graficos/Blocos/16k_crafting_storage.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[16k-crafting-storage]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "16k-crafting-storage-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+    },
+    result = "16k-crafting-storage",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "64k-crafting-storage",
+    icon = "graficos/Blocos/64k_crafting_storage.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[64k-crafting-storage]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "64k-crafting-storage-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+    },
+    result = "64k-crafting-storage",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "cable-pattern-provider",
+    icon = "graficos/Blocos/cable_pattern_provider.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[cable-pattern-provider]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "cable-pattern-provider-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+    },
+    result = "cable-pattern-provider",
+},
+})
+
+
+--------------------- fim dos blocos------------------------
 
 
 data:extend({
