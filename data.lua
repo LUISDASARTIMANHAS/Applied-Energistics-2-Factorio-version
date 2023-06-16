@@ -10,5 +10,5 @@ require("data/advanced_press_recipe.lua")
 require("data/processors_recipe.lua")
 
 -- presets Basicos do mods
-require("/graphics/style.lua")
+require("graficos/style.lua")
 require("data/AE2_grupos.lua")
