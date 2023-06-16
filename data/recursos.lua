@@ -3,7 +3,7 @@ data:extend({
 {
     type = "item",
     name = "server-item",
-    icon = "graficos/items/network-server.png",
+    icon = "graficos/blocos/drive.png",
     icon_size = 126,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[server-item]",
@@ -58,7 +58,7 @@ data:extend({
     ingredients = {
         {"logic-processor", 1},
         {"copper-cable", 5},
-        {"charged-certus-quartz-crystal",1}
+        {"fluix-crystal",1}
     },
     energy_required = 120,
     result = "annihilation-core",
@@ -151,7 +151,7 @@ data:extend({
     category = "crafting",
     enabled = false,
     ingredients = {
-        {"charged-certus-quartz-crystal", 4},
+        {"fluix-crystal", 4},
         {"copper-cable", 4},
         {"logic-processor",1}
     },
@@ -247,31 +247,6 @@ data:extend({
 
 
 
-data:extend({
--- definindo o item
-{
-    type = "item",
-    name = "engineering-processor-press",
-    icon = "graficos/items/engineering_processor_press.png",
-    icon_size = 128,
-    subgroup = "processing",
-    order = "AE2-processing[engineering-processor-press]",
-    stack_size = 64,
-},
--- receita
-{
-    type = "recipe",
-    name = "engineering-processor-press-recipe",
-    category = "crafting",
-    enabled = true,
-    ingredients = {
-        {"processing-unit",64},
-        {"iron-block",20}
-    },
-    energy_required = 180,
-    result = "engineering-processor-press",
-},
-})
 
 
 data:extend({
@@ -294,7 +269,7 @@ data:extend({
     ingredients = {
         {"logic-processor", 2},
         {"copper-cable", 10},
-        {"charged-certus-quartz-crystal",2}
+        {"fluix-crystal",2}
     },
     energy_required = 60,
     result = "formation-core",
@@ -445,33 +420,6 @@ data:extend({
 -- definindo o item
 {
     type = "item",
-    name = "logic-processor-press",
-    icon = "graficos/items/logic_processor_press.png",
-    icon_size = 128,
-    subgroup = "processing",
-    order = "AE2-processing[logic-processor-press]",
-    stack_size = 1,
-},
--- receita
-{
-    type = "recipe",
-    name = "logic-processor-press-recipe",
-    category = "crafting",
-    enabled = true,
-    ingredients = {
-        {"electronic-circuit",64},
-        {"iron-block",20}
-    },
-    energy_required = 180,
-    result = "logic-processor-press",
-},
-})
-
-
-data:extend({
--- definindo o item
-{
-    type = "item",
     name = "logic-processor",
     icon = "graficos/items/logic_processor.png",
     icon_size = 128,
@@ -551,58 +499,6 @@ data:extend({
     },
     energy_required = 120,
     result = "singularidade",
-},
-})
-
-
-data:extend({
--- definindo o item
-{
-    type = "item",
-    name = "iron-block",
-    icon = "graficos/items/iron_block.png",
-    icon_size = 128,
-    subgroup = "component",
-    order = "AE2-component[iron-block]",
-    stack_size = 64,
-},
--- receita
-{
-    type = "recipe",
-    name = "iron-block-recipe",
-    category = "crafting",
-    enabled = true,
-    ingredients = {
-        {"iron-plate",9}
-    },
-    energy_required = 9,
-    result = "iron-block"
-},
-})
-
-
-data:extend({
--- definindo o item
-{
-    type = "item",
-    name = "compressed-iron-block",
-    icon = "graficos/items/compressed_iron_block.png",
-    icon_size = 128,
-    subgroup = "component",
-    order = "AE2-component[compressed-iron-block]",
-    stack_size = 64,
-},
--- receita
-{
-    type = "recipe",
-    name = "compressed-iron-block-recipe",
-    category = "crafting",
-    enabled = true,
-    ingredients = {
-        {"iron-block",9}
-    },
-    energy_required = 12,
-    result = "compressed-iron-block"
 },
 })
 
