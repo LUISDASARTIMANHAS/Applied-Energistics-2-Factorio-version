@@ -177,34 +177,34 @@ data:extend({ {
     },
     effects =
     {
-        -- {
-        --     type = "unlock-recipe",
-        --     recipe = "1k-crafting-storage-recipe",
-        -- },
-        -- {
-        --     type = "unlock-recipe",
-        --     recipe = "4k-crafting-storage-recipe",
-        -- },
-        -- {
-        --     type = "unlock-recipe",
-        --     recipe = "16k-crafting-storage-recipe",
-        -- },
-        -- {
-        --     type = "unlock-recipe",
-        --     recipe = "64k-crafting-storage-recipe",
-        -- },
-        -- {
-        --     type = "unlock-recipe",
-        --     recipe = "crafting-terminal-recipe",
-        -- },
-        -- {
-        --     type = "unlock-recipe",
-        --     recipe = "crafting-monitor-recipe",
-        -- },
-        -- {
-        --     type = "unlock-recipe",
-        --     recipe = "molecular-assembler-recipe",
-        -- },
+        {
+            type = "unlock-recipe",
+            recipe = "1k-crafting-storage-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "4k-crafting-storage-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "16k-crafting-storage-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "64k-crafting-storage-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "crafting-terminal-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "crafting-monitor-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "molecular-assembler-recipe",
+        },
     },
     unit = {
         count = 10,
