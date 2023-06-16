@@ -6,7 +6,7 @@ data:extend(
     -- nome da categoria
     name = "AE2-category",
     order = "e",
-    icon = "/graficos/technology/AE2.png",
+    icon = "graficos/technology/AE2.png",
     icon_size = 126,
     icon_mipmaps = 2
   },
