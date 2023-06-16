@@ -191,7 +191,7 @@ data:extend({
     category = "crafting",
     enabled = true,
     ingredients = {
-        {"storage", 1},
+        {"storage-monitor", 1},
         {"crafting-unit", 1}
     },
     result = "crafting-monitor",
@@ -249,6 +249,84 @@ data:extend({
         {"calculation-processor",2}
     },
     result = "crafting-unit",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "inscriber",
+    icon = "graficos/Blocos/inscriber.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[inscriber]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "inscriber-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"iron-plate", 5},
+        {"copper-cable", 2},
+        {"copper-plate",1}
+    },
+    result = "inscriber",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "interface",
+    icon = "graficos/Blocos/interface.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[interface]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "interface-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+        {"iron-plate", 4},
+        {"annihilation-core", 1},
+        {"formation-core",1}
+    },
+    result = "interface",
+},
+})
+
+
+data:extend({
+-- definindo o item
+{
+    type = "item",
+    name = "",
+    icon = "graficos/Blocos/.png",
+    icon_size = 128,
+    subgroup = "data-terminal",
+    order = "AE2-data-terminal[]",
+    stack_size = 1,
+},
+-- receita
+{
+    type = "recipe",
+    name = "-recipe",
+    category = "crafting",
+    enabled = true,
+    ingredients = {
+    },
+    result = "",
 },
 })
 
