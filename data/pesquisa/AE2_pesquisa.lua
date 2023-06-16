@@ -7,7 +7,14 @@ data:extend({ {
     icon_size = 126,
     icon_mipmaps = 4,
     prerequisites = {
-        "plastics"
+        "plastics",
+        "Automation",
+        "Advanced-electronics",
+        "Electric-energy-accumulators",
+        "Logistics",
+        "Advanced-material-processing",
+        "Electric-energy-distribution-1",
+        "Electronics"
     },
     effects =
     {
