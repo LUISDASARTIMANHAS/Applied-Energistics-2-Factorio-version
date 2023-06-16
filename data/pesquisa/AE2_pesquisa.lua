@@ -115,7 +115,7 @@ data:extend({ {
 data:extend({ {
     type = "technology",
     name = "AE2-advanced-eletronic",
-    icon = "graficos/technology/silicon_press.png",
+    icon = "graficos/technology/advanced_eletronic.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
@@ -168,7 +168,7 @@ data:extend({ {
 data:extend({ {
     type = "technology",
     name = "AE2-autocraft",
-    icon = "graficos/technology/molecular_assembler.png",
+    icon = "graficos/technology/autocraft.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
