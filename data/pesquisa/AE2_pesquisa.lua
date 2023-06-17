@@ -166,7 +166,7 @@ data:extend({ {
             { "logistic-science-pack", 200},
             { "chemical-science-pack", 200},
             {"production-science-pack",200},
-            {"singularidade",1}
+            {"singularidade",0}
         },
         order = "AE2-group"
     }
