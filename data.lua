@@ -12,5 +12,5 @@ require("data/processors_recipe.lua")
 -- presets Basicos do mods
 require("graficos/style.lua")
 require("data/AE2_grupos.lua")
-require("control/gui-functions.lua")
-require("control/gui-element.lua")
+-- require("control/gui-functions.lua")
+-- require("control/gui-element.lua")
