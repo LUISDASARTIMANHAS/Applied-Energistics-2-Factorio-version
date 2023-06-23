@@ -29,6 +29,7 @@ data:extend({
     name = "fluix-crystal-recipe",
     category = "smelting",
     enabled = true,
+    always_show_madein = true,
     ingredients = {
         {"charged-certus-quartz-crystal",1}
     },
@@ -54,6 +55,7 @@ data:extend({
     name = "silicon-press-recipe",
     category = "crafting",
     enabled = true,
+    always_show_madein = true,
     ingredients = {
         {"iron-block", 1},
         {"charged-certus-quartz-crystal",2}
@@ -81,6 +83,7 @@ data:extend({
     name = "engineering-processor-press-recipe",
     category = "crafting",
     enabled = true,
+    always_show_madein = true,
     ingredients = {
         {"processing-unit",64},
         {"iron-block",20}
@@ -108,6 +111,7 @@ data:extend({
     name = "logic-processor-press-recipe",
     category = "crafting",
     enabled = true,
+    always_show_madein = true,
     ingredients = {
         {"electronic-circuit",64},
         {"iron-block",20}
@@ -135,6 +139,7 @@ data:extend({
     name = "iron-block-recipe",
     category = "crafting",
     enabled = true,
+    always_show_madein = true,
     ingredients = {
         {"iron-plate",9}
     },
@@ -162,6 +167,7 @@ data:extend({
     name = "compressed-iron-block-recipe",
     category = "crafting",
     enabled = true,
+    always_show_madein = true,
     ingredients = {
         {"iron-block",9}
     },
@@ -188,6 +194,7 @@ data:extend({
     name = "calculation-processor-press-recipe",
     category = "crafting",
     enabled = true,
+    always_show_madein = true,
     ingredients = {
         {"advanced-circuit", 64},
         {"iron-block", 20}
