@@ -27,7 +27,7 @@ data:extend({
     {
     type = "recipe",
     name = "fluix-crystal-recipe",
-    category = "crafting",
+    category = "smelting",
     enabled = true,
     ingredients = {
         {"charged-certus-quartz-crystal",1}
