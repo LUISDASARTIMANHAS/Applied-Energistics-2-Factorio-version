@@ -15,7 +15,7 @@ data:extend({
 {
     type = "recipe",
     name = "drive-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
         {"iron-plate", 4},
@@ -41,7 +41,7 @@ data:extend({
 {
     type = "recipe",
     name = "1k-crafting-storage-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
     },
@@ -65,7 +65,7 @@ data:extend({
 {
     type = "recipe",
     name = "4k-crafting-storage-recipe",
-    category = "smelting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
     },
@@ -89,7 +89,7 @@ data:extend({
 {
     type = "recipe",
     name = "16k-crafting-storage-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
     },
@@ -113,7 +113,7 @@ data:extend({
 {
     type = "recipe",
     name = "64k-crafting-storage-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
     },
@@ -137,7 +137,7 @@ data:extend({
 {
     type = "recipe",
     name = "cable-pattern-provider-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
         {"iron-plate", 10},
@@ -164,7 +164,7 @@ data:extend({
 {
     type = "recipe",
     name = "crafting-co-processing-unit-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
         {"engineering-processor", 1},
@@ -190,7 +190,7 @@ data:extend({
 {
     type = "recipe",
     name = "crafting-monitor-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
         {"storage-monitor", 1},
@@ -216,7 +216,7 @@ data:extend({
 {
     type = "recipe",
     name = "crafting-terminal-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
         {"calculation-processor", 1},
@@ -243,7 +243,7 @@ data:extend({
 {
     type = "recipe",
     name = "crafting-unit-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
         {"iron-plate", 6},
@@ -270,7 +270,7 @@ data:extend({
 {
     type = "recipe",
     name = "inscriber-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
         {"iron-plate", 5},
@@ -297,7 +297,7 @@ data:extend({
 {
     type = "recipe",
     name = "interface-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
         {"iron-plate", 4},
@@ -324,7 +324,7 @@ data:extend({
 {
     type = "recipe",
     name = "molecular-assembler-recipe",
-    category = "crafting",
+    category = "advanced-crafting",
     enabled = true,
     ingredients = {
         {"iron-plate", 6},
