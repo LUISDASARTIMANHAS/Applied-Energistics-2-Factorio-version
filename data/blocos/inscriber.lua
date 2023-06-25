@@ -1,4 +1,4 @@
-data =extend({
+data:extend({
 
     name = "inscriber",
     category = "entity",
