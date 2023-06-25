@@ -65,7 +65,7 @@ data:extend({
 {
     type = "recipe",
     name = "4k-crafting-storage-recipe",
-    category = "crafting",
+    category = "smelting",
     enabled = true,
     ingredients = {
     },

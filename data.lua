@@ -5,7 +5,7 @@ require("data/recursos.lua")
 -- pesquisas
 require("data/pesquisa/AE2_pesquisa.lua")
 
--- itens
+-- receitas
 require("data/advanced_press_recipe.lua")
 require("data/processors_recipe.lua")
 
