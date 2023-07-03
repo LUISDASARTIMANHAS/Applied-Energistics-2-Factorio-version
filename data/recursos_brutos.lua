@@ -27,7 +27,7 @@ data:extend({
     {
     type = "recipe",
     name = "fluix-crystal-recipe",
-    category = "inscriber",
+    category = "advanced-crafting",
     enabled = true,
     always_show_madein = true,
     ingredients = {
@@ -53,7 +53,7 @@ data:extend({
 {
     type = "recipe",
     name = "silicon-press-recipe",
-    category = "inscriber",
+    category = "advanced-crafting",
     enabled = true,
     always_show_madein = true,
     ingredients = {
@@ -81,7 +81,7 @@ data:extend({
 {
     type = "recipe",
     name = "engineering-processor-press-recipe",
-    category = "inscriber",
+    category = "advanced-crafting",
     enabled = true,
     always_show_madein = true,
     ingredients = {
@@ -109,7 +109,7 @@ data:extend({
 {
     type = "recipe",
     name = "logic-processor-press-recipe",
-    category = "inscriber",
+    category = "advanced-crafting",
     enabled = true,
     always_show_madein = true,
     ingredients = {
@@ -192,7 +192,7 @@ data:extend({
 {
     type = "recipe",
     name = "calculation-processor-press-recipe",
-    category = "inscriber",
+    category = "advanced-crafting",
     enabled = true,
     always_show_madein = true,
     ingredients = {
