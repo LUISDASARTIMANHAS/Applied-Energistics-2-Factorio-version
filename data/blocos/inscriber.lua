@@ -2,7 +2,6 @@ data:extend({
 
     name = "inscriber",
     category = "entity",
-    version = "1.1.57",
     corpse = "assembling-machine-1-remnants",
     vehicle_impact_sound = {
         {
