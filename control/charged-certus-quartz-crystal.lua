@@ -12,8 +12,8 @@ data:extend({
     tree_removal_probability = 0,
     tree_removal_max_distance = 0,
     infinite = true, -- Define o minério como infinito
-    minimum = 750, -- Quantidade mínima disponível no minério
-    normal = 1500,  -- Quantidade normal disponível no minério
+    minimum = 50, -- Quantidade mínima disponível no minério
+    normal = 300,  -- Quantidade normal disponível no minério
     minable =
     {
       hardness = 0.7,                           -- Dureza do minério (ajuste conforme desejado)
@@ -26,15 +26,13 @@ data:extend({
     autoplace = {
       order = "d[ore]-a[certus-quartz-crystal-resource]",
       control = "certus-quartz-crystal-resource",
-      sharpness = 1,
-      richness_multiplier = 10000,
-      richness_base = 30000,
+      richness_multiplier = 15000,
+      richness_base = 500,
+      coverage = 0.02,
       size_control_multiplier = 0.5,
       base_density = 0.9,
       base_spots_per_km2 = 2,
       has_starting_area_placement = false,
-      random_spot_size_minimum = 0.25,
-      random_spot_size_maximum = 3,
       regular_blob_amplitude_multiplier = 1,
       regular_rq_factor_multiplier = 1,
       candidate_spot_count = 32,
@@ -57,7 +55,8 @@ data:extend({
         variation_count = 8
       }
     },
-    map_grid = false
+    map_grid = false,
+    map_color = {r=0, g=239, b=255},
   },
   {
     type = "autoplace-control",
