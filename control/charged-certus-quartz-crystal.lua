@@ -12,8 +12,8 @@ data:extend({
     tree_removal_probability = 0,
     tree_removal_max_distance = 0,
     infinite = true, -- Define o minério como infinito
-    minimum = 10000, -- Quantidade mínima disponível no minério
-    normal = 15000,  -- Quantidade normal disponível no minério
+    minimum = 750, -- Quantidade mínima disponível no minério
+    normal = 1500,  -- Quantidade normal disponível no minério
     minable =
     {
       hardness = 0.7,                           -- Dureza do minério (ajuste conforme desejado)
