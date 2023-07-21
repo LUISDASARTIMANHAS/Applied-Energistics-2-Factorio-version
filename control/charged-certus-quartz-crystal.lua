@@ -45,9 +45,12 @@ data:extend({
     {
       sheet =
       {
-        filename = path_main.. "graficos/items/charged_certus_quartz_crystal.png", -- Adicione a imagem do minério
+        filename = "__base__/graphics/icons/iron-ore.png", -- Adicione a imagem do minério
         priority = "extra-high",
         size = 128,
+        width = 128, -- Largura do sprite (128 pixels)
+        height = 128, -- Altura do sprite (128 pixels)
+        shift = {0, 0},
         frame_count = 8,
         variation_count = 8
       }
