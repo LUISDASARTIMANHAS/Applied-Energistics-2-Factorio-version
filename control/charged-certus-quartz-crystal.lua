@@ -28,7 +28,7 @@ data:extend({
       order = "d[ore]-a[charged-certus-quartz-crystal-resource]",
       control = "charged-certus-quartz-crystal-resource",
       sharpness = 1,
-      richness_multiplier = 1500,
+      richness_multiplier = 0,
       richness_base = 750,
       size_control_multiplier = 0.1,
       peaks = {
