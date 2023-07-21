@@ -17,8 +17,8 @@ data:extend({
     normal = 1500,   -- Quantidade normal disponível no minério
     minable =
     {
-      hardness = 0.9,                           -- Dureza do minério (ajuste conforme desejado)
-      mining_time = 2,                          -- Tempo de mineração (ajuste conforme desejado)
+      hardness = 0.9, -- Dureza do minério (ajuste conforme desejado)
+      mining_time = 2, -- Tempo de mineração (ajuste conforme desejado)
       result = "charged-certus-quartz-crystal", -- Item que será produzido ao minerar o minério
     },
     collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
