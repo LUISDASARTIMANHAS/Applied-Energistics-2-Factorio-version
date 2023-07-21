@@ -3,11 +3,11 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
   {
     type = "noise-layer",
-    name = "charged-certus-quartz-crystal-resource-noise"
+    name = "certus-quartz-crystal-resource-noise"
   },
   {
     type = "resource",
-    name = "charged-certus-quartz-crystal-resource",
+    name = "certus-quartz-crystal-resource",
     icon = path_main .. "graficos/items/charged_certus_quartz_crystal.png", -- Adicione o ícone do minério
     icon_size = 32,
     flags = { "placeable-neutral" },
@@ -25,8 +25,8 @@ data:extend({
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     autoplace =
     {
-      order = "d[ore]-a[charged-certus-quartz-crystal-resource]",
-      control = "charged-certus-quartz-crystal-resource",
+      order = "d[ore]-a[certus-quartz-crystal-resource]",
+      control = "certus-quartz-crystal-resource",
       sharpness = 1,
       richness_multiplier = 0,
       richness_base = 750,
@@ -34,7 +34,7 @@ data:extend({
       peaks = {
         {
           influence = 0.2,
-          noise_layer = "charged-certus-quartz-crystal-resource-noise",
+          noise_layer = "certus-quartz-crystal-resource-noise",
           noise_octaves_difference = -1.5,
           noise_persistence = 0.4
         },
@@ -67,7 +67,7 @@ data:extend({
 data:extend({
   {
     type = "autoplace-control",
-    name = "charged-certus-quartz-crystal-resource",
+    name = "certus-quartz-crystal-resource",
     richness = true,
     order = "b-e",
     category = "resource"
