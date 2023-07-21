@@ -23,7 +23,7 @@ data:extend({
     },
     collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-    autoplace = resource_autoplace.resource_autoplace_settings({
+    autoplace = {
       order = "d[ore]-a[certus-quartz-crystal-resource]",
       control = "certus-quartz-crystal-resource",
       sharpness = 1,
@@ -38,15 +38,15 @@ data:extend({
       regular_blob_amplitude_multiplier = 1,
       regular_rq_factor_multiplier = 0.9,
       candidate_spot_count = 22,
-    }),
+    },
     stage_counts = { 15000, 9500, 5500, 2900, 1300, 400, 150, 80 },
     stages = {
       sheet = {
         frame_count = 8,
-        filename = "__base__/graphics/entity/iron-ore/iron-ore.png",
+        filename = path_main .. "graficos/Blocos/minerio_certus_crystal.png",
         hr_version = {
           frame_count = 8,
-          filename = "__base__/graphics/entity/iron-ore/hr-iron-ore.png",
+          filename = path_main .. "graficos/Blocos/minerio_certus_crystal.png",
           scale = 0.5,
           priority = "extra-high",
           size = 128,
