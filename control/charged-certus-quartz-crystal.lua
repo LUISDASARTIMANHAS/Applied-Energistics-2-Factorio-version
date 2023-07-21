@@ -2,6 +2,10 @@ local path_main = "__Applied-Energistics-2__/"
 
 data:extend({
   {
+    type = "noise-layer",
+    name = "charged-certus-quartz-crystal-resource-noise"
+  },
+  {
     type = "resource",
     name = "charged-certus-quartz-crystal-resource",
     icon = path_main.. "graficos/items/charged_certus_quartz_crystal.png", -- Adicione o ícone do minério
@@ -30,7 +34,7 @@ data:extend({
       peaks = {
         {
           influence = 0.2,
-          noise_layer = "charged-certus-quartz-crystal-resource",
+          noise_layer = "charged-certus-quartz-crystal-resource-noise",
           noise_octaves_difference = -1.5,
           noise_persistence = 0.4
         },
@@ -43,7 +47,7 @@ data:extend({
       {
         filename = path_main.. "graficos/items/charged_certus_quartz_crystal.png", -- Adicione a imagem do minério
         priority = "extra-high",
-        size = 64,
+        size = 128,
         frame_count = 8,
         variation_count = 8
       }
