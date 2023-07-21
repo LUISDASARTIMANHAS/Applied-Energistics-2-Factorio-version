@@ -10,6 +10,7 @@ data:extend({
     subgroup = "resources-generated",
     order = "AE2-resources-generated[charged-certus-quartz-crystal]",
     stack_size = 64,
+    map_color = {r=0, g=239, b=255},
 }
 })
 data:extend({
