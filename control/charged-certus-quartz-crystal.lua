@@ -51,3 +51,13 @@ data:extend({
     map_grid = false
   }
 })
+
+data:extend({
+  {
+    type = "autoplace-control",
+    name = "charged-certus-quartz-crystal",
+    richness = true,
+    order = "b-e",
+    category = "resource"
+  }
+})
