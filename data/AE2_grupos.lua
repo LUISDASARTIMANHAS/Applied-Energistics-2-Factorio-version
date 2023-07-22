@@ -52,3 +52,11 @@ data:extend(
 }
 )
 -------------------------------------------------------------------------- AE2-category
+
+-- categorias de receitas
+data:extend({
+  {
+      type = "recipe-category",
+      name = "inscriber"
+  }
+})

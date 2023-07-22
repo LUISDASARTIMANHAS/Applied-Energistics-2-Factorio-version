@@ -16,7 +16,7 @@ data:extend({
             usage_priority = "secondary-input",
             emissions = 0.01
         },
-        ingredient_count = 2,
+        ingredient_count = 3,
         module_specification = {
             module_slots = 2
         },
