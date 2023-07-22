@@ -4,7 +4,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = "inscriber",
-        category = "entity",
+        -- category = "entity",
         icon = path_main .. "graficos/Blocos/inscriber.png",
         icon_size = 128,
         icon_mipmaps = 4,

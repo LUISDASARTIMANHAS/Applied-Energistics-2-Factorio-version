@@ -4,7 +4,6 @@ data:extend({
     {
         type = "assembling-machine",
         name = "64k-crafting-storage",
-        category = "entity",
         icon = path_main .. "graficos/Blocos/64k_crafting_storage.png",
         icon_size = 128,
         icon_mipmaps = 4,
