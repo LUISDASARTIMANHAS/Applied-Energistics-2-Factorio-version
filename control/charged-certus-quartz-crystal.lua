@@ -26,6 +26,8 @@ data:extend({
     autoplace = {
       order = "d[ore]-a[certus-quartz-crystal-resource]",
       control = "certus-quartz-crystal-resource",
+      size_control_multiplier = 0.5,
+      base_density = 0.9,
       base_spots_per_km2 = 2,
       has_starting_area_placement = false,
       regular_blob_amplitude_multiplier = 1,
