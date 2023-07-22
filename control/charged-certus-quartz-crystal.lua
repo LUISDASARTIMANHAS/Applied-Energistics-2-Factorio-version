@@ -12,6 +12,8 @@ data:extend({
     tree_removal_probability = 0.7,
     tree_removal_max_distance = 32 * 32,
     infinite = true, -- Define o minério como infinito
+    minimum = 1000,
+    normal = 30000,
     minable =
     {
       hardness = 0.9,                           -- Dureza do minério (ajuste conforme desejado)
