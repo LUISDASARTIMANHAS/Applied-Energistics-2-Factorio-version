@@ -58,7 +58,7 @@ data:extend({
     always_show_madein = true,
     ingredients = {
         {"iron-block", 1},
-        {"charged-certus-quartz-crystal",2}
+        {"fluix-crystal",2}
     },
     energy_required = 120,
     result_count = 2,
@@ -192,7 +192,7 @@ data:extend({
 {
     type = "recipe",
     name = "calculation-processor-press-recipe",
-    category = "advanced-crafting",
+    category = "inscriber",
     enabled = true,
     always_show_madein = true,
     ingredients = {
