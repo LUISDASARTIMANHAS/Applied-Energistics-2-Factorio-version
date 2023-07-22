@@ -13,7 +13,7 @@ data:extend({
     tree_removal_max_distance = 0,
     infinite = true, -- Define o minério como infinito
     minimum = 50, -- Quantidade mínima disponível no minério
-    normal = 300,  -- Quantidade normal disponível no minério
+    normal = 1500,  -- Quantidade normal disponível no minério
     minable =
     {
       hardness = 0.7,                           -- Dureza do minério (ajuste conforme desejado)
@@ -26,11 +26,6 @@ data:extend({
     autoplace = {
       order = "d[ore]-a[certus-quartz-crystal-resource]",
       control = "certus-quartz-crystal-resource",
-      richness_multiplier = 15000,
-      richness_base = 500,
-      coverage = 0.02,
-      size_control_multiplier = 0.5,
-      base_density = 0.9,
       base_spots_per_km2 = 2,
       has_starting_area_placement = false,
       regular_blob_amplitude_multiplier = 1,
@@ -41,10 +36,10 @@ data:extend({
     stages = {
       sheet = {
         frame_count = 8,
-        filename = path_main .. "graficos/Blocos/hr_minerio_certus_crystal.png",
+        filename = path_main .. "graficos/Blocos/hr-teste.png",
         hr_version = {
           frame_count = 8,
-          filename = path_main .. "graficos/Blocos/hr_minerio_certus_crystal.png",
+          filename = path_main .. "graficos/Blocos/hr-teste.png",
           scale = 0.5,
           priority = "extra-high",
           size = 128,
@@ -63,10 +58,7 @@ data:extend({
     name = "certus-quartz-crystal-resource",
     richness = true,
     order = "b-e",
-    category = "resource"
-  },
-  {
-    type = "noise-layer",
-    name = "certus-quartz-crystal-resource-noise"
-  },
+    category = "resource",
+    coverage = 0.02,
+  }
 })
