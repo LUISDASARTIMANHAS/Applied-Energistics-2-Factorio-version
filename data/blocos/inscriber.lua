@@ -13,7 +13,7 @@ data:extend({
         crafting_speed = 4,
         ingredient_count = 3,
         energy_usage = "300kW",
-        crafting_categories = "inscriber",
+        crafting_categories = {"inscriber"},
         -- corpse = "big-remnants",
         corpse = "assembling-machine-2-remnants",
         -- dying_explosion = "big-explosion",
