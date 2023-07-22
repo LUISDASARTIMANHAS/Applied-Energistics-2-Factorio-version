@@ -82,7 +82,7 @@ data:extend({
   {
     type = "sprite",
     name = "certus-crystal-icon",
-    filename = path_main.. "graficos/Blocos/charged_certus_quartz_crystal.png", -- Caminho correto do arquivo de sprite
+    filename = path_main .. "graficos/items/charged_certus_quartz_crystal.png",-- Caminho correto do arquivo de sprite
     priority = "extra-high",
     width = 32,
     height = 32,
