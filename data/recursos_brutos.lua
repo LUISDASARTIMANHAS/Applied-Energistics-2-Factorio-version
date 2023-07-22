@@ -53,7 +53,7 @@ data:extend({
 {
     type = "recipe",
     name = "silicon-press-recipe",
-    category = "advanced-crafting",
+    category = "inscriber",
     enabled = true,
     always_show_madein = true,
     ingredients = {
@@ -81,7 +81,7 @@ data:extend({
 {
     type = "recipe",
     name = "engineering-processor-press-recipe",
-    category = "advanced-crafting",
+    category = "inscriber",
     enabled = true,
     always_show_madein = true,
     ingredients = {
@@ -109,7 +109,7 @@ data:extend({
 {
     type = "recipe",
     name = "logic-processor-press-recipe",
-    category = "advanced-crafting",
+    category = "inscriber",
     enabled = true,
     always_show_madein = true,
     ingredients = {

@@ -18,7 +18,7 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
-        {"iron-plate", 4},
+        {"iron-plate", 40},
         {"engineering-processor", 2}
     },
     result = "drive",
@@ -140,8 +140,8 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
-        {"iron-plate", 10},
-        {"copper-cable", 5},
+        {"iron-plate", 100},
+        {"copper-cable", 50},
         {"processing-unit",30}
     },
     result = "cable-pattern-provider",
@@ -221,7 +221,7 @@ data:extend({
     ingredients = {
         {"calculation-processor", 1},
         {"terminal", 1},
-        {"copper-cable",7}
+        {"copper-cable",70}
     },
     result = "crafting-terminal",
 },
@@ -246,7 +246,7 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
-        {"iron-plate", 6},
+        {"iron-plate", 60},
         {"logic-processor", 1},
         {"calculation-processor",2}
     },
@@ -273,9 +273,9 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
-        {"iron-plate", 5},
-        {"copper-cable", 2},
-        {"copper-plate",1}
+        {"iron-plate", 150},
+        {"copper-cable", 200},
+        {"copper-plate",100}
     },
     result = "inscriber",
 },
@@ -300,7 +300,7 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
-        {"iron-plate", 4},
+        {"iron-plate", 40},
         {"annihilation-core", 1},
         {"formation-core",1}
     },
@@ -327,7 +327,7 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
-        {"iron-plate", 6},
+        {"iron-plate", 60},
         {"annihilation-core", 1},
         {"formation-core",1},
         {"crafting-terminal",1}
@@ -382,9 +382,9 @@ data:extend({
     category = "crafting",
     enabled = true,
     ingredients = {
-        {"iron-plate", 4},
-        {"copper-cable", 4},
-        {"charged-certus-quartz-crystal",1}
+        {"iron-plate", 40},
+        {"annihilation-core", 1},
+        {"formation-core",1}
     },
     result = "pattern-provider",
 },
@@ -551,7 +551,7 @@ data:extend({
     enabled = false,
     ingredients = {
         {"fluix-crystal", 4},
-        {"copper-cable", 4},
+        {"copper-cable", 40},
         {"logic-processor",1}
     },
     energy_required = 20,
@@ -579,7 +579,7 @@ data:extend({
     enabled = false,
     ingredients = {
         {"calculation-processor", 1},
-        {"copper-cable", 5},
+        {"copper-cable", 50},
         {"cell-component-1k",3}
     },
     energy_required = 20,
@@ -607,7 +607,7 @@ data:extend({
     enabled = false,
     ingredients = {
         {"calculation-processor", 10},
-        {"copper-cable", 5},
+        {"copper-cable", 50},
         {"cell-component-4k",3}
     },
     energy_required = 20,
@@ -635,7 +635,7 @@ data:extend({
     enabled = false,
     ingredients = {
         {"calculation-processor", 1},
-        {"copper-cable", 5},
+        {"copper-cable", 50},
         {"cell-component-16k",3}
     },
     energy_required = 20,
@@ -694,8 +694,8 @@ data:extend({
     category = "crafting",
     enabled = false,
     ingredients = {
-        {"iron-plate", 4},
-        {"copper-cable", 4}
+        {"iron-plate", 40},
+        {"copper-cable", 40}
     },
     energy_required = 10,
     result = "item-cell-housing",
@@ -721,9 +721,9 @@ data:extend({
     category = "crafting",
     enabled = false,
     ingredients = {
-        {"iron-plate", 4},
+        {"iron-plate", 40},
         {"cell-component-1k",1},
-        {"copper-cable",4}
+        {"copper-cable",40}
     },
     energy_required = 160,
     result = "storage-ME-cell-1k",
@@ -749,9 +749,9 @@ data:extend({
     category = "crafting",
     enabled = false,
     ingredients = {
-        {"iron-plate", 4},
+        {"iron-plate", 40},
         {"cell-component-4k",1},
-        {"copper-cable",4}
+        {"copper-cable",40}
     },
     energy_required = 160,
     result = "storage-ME-cell-4k",
@@ -777,9 +777,9 @@ data:extend({
     category = "crafting",
     enabled = false,
     ingredients = {
-        {"iron-plate", 4},
+        {"iron-plate", 40},
         {"cell-component-16k",1},
-        {"copper-cable",4}
+        {"copper-cable",40}
     },
     energy_required = 170,
     result = "storage-ME-cell-16k",
@@ -805,9 +805,9 @@ data:extend({
     category = "crafting",
     enabled = false,
     ingredients = {
-        {"iron-plate", 4},
+        {"iron-plate", 40},
         {"cell-component-64k",1},
-        {"copper-cable",4}
+        {"copper-cable",40}
     },
     energy_required = 180,
     result = "storage-ME-cell-64k",
@@ -847,9 +847,9 @@ data:extend({
     category = "crafting",
     enabled = false,
     ingredients = {
-        {"iron-plate", 1},
-        {"copper-cable", 3},
-        {"small-lamp",5}
+        {"iron-plate", 10},
+        {"copper-cable", 30},
+        {"small-lamp",50}
     },
     energy_required = 45,
     result = "semi-dark-monitor",

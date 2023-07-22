@@ -1,47 +1,61 @@
 local path_main = "__Applied-Energistics-2__/graficos/Blocos/"
 
 data:extend({
-{
-    type = "assembling-machine",
-    name = "inscriber",
-    icon = path_main .. "inscriber.png",
-    icon_size = 128,
-    flags = { "placeable-neutral", "player-creation" },
-    minable = { mining_time = 1, result = "inscriber" },
-    max_health = 200,
-    corpse = "big-remnants",
-    dying_explosion = "medium-explosion",
-    resistances = {
-        {
-            type = "fire",
-            percent = 70
-        }
+    {
+        type = "assembling-machine",
+        name = "inscriber",
+        icon = path_main .. "inscriber.png",
+        icon_size = 128,
+        flags = { "placeable-neutral", "placeable-player", "player-creation" },
+        minable = { mining_time = 2, result = "inscriber" },
+        max_health = 200,
+        crafting_speed = 1.5,
+        energy_usage = "200kW", -- A quantidade de energia consumida pela máquina
+        energy_source = {
+            type = "electric",
+            usage_priority = "secondary-input",
+            emissions = 0.01
+        },
+        ingredient_count = 2,
+        module_specification = {
+            module_slots = 2
+        },
+        allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+        crafting_categories = { "inscriber" },
+        resistances = {
+            {
+                type = "fire",
+                percent = 70
+            }
+        },
+        collision_box = { { -0.7, -0.7 }, { 0.7, 0.7 } },
+        selection_box = { { -1, -1 }, { 1, 1 } },
+        fast_replaceable_group = "inscriber",
     },
-    collision_box = { { -1.1, -1.1 }, { 1.1, 1.1 } },
-    selection_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
     animation = {
         layers = {
             {
-                filename = path_main .. "inscriber.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                frame_count = 1,
-                shift = { 0, 0 },
+                filename = "__base__/graphics/entity/assembling-machine-1/assembling-machine-1.png",
+                priority = "high",
+                width = 108,
+                height = 114,
+                frame_count = 32,
+                line_length = 8,
+                animation_speed = 0.5,
+                shift = util.by_pixel(0, 3),
+                hr_version = {
+                    filename = "__base__/graphics/entity/assembling-machine-1/hr-assembling-machine-1.png",
+                    priority = "high",
+                    width = 214,
+                    height = 226,
+                    frame_count = 32,
+                    line_length = 8,
+                    animation_speed = 0.5,
+                    shift = util.by_pixel(0, 3),
+                    scale = 0.5
+                }
             },
         },
     },
-    crafting_categories = { --categorias aceitas para crafting
-        "crafting"
-    },
-    crafting_speed = 1.5,                                                  -- O valor pode ser ajustado conforme necessário.
-    energy_usage = "300kW",                                                -- O valor pode ser ajustado conforme necessário.
-    ingredient_count = 2,-- Permite 2 ingredientes de entrada.
-    allowed_effects = { "consumption", "speed", "productivity", "pollution" }, -- Permite que a máquina beneficie-se de módulos que proporcionem esses efeitos.
-    module_specification = {
-        module_slots = 3,                                                  -- A máquina pode suportar até 3 módulos.
-        module_info_icon_shift = { 0, 0.8 },                               -- Posição do ícone de informações do módulo.
-        module_info_multi_row_initial_height_modifier = -0.3,              -- Modifica a posição vertical do ícone de informações do módulo.
-    }
-},
+
 })
