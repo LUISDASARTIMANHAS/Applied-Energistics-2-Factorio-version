@@ -13,14 +13,25 @@ data:extend({
         crafting_speed = 4,
         ingredient_count = 3,
         energy_usage = "300kW",
-        crafting_categories = {"inscriber"},
+        buffer_capacity = "1MW",
+        crafting_categories = { "inscriber" },
         -- corpse = "big-remnants",
         corpse = "assembling-machine-2-remnants",
         -- dying_explosion = "big-explosion",
         dying_explosion = "assembling-machine-2-explosion",
         alert_icon_shift = { -0.09375, -0.375 },
-        collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
-        selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+        collision_box = {
+            { -1.2, -1.2 },
+            { 1.2,  1.2 }
+        },
+        selection_box = {
+            { -1.5, -1.5 },
+            { 1.5,  1.5 }
+        },
+        drawing_box = {
+            { -1.5, -1.5 },
+            { 1.5,  1.5 }
+        },
         energy_source = {
             emissions_per_minute = 3,
             type = "electric",
@@ -49,6 +60,10 @@ data:extend({
             "placeable-neutral",
             "placeable-player",
             "player-creation"
+        },
+        placeable_by = {
+            item = "inscriber",
+            count = 1
         },
         module_specification = {
             module_slots = 2,
