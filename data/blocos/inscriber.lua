@@ -7,15 +7,25 @@ data:extend({
         category = "entity",
         icon = path_main .. "inscriber.png",
         icon_size = 128,
+        icon_mipmaps = 4,
         minable = { mining_time = 1, result = "inscriber" },
         max_health = 350,
         crafting_speed = 4,
+        ingredient_count = 3,
+        energy_usage = "300kW",
+        crafting_categories = "inscriber",
         -- corpse = "big-remnants",
         corpse = "assembling-machine-2-remnants",
         -- dying_explosion = "big-explosion",
         dying_explosion = "assembling-machine-2-explosion",
+        alert_icon_shift = { -0.09375, -0.375 },
         collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
         selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+        energy_source = {
+            emissions_per_minute = 3,
+            type = "electric",
+            usage_priority = "secondary-input"
+        },
         resistances = {
             {
                 type = "fire",
@@ -28,6 +38,29 @@ data:extend({
             damage_type_filters = "fire",
             offsets = { { 0, 1 } },
             offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } }
+        },
+        allowed_effects = {
+            "consumption",
+            "speed",
+            "productivity",
+            "pollution"
+        },
+        flags = {
+            "placeable-neutral",
+            "placeable-player",
+            "player-creation"
+        },
+        module_specification = {
+            module_slots = 2,
+            module_info_icon_shift = { 0, 0.5 }
+        },
+        working_sound = {
+            sound = {
+                { filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.45 }
+            },
+            fade_in_ticks = 4,
+            audible_distance_modifier = 0.5,
+            fade_out_ticks = 20
         },
         vehicle_impact_sound = {
             {
@@ -50,32 +83,6 @@ data:extend({
                 filename = "__base__/sound/car-metal-impact-6.ogg",
                 volume = 0.5
             }
-        },
-        flags = {
-            "placeable-neutral",
-            "placeable-player",
-            "player-creation"
-        },
-        module_specification = {
-            module_slots = 2,
-            module_info_icon_shift = { 0, 0.5 }
-        },
-        allowed_effects = { "consumption", "speed", "productivity", "pollution" },
-        crafting_categories = { "inscriber" }, -- Substitua "gem_inscription" pela categoria de crafting correta
-        energy_source = {
-            type = "electric",
-            usage_priority = "secondary-input",
-            emissions = 0.03 / 1.5 -- Ajuste a emissão de poluição conforme necessário
-        },
-        energy_usage = "300kW",    -- Ajuste o consumo de energia conforme necessário
-        ingredient_count = 3,      -- Ajuste o número de ingredientes conforme necessário
-        working_sound = {
-            sound = {
-                { filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.45 }
-            },
-            fade_in_ticks = 4,
-            audible_distance_modifier = 0.5,
-            fade_out_ticks = 20
         },
         animation = {
             layers = {
@@ -136,23 +143,7 @@ data:extend({
         },
     }
 })
---
---       icon = path_main.. "inscriber.png",
---       energy_source = {
---         emissions_per_minute = 3,
---         type = "electric",
---         usage_priority = "secondary-input"
---       },
---       type = "assembling-machine",
---       fast_replaceable_group = "assembling-machine",
---       icon_mipmaps = 4,
---       minable = {
---         mining_time = 0.2,
---         result = "assembling-machine-2"
---       },
---       alert_icon_shift = { -0.09375, -0.375 },
---
---       fluid_boxes = {
+-- fluid_boxes = {
 --         {
 --           pipe_covers = {
 --             east = {
@@ -561,6 +552,3 @@ data:extend({
 --         },
 --         off_when_no_fluid_recipe = true
 --       },
---     }
---   }
--- })
