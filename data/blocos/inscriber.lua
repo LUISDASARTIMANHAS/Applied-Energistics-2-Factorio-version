@@ -4,13 +4,20 @@ data:extend({
     {
         type = "assembling-machine",
         name = "inscriber",
-        icon = path_main.. "inscriber.png",
+        icon = path_main .. "inscriber.png",
         icon_size = 64,
         flags = { "placeable-neutral", "player-creation" },
         minable = { mining_time = 1, result = "inscriber" },
         max_health = 350,
         corpse = "big-remnants",
         dying_explosion = "big-explosion",
+        vehicle_impact_sound = {
+            { filename = "__base__/sound/car-metal-impact-2.ogg", volume = 0.5 },
+            { filename = "__base__/sound/car-metal-impact-3.ogg", volume = 0.5 },
+            { filename = "__base__/sound/car-metal-impact-4.ogg", volume = 0.5 },
+            { filename = "__base__/sound/car-metal-impact-5.ogg", volume = 0.5 },
+            { filename = "__base__/sound/car-metal-impact-6.ogg", volume = 0.5 }
+        },
         resistances = {
             {
                 type = "fire",
@@ -25,26 +32,21 @@ data:extend({
         },
         allowed_effects = { "consumption", "speed", "productivity", "pollution" },
         crafting_categories = { "inscriber" }, -- Substitua "gem_inscription" pela categoria de crafting correta
-        crafting_speed = 2,-- Ajuste a velocidade de crafting conforme necessário
+        crafting_speed = 2,                    -- Ajuste a velocidade de crafting conforme necessário
         energy_source = {
             type = "electric",
             usage_priority = "secondary-input",
             emissions = 0.03 / 1.5 -- Ajuste a emissão de poluição conforme necessário
         },
-        energy_usage = "300kW", -- Ajuste o consumo de energia conforme necessário
-        ingredient_count = 3,-- Ajuste o número de ingredientes conforme necessário
+        energy_usage = "300kW",    -- Ajuste o consumo de energia conforme necessário
+        ingredient_count = 3,      -- Ajuste o número de ingredientes conforme necessário
         working_sound = {
             sound = {
-                {
-                    filename = "__base__/sound/assembling-machine-t2-1.ogg",
-                    volume = 0.8
-                },
-                {
-                    filename = "__base__/sound/assembling-machine-t2-2.ogg",
-                    volume = 0.8
-                }
+                { filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.45 }
             },
-            apparent_volume = 1.5
+            fade_in_ticks = 4,
+            audible_distance_modifier = 0.5,
+            fade_out_ticks = 20
         },
         animation = {
             layers = {
@@ -76,17 +78,49 @@ data:extend({
         working_visualisations = {
             {
                 animation = {
-                    filename =
-                    "__base__/graphics/entity/assembling-machine-2/working/assembling-machine-2-working-progress.png",
-                    priority = "high",
-                    width = 38,
-                    height = 37,
-                    frame_count = 8,
-                    line_length = 8,
-                    draw_as_shadow = true,
-                    shift = { 0.0625, -0.71875 },
-                    scale = 0.5,
-                    animation_speed = 0.5
+                    layers = {
+                        {
+                            frame_count = 32,
+                            filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2.png",
+                            hr_version = {
+                                frame_count = 32,
+                                filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2.png",
+                                height = 218,
+                                line_length = 8,
+                                shift = { 0, 0.125 },
+                                scale = 0.5,
+                                priority = "high",
+                                width = 214
+                            },
+                            height = 110,
+                            line_length = 8,
+                            shift = { 0, 0.125 },
+                            priority = "high",
+                            width = 108
+                        },
+                        {
+                            hr_version = {
+                                line_length = 8,
+                                scale = 0.5,
+                                width = 196,
+                                draw_as_shadow = true,
+                                frame_count = 32,
+                                filename =
+                                "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
+                                height = 163,
+                                shift = { 0.375, 0.1484375 },
+                                priority = "high"
+                            },
+                            line_length = 8,
+                            width = 98,
+                            draw_as_shadow = true,
+                            frame_count = 32,
+                            filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-shadow.png",
+                            height = 82,
+                            shift = { 0.375, 0.15625 },
+                            priority = "high"
+                        }
+                    }
                 },
                 light = { intensity = 0.5, size = 4, color = { r = 0.98, g = 0.66, b = 0.22 } }
             }
@@ -102,13 +136,6 @@ data:extend({
 --     version = "1.1.57",
 --     data = {
 --       corpse = "assembling-machine-2-remnants",
---       vehicle_impact_sound = {
---         { filename = "__base__/sound/car-metal-impact-2.ogg", volume = 0.5 },
---         { filename = "__base__/sound/car-metal-impact-3.ogg", volume = 0.5 },
---         { filename = "__base__/sound/car-metal-impact-4.ogg", volume = 0.5 },
---         { filename = "__base__/sound/car-metal-impact-5.ogg", volume = 0.5 },
---         { filename = "__base__/sound/car-metal-impact-6.ogg", volume = 0.5 }
---       },
 --       crafting_speed = 2,
 --       icon_size = 128,
 --       collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
@@ -122,21 +149,7 @@ data:extend({
 --         offsets = { { 0, 1 } },
 --         offset_deviation = { { -0.5, -0.5 }, { 0.5, 0.5 } }
 --       },
---       allowed_effects = {
---         "consumption",
---         "speed",
---         "productivity",
---         "pollution"
---       },
 --       icon = path_main.. "inscriber.png",
---       working_sound = {
---         sound = {
---           { filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.45 }
---         },
---         fade_in_ticks = 4,
---         audible_distance_modifier = 0.5,
---         fade_out_ticks = 20
---       },
 --       energy_source = {
 --         emissions_per_minute = 3,
 --         type = "electric",
@@ -144,50 +157,6 @@ data:extend({
 --       },
 --       type = "assembling-machine",
 --       fast_replaceable_group = "assembling-machine",
---       animation = {
---         layers = {
---           {
---             frame_count = 32,
---             filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2.png",
---             hr_version = {
---               frame_count = 32,
---               filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2.png",
---               height = 218,
---               line_length = 8,
---               shift = { 0, 0.125 },
---               scale = 0.5,
---               priority = "high",
---               width = 214
---             },
---             height = 110,
---             line_length = 8,
---             shift = { 0, 0.125 },
---             priority = "high",
---             width = 108
---           },
---           {
---             hr_version = {
---               line_length = 8,
---               scale = 0.5,
---               width = 196,
---               draw_as_shadow = true,
---               frame_count = 32,
---               filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
---               height = 163,
---               shift = { 0.375, 0.1484375 },
---               priority = "high"
---             },
---             line_length = 8,
---             width = 98,
---             draw_as_shadow = true,
---             frame_count = 32,
---             filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-shadow.png",
---             height = 82,
---             shift = { 0.375, 0.15625 },
---             priority = "high"
---           }
---         }
---       },
 --       icon_mipmaps = 4,
 --       minable = {
 --         mining_time = 0.2,
