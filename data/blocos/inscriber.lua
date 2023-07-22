@@ -6,7 +6,11 @@ data:extend({
         name = "inscriber",
         icon = path_main .. "inscriber.png",
         icon_size = 128,
-        flags = { "placeable-neutral", "placeable-player", "player-creation" },
+        flags = {
+            "placeable-neutral",
+            "placeable-player",
+            "player-creation"
+        },
         minable = { mining_time = 2, result = "inscriber" },
         max_health = 200,
         crafting_speed = 1.5,
