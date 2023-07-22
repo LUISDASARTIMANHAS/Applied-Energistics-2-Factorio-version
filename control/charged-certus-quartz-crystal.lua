@@ -39,14 +39,6 @@ data:extend({
       random_spot_size_minimum = 2,--Tamanho mínimo aleatório das manchas.
       random_spot_size_maximum = 4,--Tamanho máximo aleatório das manchas.
       has_starting_area_placement = false,
-      peaks =
-      {
-        {
-          noise_layer = "iron-ore",     -- Camada de ruído associada
-          noise_octaves_difference = -0.85, -- Diferença de oitavas do ruído
-          noise_persistence = 0.4,      -- Persistência do ruído
-        },
-      },
       starting_area_size = 600 * 0.0068359375, -- Tamanho da área de geração inicial
       starting_area_amount = 1500,         -- Quantidade de recurso na área inicial
       resource_patch_search_radius = 12,   -- Raio de busca do depósito de água
