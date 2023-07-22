@@ -16,21 +16,27 @@ data:extend({
     normal = 1500,  -- Quantidade normal disponível no minério
     minable =
     {
-      hardness = 0.7,                           -- Dureza do minério (ajuste conforme desejado)
+      hardness = 0.9,-- Dureza do minério (ajuste conforme desejado)
       mining_particle = "stone-particle",
-      mining_time = 2,                          -- Tempo de mineração (ajuste conforme desejado)
+      mining_time = 2,-- Tempo de mineração (ajuste conforme desejado)
       result = "charged-certus-quartz-crystal", -- Item que será produzido ao minerar o minério
+      result_count = 1,
     },
     collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
     selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
     autoplace = {
       order = "d[ore]-a[certus-quartz-crystal-resource]",
       control = "certus-quartz-crystal-resource",
-      size_control_multiplier = 0.5,
-      base_density = 4,
-      regular_rq_factor_multiplier = 1.10,
+      size_control_multiplier = 0.1, --Multiplicador do tamanho das manchas. Afeta o tamanho das áreas onde o recurso é gerado.
+      base_density = 4, --Densidade base do recurso.
+      base_spots_per_km2 = 1, --Número base de manchas por quilômetro quadrado.
+      richness_multiplier = 600, -- Multiplicador da riqueza do recurso.quantidade de recurso presente em cada mancha.
+      richness_base = 1000, -- Quantidade base de riqueza do recurso por mancha.
+      regular_rq_factor_multiplier = 1.10, --Multiplicador do fator de solicitação regular.
       starting_rq_factor_multiplier = 1.5,
-      candidate_spot_count = 22,
+      candidate_spot_count = 22, --Número de manchas candidatas para serem geradas.
+      random_spot_size_minimum = 50, --Tamanho mínimo aleatório das manchas.
+      random_spot_size_maximum = 100, --Tamanho máximo aleatório das manchas.
       has_starting_area_placement = false,
     },
     stage_counts = { 15000, 9500, 5500, 2900, 1300, 400, 150, 80 },
