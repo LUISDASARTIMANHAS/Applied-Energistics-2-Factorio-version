@@ -3,7 +3,7 @@ data:extend({
 {
     type = "recipe",
     name = "logic-processor-recipe",
-    category = "advanced-crafting",
+    category = "inscriber",
     enabled = false,
     ingredients = {
         {"logic-processor-press",1},
@@ -16,7 +16,7 @@ data:extend({
 {
     type = "recipe",
     name = "calculation-processor-recipe",
-    category = "advanced-crafting",
+    category = "inscriber",
     enabled = false,
     ingredients = {
         {"calculation-processor-press",1},
@@ -29,7 +29,7 @@ data:extend({
 {
     type = "recipe",
     name = "engineering-processor-recipe",
-    category = "advanced-crafting",
+    category = "inscriber",
     enabled = false,
     ingredients = {
         {"engineering-processor-press",1},

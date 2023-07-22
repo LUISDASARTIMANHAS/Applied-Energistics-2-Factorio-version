@@ -31,7 +31,9 @@ data:extend({
             },
         },
     },
-    crafting_categories = { "crafting" },
+    crafting_categories = { --categorias aceitas para crafting
+        "crafting"
+    },
     crafting_speed = 1.5,                                                  -- O valor pode ser ajustado conforme necessário.
     energy_usage = "300kW",                                                -- O valor pode ser ajustado conforme necessário.
     ingredient_count = 2,-- Permite 2 ingredientes de entrada.
