@@ -77,3 +77,15 @@ data:extend({
     coverage = 0.02,
   }
 })
+
+data:extend({
+  {
+    type = "sprite",
+    name = "certus-crystal-icon",
+    filename = path_main.. "graficos/Blocos/charged_certus_quartz_crystal.png", -- Caminho correto do arquivo de sprite
+    priority = "extra-high",
+    width = 32,
+    height = 32,
+    flags = { "gui-icon" }
+  },
+})
