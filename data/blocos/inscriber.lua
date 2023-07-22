@@ -61,7 +61,8 @@ data:extend({
             "placeable-neutral",
             "placeable-player",
             "player-creation",
-            "not-upgradable"
+            "not-upgradable",
+            "placeable-off-grid"
         },
         placeable_by = {
             item = "inscriber",

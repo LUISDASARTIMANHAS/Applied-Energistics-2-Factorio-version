@@ -44,6 +44,8 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
+        {"crafting-unit",1},
+        {"cell_component_1k",1}
     },
     result = "1k-crafting-storage",
 },
@@ -68,6 +70,8 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
+        {"crafting-unit",1},
+        {"cell_component_4k",1}
     },
     result = "4k-crafting-storage",
 },
@@ -92,6 +96,8 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
+        {"crafting-unit",1},
+        {"cell_component_16k",1}
     },
     result = "16k-crafting-storage",
 },
@@ -116,6 +122,8 @@ data:extend({
     category = "advanced-crafting",
     enabled = true,
     ingredients = {
+        {"crafting-unit",1},
+        {"cell_component_64k",1}
     },
     result = "64k-crafting-storage",
 },
