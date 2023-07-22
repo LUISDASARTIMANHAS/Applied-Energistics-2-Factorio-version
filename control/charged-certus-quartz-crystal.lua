@@ -84,8 +84,8 @@ data:extend({
     name = "certus-crystal-icon",
     filename = path_main .. "graficos/items/charged_certus_quartz_crystal.png",-- Caminho correto do arquivo de sprite
     priority = "extra-high",
-    width = 32,
-    height = 32,
+    width = 64,
+    height = 64,
     flags = { "gui-icon" }
   },
 })
