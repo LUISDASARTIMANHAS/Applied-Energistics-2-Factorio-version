@@ -20,7 +20,7 @@ require("control/charged-certus-quartz-crystal.lua")
 -- blocos
 require("data/blocos/1k_crafting_storage.lua")
 require("data/blocos/4k_crafting_storage.lua")
-require("data/blocos/16_crafting_storage.lua")
+require("data/blocos/16k_crafting_storage.lua")
 require("data/blocos/64k_crafting_storage.lua")
 -- require("data/blocos/cable_pattern_provider.lua")
 -- require("data/blocos/crafting_co_processing_unit.lua")
