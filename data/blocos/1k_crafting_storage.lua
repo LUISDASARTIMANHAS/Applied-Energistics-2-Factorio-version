@@ -58,8 +58,7 @@ data:extend({
         flags = {
             "placeable-neutral",
             "placeable-player",
-            "player-creation",
-            "not-upgradable"
+            "player-creation"
         },
         placeable_by = {
             item = "1k-crafting-storage",
