@@ -3,11 +3,11 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "",
-        name = "crafting-terminal",
-        icon = path_main .. "graficos/Blocos/crafting_terminal.png",
+        name = "pattern-access-terminal",
+        icon = path_main .. "graficos/Blocos/pattern_access_terminal.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        minable = { mining_time = 1, result = "crafting-terminal" },
+        minable = { mining_time = 1, result = "pattern-access-terminal" },
         max_health = 350,
         crafting_speed = 4,
         ingredient_count = 3,
@@ -62,7 +62,7 @@ data:extend({
             "not-upgradable"
         },
         placeable_by = {
-            item = "crafting-terminal",
+            item = "pattern-access-terminal",
             count = 1
         },
         module_specification = {
