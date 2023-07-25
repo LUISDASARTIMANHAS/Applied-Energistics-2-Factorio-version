@@ -54,13 +54,7 @@ data:extend({
           starting_area_weight_optimal = 0,
           starting_area_weight_range = 0,
           starting_area_weight_max_range = 2,
-        },
-        {
-          influence = 0.3,
-          noise_layer = "mineral",
-          noise_octaves_difference = -1.5,
-          noise_persistence = 0.3,
-        },
+        }
       },
     },
     stage_counts = { 15000, 9500, 5500, 1000, 400, 100, 50, 1 },
