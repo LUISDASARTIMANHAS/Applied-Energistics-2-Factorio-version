@@ -67,7 +67,7 @@ data:extend({
           variation_count = 8
         },
         priority = "extra-high",
-        size = 64,
+        size = 128,
         variation_count = 8
       }
     },
