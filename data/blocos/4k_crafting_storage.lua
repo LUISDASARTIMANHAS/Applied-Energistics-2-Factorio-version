@@ -102,45 +102,23 @@ data:extend({
         animation = {
             layers = {
                 {
-                    frame_count = 32,
-                    filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2.png",
+                    frame_count = 1,
+                    filename = path_main .. "graficos/Blocos/4k_crafting_storage.png",
                     hr_version = {
-                        frame_count = 32,
+                        frame_count = 1,
                         filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2.png",
-                        height = 218,
-                        line_length = 8,
+                        height = 128,
+                        line_length = 1,
                         shift = { 0, 0.125 },
                         scale = 0.5,
                         priority = "high",
-                        width = 214
+                        width = 128
                     },
-                    height = 110,
-                    line_length = 8,
+                    height = 128,
+                    line_length = 1,
                     shift = { 0, 0.125 },
                     priority = "high",
-                    width = 108
-                },
-                {
-                    hr_version = {
-                        line_length = 8,
-                        scale = 0.5,
-                        width = 196,
-                        draw_as_shadow = true,
-                        frame_count = 32,
-                        filename =
-                        "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
-                        height = 163,
-                        shift = { 0.375, 0.1484375 },
-                        priority = "high"
-                    },
-                    line_length = 8,
-                    width = 98,
-                    draw_as_shadow = true,
-                    frame_count = 32,
-                    filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-shadow.png",
-                    height = 82,
-                    shift = { 0.375, 0.15625 },
-                    priority = "high"
+                    width = 128
                 }
             }
         },

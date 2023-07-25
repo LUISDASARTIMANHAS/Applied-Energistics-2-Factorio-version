@@ -105,23 +105,23 @@ data:extend({
         animation = {
             layers = {
                 {
-                    frame_count = 32,
-                    filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2.png",
+                    frame_count = 1,
+                    filename = path_main .. "graficos/Blocos/inscriber.png",
                     hr_version = {
-                        frame_count = 32,
-                        filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2.png",
-                        height = 218,
-                        line_length = 8,
+                        frame_count = 1,
+                        filename = path_main .. "graficos/Blocos/inscriber.png",
+                        height = 128,
+                        line_length = 1,
                         shift = { 0, 0.125 },
                         scale = 0.5,
                         priority = "high",
-                        width = 214
+                        width = 128
                     },
-                    height = 110,
-                    line_length = 8,
+                    height = 128,
+                    line_length = 1,
                     shift = { 0, 0.125 },
                     priority = "high",
-                    width = 108
+                    width = 128
                 },
                 {
                     hr_version = {

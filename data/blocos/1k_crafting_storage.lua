@@ -119,29 +119,7 @@ data:extend({
                         width = 128,
                         filename = path_main .. "graficos/Blocos/1k_crafting_storage.png",
                     },
-                },
-                -- {
-                --     hr_version = {
-                --         line_length = 1,
-                --         scale = 0.5,
-                --         width = 128,
-                --         draw_as_shadow = true,
-                --         frame_count = 32,
-                --         filename =
-                --         "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
-                --         height = 128,
-                --         shift = { 0.375, 0.1484375 },
-                --         priority = "high"
-                --     },
-                --     line_length = 8,
-                --     width = 98,
-                --     draw_as_shadow = true,
-                --     frame_count = 32,
-                --     filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-shadow.png",
-                --     height = 82,
-                --     shift = { 0.375, 0.15625 },
-                --     priority = "high"
-                -- }
+                }
             }
         },
         close_sound = {
