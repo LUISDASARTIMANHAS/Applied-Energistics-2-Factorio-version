@@ -122,28 +122,6 @@ data:extend({
                     shift = { 0, 0.125 },
                     priority = "high",
                     width = 128
-                },
-                {
-                    hr_version = {
-                        line_length = 8,
-                        scale = 0.5,
-                        width = 196,
-                        draw_as_shadow = true,
-                        frame_count = 32,
-                        filename =
-                        "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
-                        height = 163,
-                        shift = { 0.375, 0.1484375 },
-                        priority = "high"
-                    },
-                    line_length = 8,
-                    width = 98,
-                    draw_as_shadow = true,
-                    frame_count = 32,
-                    filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-shadow.png",
-                    height = 82,
-                    shift = { 0.375, 0.15625 },
-                    priority = "high"
                 }
             }
         },
