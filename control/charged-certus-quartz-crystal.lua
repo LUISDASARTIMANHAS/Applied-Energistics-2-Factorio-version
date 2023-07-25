@@ -57,10 +57,10 @@ data:extend({
     stages = {
       sheet = {
         frame_count = 8,
-        filename = path_main .. "graficos/Blocos/hr-teste.png",
+        filename = path_main .. "graficos/Blocos/hr_charged_certus_quartz_crystal.png",
         hr_version = {
           frame_count = 8,
-          filename = path_main .. "graficos/Blocos/hr-teste.png",
+          filename = path_main .. "graficos/Blocos/hr_charged_certus_quartz_crystal.png",
           scale = 0.5,
           priority = "extra-high",
           size = 128,
