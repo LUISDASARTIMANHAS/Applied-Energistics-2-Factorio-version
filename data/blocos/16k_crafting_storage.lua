@@ -14,6 +14,7 @@ data:extend({
         off_when_no_fluid_recipe = true,
         energy_usage = "300kW",
         buffer_capacity = "1MW",
+        crafting_categories = { "inscriber","crafting" },
         -- corpse = "big-remnants",
         corpse = "assembling-machine-2-remnants",
         -- dying_explosion = "big-explosion",
