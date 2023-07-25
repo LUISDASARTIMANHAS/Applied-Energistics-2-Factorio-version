@@ -45,7 +45,7 @@ data:extend({
     enabled = true,
     ingredients = {
         {"crafting-unit",1},
-        {"cell_component_1k",1}
+        {"cell-component-1k",1}
     },
     result = "1k-crafting-storage",
 },
