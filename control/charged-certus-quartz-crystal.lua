@@ -5,7 +5,7 @@ data:extend({
     type = "resource",
     name = "certus-quartz-crystal-resource",
     icon = path_main .. "graficos/items/charged_certus_quartz_crystal.png", -- Adicione o ícone do minério
-    icon_size = 64,
+    icon_size = 128,
     icon_mipmaps = 4,
     flags = { "placeable-neutral" },
     category = "basic-solid",
@@ -13,7 +13,7 @@ data:extend({
     tree_removal_probability = 1,
     tree_removal_max_distance = 32 * 32,
     infinite = true, -- Define o minério como infinito
-    minimum = 100,   -- Quantidade mínima disponível no minério
+    minimum = 500,   -- Quantidade mínima disponível no minério
     normal = 1000,   -- Quantidade normal disponível no minério
     minable =
     {
@@ -43,11 +43,7 @@ data:extend({
       has_starting_area_placement = false,
       starting_area_size = 600 * 0.0068359375, -- Tamanho da área de geração inicial
       starting_area_amount = 1000,             -- Quantidade de recurso na área inicial
-      resource_patch_search_radius = 12,       -- Raio de busca do depósito de água
-      water_patch_search_radius = 24,          -- Raio de busca da área de água
-      water_appearance_probability = 0.05,     -- Probabilidade de encontrar água (0.05 = 5%)
-      water_richness_factor = 1.3,             -- Fator de riqueza da água (1.3 = 30% mais rico)
-      water_richness_base = 500,               -- Riqueza base da água
+      resource_patch_search_radius = 12,           -- Riqueza base da água
       peaks = {
         {
           influence = 0.2,
