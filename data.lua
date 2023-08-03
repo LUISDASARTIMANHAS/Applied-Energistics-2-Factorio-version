@@ -6,7 +6,6 @@ require("data/recursos.lua")
 require("data/pesquisa/AE2_pesquisa.lua")
 
 -- receitas
-require("data/advanced_press_recipe.lua")
 require("data/processors_recipe.lua")
 
 -- presets Basicos do mods
