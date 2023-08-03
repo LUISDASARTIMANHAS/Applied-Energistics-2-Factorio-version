@@ -9,13 +9,9 @@ local starting_items = {
 -- Função que adiciona os itens ao inventário do jogador e exibe uma mensagem no chat
 local function give_starting_items(event)
     local player = game.players[event.player_index]
-    for _, item in ipairs(starting_items) do
-        player.print("adicionando item!")
-        player.insert({name = item.name, count = item.count})
-    end
-
     player.print("Você recebeu os itens iniciais!")
+    player.get_main_inventory().insert(starting_items)
 end
 
 -- Registrando o evento on_player_created para chamar a função give_starting_items
-script.on_event(defines.events.on_player_joined_game, give_starting_items)
+script.on_event(defines.events.on_player_created, give_starting_items)
