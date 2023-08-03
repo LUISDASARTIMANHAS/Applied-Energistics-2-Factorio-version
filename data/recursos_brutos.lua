@@ -65,7 +65,6 @@ data:extend({
     result = "silicon-press",
 },
 })
-
 data:extend({
 -- definindo o item
 {
@@ -82,18 +81,16 @@ data:extend({
     type = "recipe",
     name = "engineering-processor-press-recipe",
     category = "inscriber",
-    enabled = true,
-    always_show_madein = true,
+    enabled = false,
     ingredients = {
-        {"processing-unit",64},
-        {"iron-block",20}
+        { "engineering-processor-press", 1 },
+        { "iron-block",                  9 }
     },
-    energy_required = 180,
+    energy_required = 120,
+    result_count = 2,
     result = "engineering-processor-press",
 },
 })
-
-
 data:extend({
 -- definindo o item
 {
@@ -110,17 +107,43 @@ data:extend({
     type = "recipe",
     name = "logic-processor-press-recipe",
     category = "inscriber",
-    enabled = true,
-    always_show_madein = true,
+    enabled = false,
     ingredients = {
-        {"electronic-circuit",64},
-        {"iron-block",20}
+        { "logic-processor-press", 1 },
+        { "iron-block",            9 }
     },
-    energy_required = 180,
+    energy_required = 120,
+    result_count = 2,
     result = "logic-processor-press",
 },
 })
-
+data:extend({
+    -- definindo o item
+    {
+        type = "item",
+        name = "calculation-processor-press",
+        icon = path_main.. "graficos/items/calculation_processor_press.png",
+        icon_size = 128,
+        subgroup = "processing",
+        order = "AE2-processing[calculation-processor-press]",
+        stack_size = 1,
+    },
+    -- receita
+    
+{
+    type = "recipe",
+    name = "calculation-processor-press-recipe",
+    category = "inscriber",
+    enabled = false,
+    ingredients = {
+        { "calculation-processor-press", 1 },
+        { "iron-block",                  9 }
+    },
+    energy_required = 120,
+    result_count = 2,
+    result = "calculation-processor-press",
+},
+    })
 
 data:extend({
 -- definindo o item
@@ -148,8 +171,6 @@ data:extend({
 },
 })
 
-
-
 data:extend({
 -- definindo o item
 {
@@ -173,33 +194,5 @@ data:extend({
     },
     energy_required = 12,
     result = "compressed-iron-block"
-},
-})
-
-
-data:extend({
--- definindo o item
-{
-    type = "item",
-    name = "calculation-processor-press",
-    icon = path_main.. "graficos/items/calculation_processor_press.png",
-    icon_size = 128,
-    subgroup = "processing",
-    order = "AE2-processing[calculation-processor-press]",
-    stack_size = 1,
-},
--- receita
-{
-    type = "recipe",
-    name = "calculation-processor-press-recipe",
-    category = "inscriber",
-    enabled = true,
-    always_show_madein = true,
-    ingredients = {
-        {"advanced-circuit", 64},
-        {"iron-block", 20}
-    },
-    energy_required = 180,
-    result = "calculation-processor-press",
 },
 })

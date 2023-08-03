@@ -67,7 +67,19 @@ data:extend({ {
         {
             type = "unlock-recipe",
             recipe = "semi-dark-monitor-recipe",
-        }
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "calculation-processor-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "engineering-processor-recipe",
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "logic-processor-recipe",
+        },
 
     },
     unit = {
@@ -112,60 +124,6 @@ data:extend({ {
             { "logistic-science-pack", 20},
             { "chemical-science-pack", 20},
             {"production-science-pack",20}
-        },
-        order = "AE2-group"
-    }
-}
-})
-
-
-data:extend({ {
-    type = "technology",
-    name = "AE2-advanced-eletronic",
-    icon = path_main.. "graficos/technology/advanced_eletronic.png",
-    icon_size = 128,
-    icon_mipmaps = 4,
-    prerequisites = {
-        "AE2",
-        "AE2-singularidade",
-        "electronics",
-        "advanced-electronics"
-    },
-    effects =
-    {
-        {
-            type = "unlock-recipe",
-            recipe = "logic-processor-advanced-press-recipe",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "engineering-processor-advanced-press-recipe",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "calculation-processor-advanced-press-recipe",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "calculation-processor-recipe",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "engineering-processor-recipe",
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "logic-processor-recipe",
-        },
-    },
-    unit = {
-        count = 5,
-        time = 30,
-        ingredients = {
-            { "automation-science-pack", 200},
-            { "logistic-science-pack", 200},
-            { "chemical-science-pack", 200},
-            {"production-science-pack",200}
         },
         order = "AE2-group"
     }
