@@ -96,7 +96,8 @@ data:extend({ {
 })
 
 
-data:extend({ {
+data:extend({ 
+    {
     type = "technology",
     name = "AE2-singularidade",
     icon = path_main.. "graficos/technology/singularity.png",
@@ -138,8 +139,7 @@ data:extend({ {
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
-        "AE2",
-        "AE2-advanced-eletronic"
+        "AE2"
     },
     effects =
     {
