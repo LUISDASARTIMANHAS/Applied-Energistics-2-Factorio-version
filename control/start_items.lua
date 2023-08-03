@@ -10,6 +10,7 @@ local starting_items = {
 local function give_starting_items(event)
     local player = game.players[event.player_index]
     for _, item in ipairs(starting_items) do
+        player.print("adicionando item!")
         player.insert({name = item.name, count = item.count})
     end
 
@@ -17,4 +18,4 @@ local function give_starting_items(event)
 end
 
 -- Registrando o evento on_player_created para chamar a função give_starting_items
-script.on_event(defines.events.on_player_created, give_starting_items)
+script.on_event(defines.events.on_player_joined_game, give_starting_items)
