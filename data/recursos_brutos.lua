@@ -81,7 +81,7 @@ data:extend({
     type = "recipe",
     name = "engineering-processor-press-recipe",
     category = "inscriber",
-    enabled = false,
+    enabled = true,
     ingredients = {
         { "engineering-processor-press", 1 },
         { "iron-block",                  9 }
@@ -107,7 +107,7 @@ data:extend({
     type = "recipe",
     name = "logic-processor-press-recipe",
     category = "inscriber",
-    enabled = false,
+    enabled = true,
     ingredients = {
         { "logic-processor-press", 1 },
         { "iron-block",            9 }
@@ -129,12 +129,11 @@ data:extend({
         stack_size = 1,
     },
     -- receita
-    
 {
     type = "recipe",
     name = "calculation-processor-press-recipe",
     category = "inscriber",
-    enabled = false,
+    enabled = true,
     ingredients = {
         { "calculation-processor-press", 1 },
         { "iron-block",                  9 }
