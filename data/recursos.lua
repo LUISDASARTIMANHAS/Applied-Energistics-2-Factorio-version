@@ -9,6 +9,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[drive]",
+    place_result = "drive-entidade",
     stack_size = 1,
 },
 -- receita
@@ -35,6 +36,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[1k-crafting-storage]",
+    place_result = "1k-crafting-storage-entidade",
     stack_size = 1,
 },
 -- receita
@@ -61,6 +63,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[4k-crafting-storage]",
+    place_result = "4k-crafting-storage-entidade",
     stack_size = 1,
 },
 -- receita
@@ -87,6 +90,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[16k-crafting-storage]",
+    place_result = "16k-crafting-storage-entidade",
     stack_size = 1,
 },
 -- receita
@@ -113,6 +117,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[64k-crafting-storage]",
+    place_result = "64k-crafting-storage-entidade",
     stack_size = 1,
 },
 -- receita
@@ -192,6 +197,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-monitor]",
+    place_result = "crafting-monitor-entidade",
     stack_size = 1,
 },
 -- receita
@@ -218,6 +224,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-terminal]",
+    place_result = "crafting-terminal-entidade",
     stack_size = 1,
 },
 -- receita
@@ -245,6 +252,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-unit]",
+    place_result = "crafting-unit-entidade",
     stack_size = 1,
 },
 -- receita
@@ -272,6 +280,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[inscriber]",
+    place_result = "inscriber-entidade",
     stack_size = 1,
 },
 -- receita
@@ -299,6 +308,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[interface]",
+    place_result = "interface-entidade",
     stack_size = 1,
 },
 -- receita
@@ -326,6 +336,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[molecular-assembler]",
+    place_result = "molecular-assembler-entidade",
     stack_size = 1,
 },
 -- receita
@@ -354,6 +365,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[pattern-access-terminal]",
+    place_result = "pattern-access-terminal-entidade",
     stack_size = 1,
 },
 -- receita
@@ -381,6 +393,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[pattern-provider]",
+    place_result = "pattern-provider-entidade",
     stack_size = 1,
 },
 -- receita
@@ -408,6 +421,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[storage-monitor]",
+    place_result = "storage-monitor-entidade",
     stack_size = 1,
 },
 -- receita
@@ -435,6 +449,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[terminal]",
+    place_result = "terminal-entidade",
     stack_size = 1,
 },
 -- receita
