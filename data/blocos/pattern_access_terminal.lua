@@ -3,7 +3,7 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "",
-        name = "pattern-access-terminal",
+        name = "pattern-access-terminal-entidade",
         icon = path_main .. "graficos/Blocos/pattern_access_terminal.png",
         icon_size = 128,
         icon_mipmaps = 4,

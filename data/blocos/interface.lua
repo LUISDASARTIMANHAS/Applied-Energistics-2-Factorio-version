@@ -3,7 +3,7 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "",
-        name = "interface",
+        name = "interface-entidade",
         icon = path_main .. "graficos/Blocos/interface.png",
         icon_size = 128,
         icon_mipmaps = 4,

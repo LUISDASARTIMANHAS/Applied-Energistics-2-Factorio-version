@@ -3,7 +3,7 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "",
-        name = "crafting-terminal",
+        name = "crafting-terminal-entidade",
         icon = path_main .. "graficos/Blocos/crafting_terminal.png",
         icon_size = 128,
         icon_mipmaps = 4,

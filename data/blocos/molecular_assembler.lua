@@ -3,7 +3,7 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "",
-        name = "molecular-assembler",
+        name = "molecular-assembler-entidade",
         icon = path_main .. "graficos/Blocos/molecular_assembler.png",
         icon_size = 128,
         icon_mipmaps = 4,

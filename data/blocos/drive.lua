@@ -3,7 +3,7 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "",
-        name = "drive",
+        name = "drive-entidade",
         icon = path_main .. "graficos/Blocos/drive.png",
         icon_size = 128,
         icon_mipmaps = 4,

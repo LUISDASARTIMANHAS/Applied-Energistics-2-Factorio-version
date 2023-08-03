@@ -3,7 +3,7 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "assembling-machine",
-        name = "64k-crafting-storage",
+        name = "64k-crafting-storage-entidade",
         icon = path_main .. "graficos/Blocos/64k_crafting_storage.png",
         icon_size = 128,
         icon_mipmaps = 4,
