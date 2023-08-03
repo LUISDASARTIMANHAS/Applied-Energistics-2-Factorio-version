@@ -9,7 +9,7 @@ data:extend({
         icon_mipmaps = 4,
         minable = { mining_time = 1, result = "drive" },
         max_health = 350,
-        inventory_size = 8,
+        -- inventory_size = 8,
         -- corpse = "big-remnants",
         corpse = "assembling-machine-2-remnants",
         -- dying_explosion = "big-explosion",
