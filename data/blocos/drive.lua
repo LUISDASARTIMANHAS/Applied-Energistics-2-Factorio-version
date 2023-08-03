@@ -2,18 +2,14 @@ local path_main = "__Applied-Energistics-2__/"
 
 data:extend({
     {
-        type = "",
+        type = "container",
         name = "drive-entidade",
         icon = path_main .. "graficos/Blocos/drive.png",
         icon_size = 128,
         icon_mipmaps = 4,
         minable = { mining_time = 1, result = "drive" },
         max_health = 350,
-        crafting_speed = 4,
-        ingredient_count = 3,
-        off_when_no_fluid_recipe = true,
-        energy_usage = "300kW",
-        buffer_capacity = "1MW",
+        inventory_size = 8,
         -- corpse = "big-remnants",
         corpse = "assembling-machine-2-remnants",
         -- dying_explosion = "big-explosion",
