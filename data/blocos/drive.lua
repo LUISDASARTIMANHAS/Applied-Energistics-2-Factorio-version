@@ -95,48 +95,39 @@ data:extend({
                 volume = 0.5
             }
         },
-        animation = {
+        picture = {
             layers = {
                 {
-                    frame_count = 32,
-                    filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2.png",
+                    filename = "__base__/graphics/entity/iron-chest/iron-chest.png",
                     hr_version = {
-                        frame_count = 32,
-                        filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2.png",
-                        height = 218,
-                        line_length = 8,
-                        shift = { 0, 0.125 },
+                        filename = "__base__/graphics/entity/iron-chest/hr-iron-chest.png",
+                        height = 76,
+                        shift = { -0.015625, -0.015625 },
                         scale = 0.5,
-                        priority = "high",
-                        width = 214
+                        priority = "extra-high",
+                        width = 66
                     },
-                    height = 110,
-                    line_length = 8,
-                    shift = { 0, 0.125 },
-                    priority = "high",
-                    width = 108
+                    height = 38,
+                    shift = { 0, -0.015625 },
+                    priority = "extra-high",
+                    width = 34
                 },
                 {
+                    filename = "__base__/graphics/entity/iron-chest/iron-chest-shadow.png",
                     hr_version = {
-                        line_length = 8,
+                        filename = "__base__/graphics/entity/iron-chest/hr-iron-chest-shadow.png",
+                        height = 50,
+                        shift = { 0.328125, 0.1875 },
                         scale = 0.5,
-                        width = 196,
-                        draw_as_shadow = true,
-                        frame_count = 32,
-                        filename =
-                        "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2-shadow.png",
-                        height = 163,
-                        shift = { 0.375, 0.1484375 },
-                        priority = "high"
+                        priority = "extra-high",
+                        width = 110,
+                        draw_as_shadow = true
                     },
-                    line_length = 8,
-                    width = 98,
-                    draw_as_shadow = true,
-                    frame_count = 32,
-                    filename = "__base__/graphics/entity/assembling-machine-2/assembling-machine-2-shadow.png",
-                    height = 82,
-                    shift = { 0.375, 0.15625 },
-                    priority = "high"
+                    height = 26,
+                    shift = { 0.3125, 0.203125 },
+                    priority = "extra-high",
+                    width = 56,
+                    draw_as_shadow = true
                 }
             }
         },

@@ -197,7 +197,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-monitor]",
-    place_result = "crafting-monitor-entidade",
+    -- place_result = "crafting-monitor-entidade",
     stack_size = 1,
 },
 -- receita
@@ -224,7 +224,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-terminal]",
-    place_result = "crafting-terminal-entidade",
+    -- place_result = "crafting-terminal-entidade",
     stack_size = 1,
 },
 -- receita
@@ -252,7 +252,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[crafting-unit]",
-    place_result = "crafting-unit-entidade",
+    -- place_result = "crafting-unit-entidade",
     stack_size = 1,
 },
 -- receita
@@ -308,7 +308,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[interface]",
-    place_result = "interface-entidade",
+    -- place_result = "interface-entidade",
     stack_size = 1,
 },
 -- receita
@@ -365,7 +365,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[pattern-access-terminal]",
-    place_result = "pattern-access-terminal-entidade",
+    -- place_result = "pattern-access-terminal-entidade",
     stack_size = 1,
 },
 -- receita
@@ -393,7 +393,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[pattern-provider]",
-    place_result = "pattern-provider-entidade",
+    -- place_result = "pattern-provider-entidade",
     stack_size = 1,
 },
 -- receita
@@ -421,7 +421,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[storage-monitor]",
-    place_result = "storage-monitor-entidade",
+    -- place_result = "storage-monitor-entidade",
     stack_size = 1,
 },
 -- receita
@@ -449,7 +449,7 @@ data:extend({
     icon_size = 128,
     subgroup = "data-terminal",
     order = "AE2-data-terminal[terminal]",
-    place_result = "terminal-entidade",
+    -- place_result = "terminal-entidade",
     stack_size = 1,
 },
 -- receita
