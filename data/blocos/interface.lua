@@ -2,7 +2,7 @@ local path_main = "__Applied-Energistics-2__/"
 
 data:extend({
     {
-        type = "",
+        type = "assembling-machine",
         name = "interface-entidade",
         icon = path_main .. "graficos/Blocos/interface.png",
         icon_size = 128,

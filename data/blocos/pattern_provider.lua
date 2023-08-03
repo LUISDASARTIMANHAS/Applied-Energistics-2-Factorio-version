@@ -2,7 +2,7 @@ local path_main = "__Applied-Energistics-2__/"
 
 data:extend({
     {
-        type = "",
+        type = "assembling-machine",
         name = "pattern-provider-entidade",
         icon = path_main .. "graficos/Blocos/pattern_provider.png",
         icon_size = 128,

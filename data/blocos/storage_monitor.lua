@@ -2,7 +2,7 @@ local path_main = "__Applied-Energistics-2__/"
 
 data:extend({
     {
-        type = "",
+        type = "assembling-machine",
         name = "storage-monitor-entidade",
         icon = path_main .. "graficos/Blocos/storage_monitor.png",
         icon_size = 128,
