@@ -8,7 +8,7 @@ para que possa ser executado.
 
 |                                  | Em desinvolvimento   | "Versão Estavel"  |
 |----------------------------------|----------------------|-------------------|
-|                        **Versão**|               0.0.17 |             0.0.16|
+|                        **Versão**|                0.2.7 |              0.2.6|
 | **Atualização Auto Via factorio**|                  :x: |               :x: |
 |                       **Discord**|   :heavy_check_mark: |               :x: |
 |              **Reporte de Erros**|   :heavy_check_mark: |               :x: |
