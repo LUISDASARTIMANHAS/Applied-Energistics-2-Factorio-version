@@ -1,6 +1,6 @@
 {
     "name": "Applied-Energistics-2",
-    "version": "0.4.6",
+    "version": "0.4.7",
     "title": "Energia Aplicada 2",
     "author": "LUIS DAS ARTIMANHAS",
     "contact": "luisaugustodesouza785@gmail.com",
@@ -8,7 +8,8 @@
     "description": "Mod que importa as mecanicas do Applied Energistics 2, inspirado (mas não afiliado ao mod Minecraft Applied Energistics 2).",
     "factorio_version": "1.1",
     "dependencies": [
-        "base >= 1.1.69"
+        "base >= 1.1.80",
+        "flib >= 0.12.9"
     ],
     "license": "GNU General Public License v3.0",
     "thumbnail": "thumbnail.png"
