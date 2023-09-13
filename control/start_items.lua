@@ -12,7 +12,7 @@ local function give_starting_items(event)
     for _, item in ipairs(starting_items) do
         player.insert({name = item.name, count = item.count})
     end
-    player.print("Você recebeu os itens iniciais!")
+    player.print("AE2: Você recebeu os itens iniciais!")
 end
 
 -- Registrando o evento on_player_created para chamar a função give_starting_items
