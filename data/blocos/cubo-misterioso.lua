@@ -3,16 +3,6 @@ local path_main = "__Applied-Energistics-2__/"
 -- Defina as configurações de geração para suas pedras personalizadas
 data:extend({
     {
-        type = "autoplace-control",
-        name = "cubo-misterioso-control",
-        richness = true,
-        order = "b-e"
-    },
-    {
-        type = "noise-layer",
-        name = "cubo-misterioso"
-    },
-    {
         type = "resource",
         name = "cubo-misterioso",
         icon = path_main.. "graficos/Blocos/the_mysterious_cube.png",
@@ -53,5 +43,16 @@ data:extend({
                 variation_count = 1
             }
         },
+    },
+    {
+        type = "autoplace-control",
+        name = "cubo-misterioso-control",
+        richness = true,
+        order = "b-e",
+        category = "AE2-category"
+    },
+    {
+        type = "noise-layer",
+        name = "cubo-misterioso"
     }
 })
