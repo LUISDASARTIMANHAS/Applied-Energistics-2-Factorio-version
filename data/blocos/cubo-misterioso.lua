@@ -42,21 +42,6 @@ data:extend({
         },
         collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
         selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
-        autoplace = {
-            control = "cubo-misterioso-control",
-            sharpness = 1,
-            richness_multiplier = 1500,
-            richness_base = 150,
-            size_control_multiplier = 0.06,
-            peaks = {
-                {
-                    influence = 0.2,
-                    noise_layer = "cubo-misterioso",
-                    noise_octaves_difference = -1.5,
-                    noise_persistence = 0.4
-                }
-            }
-        },
         stage_counts = {100},
         stages = {
             sheet = {
@@ -68,9 +53,5 @@ data:extend({
                 variation_count = 1
             }
         },
-    },
-    {
-        type = "noise-layer",
-        name = "cubo-misterioso"
     }
 })
