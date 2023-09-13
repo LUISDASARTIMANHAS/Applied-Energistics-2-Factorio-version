@@ -4,7 +4,6 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "resource",
-        category = "AE2-category",
         name = "cubo-misterioso",
         icon = path_main.. "graficos/Blocos/the_mysterious_cube.png",
         icon_size = 128,
