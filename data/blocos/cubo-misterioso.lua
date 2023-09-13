@@ -42,7 +42,7 @@ data:extend({
                 }
             }
         },
-        stage_counts = {10000, 7500, 5000, 2500, 1000, 500, 200, 100},
+        stage_counts = {100},
         stages = {
             sheet = {
                 filename = path_main.. "graficos/Blocos/the_mysterious_cube.png",
