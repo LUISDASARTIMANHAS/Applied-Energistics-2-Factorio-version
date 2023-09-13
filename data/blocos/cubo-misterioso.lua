@@ -4,6 +4,7 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "resource",
+        category = "AE2-category",
         name = "cubo-misterioso",
         icon = path_main.. "graficos/Blocos/the_mysterious_cube.png",
         icon_size = 128,
@@ -43,13 +44,6 @@ data:extend({
                 variation_count = 1
             }
         },
-    },
-    {
-        type = "autoplace-control",
-        name = "cubo-misterioso-control",
-        richness = true,
-        order = "b-e",
-        category = "AE2-category"
     },
     {
         type = "noise-layer",
