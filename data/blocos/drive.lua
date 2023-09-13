@@ -98,7 +98,7 @@ data:extend({
         picture = {
             layers = {
                 {
-                    filename = "__base__/graphics/entity/iron-chest/iron-chest.png",
+                    filename = path_main .. "graficos/Blocos/drive.png",
                     hr_version = {
                         filename = "__base__/graphics/entity/iron-chest/hr-iron-chest.png",
                         height = 76,
@@ -113,20 +113,11 @@ data:extend({
                     width = 34
                 },
                 {
-                    filename = "__base__/graphics/entity/iron-chest/iron-chest-shadow.png",
-                    hr_version = {
-                        filename = "__base__/graphics/entity/iron-chest/hr-iron-chest-shadow.png",
-                        height = 50,
-                        shift = { 0.328125, 0.1875 },
-                        scale = 0.5,
-                        priority = "extra-high",
-                        width = 110,
-                        draw_as_shadow = true
-                    },
-                    height = 26,
+                    filename = path_main .. "graficos/Blocos/drive.png",
+                    height = 128,
                     shift = { 0.3125, 0.203125 },
                     priority = "extra-high",
-                    width = 56,
+                    width = 128,
                     draw_as_shadow = true
                 }
             }
