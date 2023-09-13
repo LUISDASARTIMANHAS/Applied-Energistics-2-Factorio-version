@@ -99,18 +99,10 @@ data:extend({
             layers = {
                 {
                     filename = path_main .. "graficos/Blocos/drive.png",
-                    hr_version = {
-                        filename = "__base__/graphics/entity/iron-chest/hr-iron-chest.png",
-                        height = 76,
-                        shift = { -0.015625, -0.015625 },
-                        scale = 0.5,
-                        priority = "extra-high",
-                        width = 66
-                    },
-                    height = 38,
+                    height = 128,
                     shift = { 0, -0.015625 },
                     priority = "extra-high",
-                    width = 34
+                    width = 128
                 },
                 {
                     filename = path_main .. "graficos/Blocos/drive.png",
