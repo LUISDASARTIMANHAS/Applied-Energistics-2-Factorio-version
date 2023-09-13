@@ -4,17 +4,17 @@ local path_main = "__Applied-Energistics-2__/"
 data:extend({
     {
         type = "autoplace-control",
-        name = "minha-pedra-control",
+        name = "cubo-misterioso-control",
         richness = true,
         order = "b-e"
     },
     {
         type = "noise-layer",
-        name = "minha-pedra"
+        name = "cubo-misterioso"
     },
     {
         type = "resource",
-        name = "minha-pedra",
+        name = "cubo-misterioso",
         icon = path_main.. "graficos/Blocos/the_mysterious_cube.png",
         icon_size = 128,
         flags = {"placeable-neutral"},
@@ -23,12 +23,12 @@ data:extend({
             hardness = 1,
             mining_particle = "stone-particle",
             mining_time = 2,
-            result = "minha-pedra-item"
+            result = "cubo-misterioso-item"
         },
         collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
         selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
         autoplace = {
-            control = "minha-pedra-control",
+            control = "cubo-misterioso-control",
             sharpness = 1,
             richness_multiplier = 1500,
             richness_base = 150,
@@ -36,7 +36,7 @@ data:extend({
             peaks = {
                 {
                     influence = 0.2,
-                    noise_layer = "minha-pedra",
+                    noise_layer = "cubo-misterioso",
                     noise_octaves_difference = -1.5,
                     noise_persistence = 0.4
                 }
