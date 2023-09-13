@@ -13,7 +13,32 @@ data:extend({
             hardness = 1,
             mining_particle = "stone-particle",
             mining_time = 2,
-            result = "cubo-misterioso-item"
+            results = {
+                {
+                    type = "item",
+                    name = "silicon-press",
+                    amount_min = 1,
+                    amount_max = 1
+                },
+                {
+                    type = "item",
+                    name = "engineering-processor-press",
+                    amount_min = 1,
+                    amount_max = 1
+                },
+                {
+                    type = "item",
+                    name = "logic-processor-press",
+                    amount_min = 1,
+                    amount_max = 1
+                },
+                {
+                    type = "item",
+                    name = "calculation-processor-press",
+                    amount_min = 1,
+                    amount_max = 1
+                }
+            }
         },
         collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
         selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
