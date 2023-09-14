@@ -43,13 +43,12 @@ data:extend({
         collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
         autoplace = {
-            order = "d[ore]-a[certus-quartz-crystal-resource]",
-            control = "certus-quartz-crystal-resource",
+            order = "d[ore]-a[cubo-misterioso]",
+            control = "cubo-misterioso",
             has_starting_area_placement = false,
-            starting_area_amount = 0, -- Quantidade de recurso na área inicial
             peaks = {
                 {
-                    influence = 0.2,
+                    influence = 0.5,
                     starting_area_weight_optimal = 0,
                     starting_area_weight_range = 0,
                     starting_area_weight_max_range = 20,

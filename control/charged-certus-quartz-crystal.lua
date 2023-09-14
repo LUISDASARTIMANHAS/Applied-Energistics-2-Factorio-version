@@ -36,7 +36,7 @@ data:extend({
     autoplace = {
       order = "d[ore]-a[certus-quartz-crystal-resource]",
       control = "certus-quartz-crystal-resource",
-      size_control_multiplier = 0.1,           --Multiplicador do tamanho das manchas. Afeta o tamanho das áreas onde o recurso é gerado.
+      size_control_multiplier = 0.2,           --Multiplicador do tamanho das manchas. Afeta o tamanho das áreas onde o recurso é gerado.
       sharpness = 1,
       base_density = 4,                        --Densidade base do recurso.
       richness_multiplier = 1500,              -- Multiplicador da riqueza do recurso.quantidade de recurso presente em cada mancha.
@@ -86,6 +86,6 @@ data:extend({
     richness = true,
     order = "b-e",
     category = "resource",
-    coverage = 0.02,
+    coverage = 0.2,
   }
 })
