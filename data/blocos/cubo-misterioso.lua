@@ -12,7 +12,7 @@ data:extend({
         minable = {
             hardness = 8,
             mining_particle = "stone-particle",
-            mining_time = 0,
+            mining_time = 2,
             results = {
                 {
                     type = "item",
