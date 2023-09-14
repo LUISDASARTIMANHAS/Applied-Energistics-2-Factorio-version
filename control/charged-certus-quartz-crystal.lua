@@ -41,7 +41,6 @@ data:extend({
       sharpness = 1,
       --Densidade base do recurso.
       base_density = 4,
-      coverage = 0.2,
       -- Multiplicador da riqueza do recurso.quantidade de recurso presente em cada mancha.
       richness_multiplier = 1500,
       -- Quantidade base de riqueza do recurso por mancha.
