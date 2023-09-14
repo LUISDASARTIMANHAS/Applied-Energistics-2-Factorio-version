@@ -59,16 +59,6 @@ data:extend({
         stage_counts = { 100 },
         stages = {
             sheet = {
-                filename = path_main .. "graficos/Blocos/the_mysterious_cube.png",
-                priority = "extra-high",
-                width = 128,
-                height = 128,
-                frame_count = 1,
-                variation_count = 1
-            }
-        },
-        stages = {
-            sheet = {
                 frame_count = 1,
                 filename = path_main .. "graficos/Blocos/the_mysterious_cube.png",
                 hr_version = {
@@ -90,6 +80,25 @@ data:extend({
                 priority = "extra-high",
                 size = 128,
                 variation_count = 1
+            }
+        },
+        picture = {
+            layers = {
+                {
+                    filename = path_main .. "graficos/Blocos/the_mysterious_cube.png",
+                    height = 128,
+                    shift = { 0, -0.015625 },
+                    priority = "extra-high",
+                    width = 128
+                },
+                {
+                    filename = path_main .. "graficos/Blocos/the_mysterious_cube.png",
+                    height = 128,
+                    shift = { 0.3125, 0.203125 },
+                    priority = "extra-high",
+                    width = 128,
+                    draw_as_shadow = true
+                }
             }
         },
         map_grid = false
