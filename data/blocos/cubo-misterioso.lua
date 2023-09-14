@@ -44,8 +44,11 @@ data:extend({
             { -1.2, -1.2 },
             { 1.2,  1.2 }
         },
-        selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
-        stage_counts = { 100 },
+        selection_box = {
+            { -1.2, -1.2 },
+            { 1.2,  1.2 }
+        },
+        stage_counts = { 1000 },
         stages = {
             sheet = {
                 frame_count = 1,
@@ -94,8 +97,10 @@ data:extend({
         map_color = { r = 255, g = 0, b = 255 },
         autoplace = {
             order = "d[ore]-a[cubo-misterioso]",
-            control = "cubo-misterioso",
             has_starting_area_placement = false,
+            richness = 2,
+            size = 2,
+            frequency = 2,
             peaks = {
                 {
                     influence = 0.5,
@@ -106,15 +111,4 @@ data:extend({
             },
         },
     },
-    -- map generator GUI.
-    {
-        type = "autoplace-control",
-        name = "cubo-misterioso",
-        order = "b-e",
-        category = "resource",
-        richness = false,
-        size = false,
-        frequency = false,
-        can_be_disabled = false
-    }
 })
