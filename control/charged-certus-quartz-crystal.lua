@@ -12,15 +12,21 @@ data:extend({
     order = "a-b-a",
     tree_removal_probability = 1,
     tree_removal_max_distance = 32 * 32,
-    infinite = true, -- Define o minério como infinito
-    minimum = 500,   -- Quantidade mínima disponível no minério
-    normal = 1000,   -- Quantidade normal disponível no minério
+    -- Define o minério como infinito
+    infinite = true,
+    -- Quantidade mínima disponível no minério
+    minimum = 500,
+    -- Quantidade normal disponível no minério
+    normal = 1000,
     minable =
     {
-      hardness = 0.7,                           -- Dureza do minério (ajuste conforme desejado)
+      -- Dureza do minério (ajuste conforme desejado)
+      hardness = 0.7,
       mining_particle = "stone-particle",
-      mining_time = 2,                          -- Tempo de mineração (ajuste conforme desejado)
-      result = "charged-certus-quartz-crystal", -- Item que será produzido ao minerar o minério
+      -- Tempo de mineração (ajuste conforme desejado)
+      mining_time = 2,
+      -- Item que será produzido ao minerar o minério
+      result = "charged-certus-quartz-crystal",
       amount_min = 1,
       amount_max = 5,
       result_count = 1,
@@ -43,7 +49,7 @@ data:extend({
       has_starting_area_placement = false,
       starting_area_size = 600 * 0.0068359375, -- Tamanho da área de geração inicial
       starting_area_amount = 1000,             -- Quantidade de recurso na área inicial
-      resource_patch_search_radius = 12,           -- Riqueza base da água
+      resource_patch_search_radius = 12,       -- Riqueza base da água
       peaks = {
         {
           influence = 0.2,
