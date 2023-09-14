@@ -12,6 +12,14 @@ para que possa ser executado.
 | **Atualização Auto Via factorio**| :heavy_check_mark:   |:heavy_check_mark: |
 |                       **Discord**| :heavy_check_mark:   |               :x: |
 |              **Reporte de Erros**| :heavy_check_mark:   |               :x: |
+## Retornar a versões Anteriores:
+0.4.7, Sem suporte
+
+Disponível em: https://github.com/LUISDASARTIMANHAS/Applied-Energistics-2-Factorio-version/commit/1a03df6789296ad61222b4c13c37bd12c551faee
+
+0.4.6, Sem suporte, Obsoleta
+
+Disponível em: https://github.com/LUISDASARTIMANHAS/Applied-Energistics-2-Factorio-version/commit/3f57d714f2aca168186275035c4d34209bccc956
 
 ## Wiki
 
