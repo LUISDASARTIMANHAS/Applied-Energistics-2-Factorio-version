@@ -11,7 +11,7 @@ data:extend({
     category = "basic-solid",
     order = "a-b-a",
     tree_removal_probability = 1,
-    tree_removal_max_distance = 32 * 32,
+    tree_removal_max_distance = 1024,
     -- Define o minério como infinito
     infinite = true,
     -- Quantidade mínima disponível no minério
@@ -36,26 +36,38 @@ data:extend({
     autoplace = {
       order = "d[ore]-a[certus-quartz-crystal-resource]",
       control = "certus-quartz-crystal-resource",
-      size_control_multiplier = 0.2,           --Multiplicador do tamanho das manchas. Afeta o tamanho das áreas onde o recurso é gerado.
+      --Multiplicador do tamanho das manchas. Afeta o tamanho das áreas onde o recurso é gerado.
+      size_control_multiplier = 0.2,
       sharpness = 1,
-      base_density = 4,                        --Densidade base do recurso.
-      richness_multiplier = 1500,              -- Multiplicador da riqueza do recurso.quantidade de recurso presente em cada mancha.
-      richness_base = 300,                     -- Quantidade base de riqueza do recurso por mancha.
-      regular_rq_factor_multiplier = 1,        --Multiplicador do fator de solicitação regular.
+      --Densidade base do recurso.
+      base_density = 4,
+      coverage = 0.2,
+      -- Multiplicador da riqueza do recurso.quantidade de recurso presente em cada mancha.
+      richness_multiplier = 1500,
+      -- Quantidade base de riqueza do recurso por mancha.
+      richness_base = 300,
+      --Multiplicador do fator de solicitação regular.
+      regular_rq_factor_multiplier = 1,
       starting_rq_factor_multiplier = 1.5,
-      candidate_spot_count = 22,               --Número de manchas candidatas para serem geradas.
-      random_spot_size_minimum = 2,            --Tamanho mínimo aleatório das manchas.
-      random_spot_size_maximum = 4,            --Tamanho máximo aleatório das manchas.
+      --Número de manchas candidatas para serem geradas.
+      candidate_spot_count = 22,
+      --Tamanho mínimo aleatório das manchas.
+      random_spot_size_minimum = 2,
+      --Tamanho máximo aleatório das manchas.
+      random_spot_size_maximum = 4,
       has_starting_area_placement = false,
-      starting_area_size = 600 * 0.0068359375, -- Tamanho da área de geração inicial
-      starting_area_amount = 1000,             -- Quantidade de recurso na área inicial
-      resource_patch_search_radius = 12,       -- Riqueza base da água
+      -- Tamanho da área de geração inicial
+      starting_area_size = 600 * 0.0068359375,
+      -- Quantidade de recurso na área inicial
+      starting_area_amount = 1000,
+      -- Riqueza base da água
+      resource_patch_search_radius = 12,
       peaks = {
         {
           influence = 0.2,
           starting_area_weight_optimal = 0,
           starting_area_weight_range = 0,
-          starting_area_weight_max_range = 2,
+          starting_area_weight_max_range = 200,
         }
       },
     },
@@ -78,14 +90,17 @@ data:extend({
       }
     },
     map_grid = false,
-    map_color = { r = 0, g = 239, b = 255 },
+    map_color = { r = 0, g = 255, b = 255 },
   },
+  -- map generator GUI.
   {
     type = "autoplace-control",
     name = "certus-quartz-crystal-resource",
-    richness = true,
     order = "b-e",
     category = "resource",
-    coverage = 0.2,
+    richness = 2,
+    size = 1,
+    frequency = 2,
+    can_be_disabled = false
   }
 })

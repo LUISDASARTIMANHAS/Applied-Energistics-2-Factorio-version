@@ -100,14 +100,18 @@ data:extend({
                 }
             }
         },
-        map_grid = false
+        map_grid = false,
+        map_color = { r = 255, g = 0, b = 255 },
     },
+    -- map generator GUI.
     {
         type = "autoplace-control",
         name = "cubo-misterioso",
-        richness = false,
         order = "b-e",
         category = "resource",
-        coverage = 0.02,
+        richness = false,
+        size = false,
+        frequency = false,
+        can_be_disabled = false
     }
 })
