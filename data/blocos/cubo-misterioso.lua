@@ -10,9 +10,9 @@ data:extend({
         flags = { "placeable-neutral" },
         order = "a-b-a",
         minable = {
-            hardness = 2,
+            hardness = 8,
             mining_particle = "stone-particle",
-            mining_time = 20,
+            mining_time = 0,
             results = {
                 {
                     type = "item",
@@ -40,7 +40,10 @@ data:extend({
                 }
             }
         },
-        collision_box = { { -0.1, -0.1 }, { 0.1, 0.1 } },
+        collision_box = {
+            { -1.2, -1.2 },
+            { 1.2,  1.2 }
+        },
         selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
         stage_counts = { 100 },
         stages = {
