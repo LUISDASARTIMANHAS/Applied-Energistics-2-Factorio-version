@@ -42,7 +42,7 @@ data:extend({
       --Densidade base do recurso.
       base_density = 4,
       -- Multiplicador da riqueza do recurso.quantidade de recurso presente em cada mancha.
-      richness_multiplier = 1500,
+      richness_multiplier = 500,
       -- Quantidade base de riqueza do recurso por mancha.
       richness_base = 300,
       --Multiplicador do fator de solicitação regular.
