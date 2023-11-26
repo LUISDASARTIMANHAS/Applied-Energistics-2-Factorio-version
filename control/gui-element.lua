@@ -51,3 +51,4 @@ script.on_event(defines.events.on_gui_closed, function(event)
         event.element.destroy()
     end
 end)
+

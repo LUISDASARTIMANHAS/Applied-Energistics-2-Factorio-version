@@ -1,18 +1,23 @@
--- Itens iniciais que você deseja fornecer ao jogador
-local starting_items = {
-    {name = "iron-plate", count = 100},
-    {name = "copper-plate", count = 100},
-    {name = "iron-gear-wheel", count = 50},
-    -- Adicione mais itens conforme necessário
-}
+-- Importando as funções do arquivo functions.lua
+require("functions.lua")
 
--- Função que adiciona os itens ao inventário do jogador e exibe uma mensagem no chat
+-- Função chamada quando um jogador é criado
 local function give_starting_items(event)
     local player = game.players[event.player_index]
-    for _, item in ipairs(starting_items) do
-        player.insert({name = item.name, count = item.count})
+    if player then
+        -- Itens iniciais que você deseja fornecer ao jogador
+        local starting_items = {
+            {name = "iron-plate", count = 100},
+            {name = "copper-plate", count = 100},
+            {name = "iron-gear-wheel", count = 50},
+            -- Adicione mais itens conforme necessário
+        }
+
+        -- Adiciona os itens ao jogador
+        for _, item in pairs(starting_items) do
+            AdicionarItemNaMochilaDoJogador(player, item.name, item.count)
+        end
     end
-    player.print("AE2: Você recebeu os itens iniciais!")
 end
 
 -- Registrando o evento on_player_created para chamar a função give_starting_items
