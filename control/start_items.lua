@@ -1,12 +1,12 @@
 -- Importando as funções do arquivo functions.lua
-require("functions.lua")
+require("functions")
 
--- Função chamada quando um jogador é criado
-local function give_starting_items(event)
+-- Altere o nome da função para algo mais descritivo
+function adicionarItensAoAndar(event)
     local player = game.players[event.player_index]
-    if player then
+    if player and player.valid then
         -- Itens iniciais que você deseja fornecer ao jogador
-        local starting_items = {
+        local startingItems = {
             {name = "iron-plate", count = 100},
             {name = "copper-plate", count = 100},
             {name = "iron-gear-wheel", count = 50},
@@ -14,11 +14,11 @@ local function give_starting_items(event)
         }
 
         -- Adiciona os itens ao jogador
-        for _, item in pairs(starting_items) do
+        for _, item in pairs(startingItems) do
             AdicionarItemNaMochilaDoJogador(player, item.name, item.count)
         end
     end
 end
 
--- Registrando o evento on_player_created para chamar a função give_starting_items
-script.on_event(defines.events.on_player_created, give_starting_items)
+-- Registre a função para o evento on_player_changed_position
+script.on_event(defines.events.on_player_changed_position, adicionarItensAoAndar)
