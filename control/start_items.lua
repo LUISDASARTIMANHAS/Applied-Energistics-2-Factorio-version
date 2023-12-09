@@ -1,8 +1,6 @@
 -- Importando as funções do arquivo functions.lua
 require("functions")
 
--- Altere o nome da função para algo mais descritivo
-function adicionarItensAoAndar(event)
     local player = game.players[event.player_index]
     if player and player.valid then
         -- Itens iniciais que você deseja fornecer ao jogador
@@ -18,7 +16,6 @@ function adicionarItensAoAndar(event)
             AdicionarItemNaMochilaDoJogador(player, item.name, item.count)
         end
     end
-end
 
 -- Registre a função para o evento on_player_changed_position
-script.on_event(defines.events.on_player_changed_position, adicionarItensAoAndar)
+-- script.on_event(defines.events.on_player_changed_position, adicionarItensAoAndar)

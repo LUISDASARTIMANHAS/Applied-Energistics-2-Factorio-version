@@ -56,7 +56,7 @@ data:extend({
         autoplace = {
             order = "d[ore]-a[cubo-misterioso]",
             -- recursos por mancha
-            richness_base = 10,
+            richness_base = 2,
             -- base_density = 2,
             -- base_spots_per_km2 = 1,
             -- random_probability = 1 / 48,
