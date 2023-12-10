@@ -1,4 +1,5 @@
 local path_main = "__Applied-Energistics-2__/"
+local baseResourceMultiplier = 0.10
 
 -- Defina as configurações de geração para suas pedras personalizadas
 data:extend({
@@ -10,8 +11,8 @@ data:extend({
         flags = { "placeable-neutral" },
         category = "basic-solid",
         highlight = true,
-        minimum = 10,
-        normal = 10,
+        minimum = 10 * baseResourceMultiplier,
+        normal = 10 * baseResourceMultiplier,
         tree_removal_max_distance = 32 * 32,
         order = "a-b-a",
         minable = {
@@ -56,42 +57,34 @@ data:extend({
         autoplace = {
             order = "d[ore]-a[cubo-misterioso]",
             -- recursos por mancha
-            richness_base = 2,
-            -- base_density = 2,
-            -- base_spots_per_km2 = 1,
-            -- random_probability = 1 / 48,
-            -- random_spot_size_minimum = 1000,
-            -- random_spot_size_maximum = 10000,
-            -- starting_rq_factor_multiplier = 10,
-            --base_density needs to be decreased to compensate
+            richness_base = 2 * baseResourceMultiplier,
             has_starting_area_placement = false,
-            -- regular_rq_factor_multiplier = 1,
             --geração
-            richness = 0.05,
-            size = 0.01,
-            frequency = 0.02,
+            richness = 1 * baseResourceMultiplier,
+            size = 1 * baseResourceMultiplier,
+            frequency = 5 * baseResourceMultiplier,
             --Multiplicador do tamanho das manchas. Afeta o tamanho das áreas onde o recurso é gerado.
-            size_control_multiplier = 0.2,
-            sharpness = 1,
+            size_control_multiplier = 0.5 * baseResourceMultiplier,
+            sharpness = 10 * baseResourceMultiplier,
             --Densidade base do recurso.
-            base_density = 4,
+            base_density = 1 * baseResourceMultiplier,
             -- Multiplicador da riqueza do recurso.quantidade de recurso presente em cada mancha.
-            richness_multiplier = 500,
+            richness_multiplier = 500 * baseResourceMultiplier,
             --Multiplicador do fator de solicitação regular.
-            regular_rq_factor_multiplier = 1,
-            starting_rq_factor_multiplier = 1.5,
+            regular_rq_factor_multiplier = 10 * baseResourceMultiplier,
+            starting_rq_factor_multiplier = 15 * baseResourceMultiplier,
             --Número de manchas candidatas para serem geradas.
-            candidate_spot_count = 22,
+            candidate_spot_count = 22 * baseResourceMultiplier,
             --Tamanho mínimo aleatório das manchas.
-            random_spot_size_minimum = 2,
+            random_spot_size_minimum = 2 * baseResourceMultiplier,
             --Tamanho máximo aleatório das manchas.
-            random_spot_size_maximum = 4,
+            random_spot_size_maximum = 40 * baseResourceMultiplier,
             -- Tamanho da área de geração inicial
-            starting_area_size = 600 * 0.0068359375,
+            starting_area_size = (6000 * baseResourceMultiplier) * 0.0068359375,
             -- Quantidade de recurso na área inicial
-            starting_area_amount = 1000,
+            starting_area_amount = 1000 * baseResourceMultiplier,
             -- Riqueza base da água
-            resource_patch_search_radius = 12,
+            resource_patch_search_radius = 12 * baseResourceMultiplier,
         },
         stage_counts = { 0 },
         stages = {

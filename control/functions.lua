@@ -13,7 +13,14 @@ end
 
 function AddLegacyResources()
     local player = getPlayerByIndex(1)
-    if AE2 - legacy - resources.value then
-        AdicionarItemNaMochilaDoJogador(player, "iron-ore",2)
+    if AE2_legacy_resources.value and player then
+        local startingItems = {
+            {name = "iron-plate", count = 100},
+            {name = "copper-plate", count = 100},
+            {name = "iron-gear-wheel", count = 50},
+        }
+        for _, item in pairs(startingItems) do
+            AdicionarItemNaMochilaDoJogador(player, item.name, item.count)
+        end
     end
 end
