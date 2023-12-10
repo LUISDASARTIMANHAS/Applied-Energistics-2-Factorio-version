@@ -1,5 +1,5 @@
 local path_main = "__Applied-Energistics-2__/"
-local baseResourceMultiplier = 0.10
+local baseResourceMultiplier = 0.20
 
 -- Defina as configurações de geração para suas pedras personalizadas
 data:extend({
