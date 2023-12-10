@@ -17,5 +17,4 @@ require("functions")
         end
     end
 
--- Registre a função para o evento on_player_changed_position
 -- script.on_event(defines.events.on_player_changed_position, adicionarItensAoAndar)
