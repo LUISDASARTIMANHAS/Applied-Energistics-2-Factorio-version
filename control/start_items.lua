@@ -1,7 +1,7 @@
 require("control/functions")
 
-script.on_event(defines.events.on_player_created, function(event)
-    local player = game.get_player(event.player_index)
+script.on_init(function()
+    local player = getPlayerByIndex(1)
     if player and player.valid then
         -- Itens iniciais que você deseja fornecer ao jogador
         local startingItems = {
