@@ -8,13 +8,16 @@ data:extend({
         name = "cubo-misterioso",
         icon = path_main .. "graficos/Blocos/the_mysterious_cube.png",
         icon_size = 128,
+        icon_mipmaps = 4,
         flags = { "placeable-neutral" },
+        order = "a-b-a",
+        subgroup = "raw-resource",
         category = "basic-solid",
         highlight = true,
+        infinite = false,
         minimum = 10 * baseResourceMultiplier,
         normal = 10 * baseResourceMultiplier,
         tree_removal_max_distance = 32 * 32,
-        order = "a-b-a",
         minable = {
             hardness = 8,
             mining_particle = "stone-particle",
@@ -55,36 +58,19 @@ data:extend({
             { 1.5,  1.5 }
         },
         autoplace = {
+            name = "cubo-misterioso",
             order = "d[ore]-a[cubo-misterioso]",
-            -- recursos por mancha
-            richness_base = 2 * baseResourceMultiplier,
-            has_starting_area_placement = false,
-            --geração
-            richness = 1 * baseResourceMultiplier,
-            size = 1 * baseResourceMultiplier,
-            frequency = 5 * baseResourceMultiplier,
-            --Multiplicador do tamanho das manchas. Afeta o tamanho das áreas onde o recurso é gerado.
-            size_control_multiplier = 0.5 * baseResourceMultiplier,
-            sharpness = 10 * baseResourceMultiplier,
             --Densidade base do recurso.
-            base_density = 1 * baseResourceMultiplier,
-            -- Multiplicador da riqueza do recurso.quantidade de recurso presente em cada mancha.
-            richness_multiplier = 500 * baseResourceMultiplier,
-            --Multiplicador do fator de solicitação regular.
-            regular_rq_factor_multiplier = 10 * baseResourceMultiplier,
-            starting_rq_factor_multiplier = 15 * baseResourceMultiplier,
-            --Número de manchas candidatas para serem geradas.
-            candidate_spot_count = 22 * baseResourceMultiplier,
-            --Tamanho mínimo aleatório das manchas.
-            random_spot_size_minimum = 2 * baseResourceMultiplier,
-            --Tamanho máximo aleatório das manchas.
-            random_spot_size_maximum = 40 * baseResourceMultiplier,
-            -- Tamanho da área de geração inicial
-            starting_area_size = (6000 * baseResourceMultiplier) * 0.0068359375,
-            -- Quantidade de recurso na área inicial
-            starting_area_amount = 1000 * baseResourceMultiplier,
-            -- Riqueza base da água
-            resource_patch_search_radius = 12 * baseResourceMultiplier,
+            base_density = 10 * baseResourceMultiplier,
+            base_spots_per_km2 = 7.5 * baseResourceMultiplier,
+            --geração
+            richness = true,
+            has_starting_area_placement = false,
+            random_spot_size_minimum = 2.5 * baseResourceMultiplier,
+            random_spot_size_maximum = 30 * baseResourceMultiplier,
+            regular_blob_amplitude_multiplier = 10 * baseResourceMultiplier,
+            regular_rq_factor_multiplier = 9 * baseResourceMultiplier,
+            candidate_spot_count = 220 * baseResourceMultiplier,
         },
         stage_counts = { 0 },
         stages = {
