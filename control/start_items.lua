@@ -1,5 +1,5 @@
 -- Importando as funções do arquivo functions.lua
-require("functions")
+require("control/functions")
 
     local player = game.players[event.player_index]
     if player and player.valid then
