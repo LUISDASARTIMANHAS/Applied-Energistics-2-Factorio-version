@@ -10,7 +10,8 @@
     "dependencies": [
         "base >= 1.1.80",
         "flib >= 0.12.9",
-        "stdlib >= 1.4.8"
+        "stdlib >= 1.4.8",
+        "(?)All-The-Mods-Translated-BR >= 0.0.28"
     ],
     "license": "GNU General Public License v3.0",
     "thumbnail": "thumbnail.png"

@@ -1,7 +1,7 @@
--- Importando as funções do arquivo functions.lua
 require("control/functions")
 
-    local player = game.players[event.player_index]
+script.on_event(defines.events.on_player_created, function(event)
+    local player = game.get_player(event.player_index)
     if player and player.valid then
         -- Itens iniciais que você deseja fornecer ao jogador
         local startingItems = {
@@ -18,3 +18,5 @@ require("control/functions")
     end
 
 -- script.on_event(defines.events.on_player_changed_position, adicionarItensAoAndar)
+
+end)
