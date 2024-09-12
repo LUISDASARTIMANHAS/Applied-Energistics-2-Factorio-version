@@ -1,5 +1,12 @@
 local path_main = "__Applied-Energistics-2__/"
 
+    -- category = "advanced-crafting" maquinas de montagem tier 2 e 3
+    -- category = "basic-crafting" maquinas de montagem tier 1
+    -- category = "crafting" feito a mão
+    -- category = "smelting" feito em fornalhas
+    -- category = "centrifuging" feito na centrifuge
+    -- category = "inscriber"
+
 data:extend({
 -- definindo o item
 {
