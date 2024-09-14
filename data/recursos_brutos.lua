@@ -12,11 +12,26 @@ data:extend(
         -- definindo o item
         {
             type = "item",
+            name = "certus-quartz-crystal",
+            icon = path_main .. "graficos/itens/certus_quartz_crystal.png",
+            icon_size = 128,
+            subgroup = "resources-generated",
+            order = "AE2-resources-generated[certus-quartz-crystal]",
+            stack_size = 64
+        }
+    }
+)
+
+data:extend(
+    {
+        -- definindo o item
+        {
+            type = "item",
             name = "quartz",
             icon = path_main .. "graficos/itens/quartz.png",
             icon_size = 128,
-            subgroup = "data-terminal",
-            order = "resources-generated[quartz]",
+            subgroup = "resources-generated",
+            order = "AE2-resources-generated[quartz]",
             stack_size = 64
         }, -- receita
         {
@@ -39,8 +54,8 @@ data:extend(
             name = "charged-certus-quartz-crystal",
             icon = path_main .. "graficos/itens/charged_certus_quartz_crystal.png",
             icon_size = 128,
-            subgroup = "data-terminal",
-            order = "resources-generated[charged-certus-quartz-crystal]",
+            subgroup = "resources-generated",
+            order = "AE2-resources-generated[charged-certus-quartz-crystal]",
             stack_size = 64
         }, -- receita
         {
@@ -79,8 +94,8 @@ data:extend(
             name = "certus-quartz-dust",
             icon = path_main .. "graficos/itens/certus_quartz_dust.png",
             icon_size = 128,
-            subgroup = "data-terminal",
-            order = "resources-generated[certus-quartz-dust]",
+            subgroup = "resources-generated",
+            order = "AE2-resources-generated[certus-quartz-dust]",
             stack_size = 64
         }, -- receita
         {
@@ -102,8 +117,8 @@ data:extend(
             name = "silicon",
             icon = path_main .. "graficos/itens/silicon.png",
             icon_size = 128,
-            subgroup = "data-terminal",
-            order = "resources-generated[silicon]",
+            subgroup = "resources-generated",
+            order = "AE2-resources-generated[silicon]",
             stack_size = 64
         }, -- receita
         {
@@ -182,8 +197,8 @@ data:extend(
             name = "fluix-dust",
             icon = path_main .. "graficos/itens/fluix_dust.png",
             icon_size = 128,
-            subgroup = "data-terminal",
-            order = "resources-generated[certus-quartz-dust]",
+            subgroup = "resources-generated",
+            order = "AE2-resources-generated[certus-quartz-dust]",
             stack_size = 64
         }, -- receita
         {
@@ -318,8 +333,8 @@ data:extend(
             name = "certus-quartz-block",
             icon = path_main .. "graficos/blocos/quartz_block.png",
             icon_size = 128,
-            subgroup = "data-terminal",
-            order = "resources-generated[certus-quartz-block]",
+            subgroup = "resources-generated",
+            order = "AE2-resources-generated[certus-quartz-block]",
             stack_size = 1
         }, -- receita
         {
@@ -327,7 +342,7 @@ data:extend(
             name = "certus-quartz-block-recipe",
             category = "crafting",
             enabled = true,
-            ingredients = {{"certus-quartz-cristal", 4}},
+            ingredients = {{"certus-quartz-crystal", 4}},
             result = "certus-quartz-block"
         }
     }

@@ -26,7 +26,7 @@ data:extend({
       -- Tempo de mineração (ajuste conforme desejado)
       mining_time = 2,
       -- Item que será produzido ao minerar o minério
-      result = "charged-certus-quartz-crystal",
+      result = "certus-quartz-crystal",
       amount_min = 1,
       amount_max = 5,
       result_count = 1,

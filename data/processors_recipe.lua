@@ -7,6 +7,7 @@ local path_main = "__Applied-Energistics-2__/"
 -- category = "inscriber"
 
 -- PRINTED CIRCUITS
+
 data:extend(
     {
         -- definindo o item
@@ -15,13 +16,17 @@ data:extend(
             name = "printed-silicon",
             icon = path_main .. "graficos/itens/printed_silicon.png",
             icon_size = 128,
-            subgroup = "data-terminal",
+            subgroup = "component",
             order = "AE2-component[printed-silicon]",
             stack_size = 1
         }, -- receita
         {
             type = "recipe",
             name = "printed-silicon-recipe",
+            icon = path_main .. "graficos/itens/printed_silicon.png",
+            icon_size = 128,
+            subgroup = "component",
+            order = "AE2-component[printed-silicon]",
             category = "inscriber",
             enabled = true,
             energy_required = 20,
@@ -29,24 +34,33 @@ data:extend(
                 {"silicon", 1},
                 {"silicon-press", 1}
             },
-            result = {
-                {"printed-silicon", 1},
-                {"silicon-press", 1}
+            results = {
+                {name = "printed-silicon", amount = 1},
+                {name = "silicon-press", amount = 2}
             }
-        },
+        }
+    }
+)
+
+data:extend(
+    {
         -- definindo o item
         {
             type = "item",
             name = "printed-logic-processor",
             icon = path_main .. "graficos/itens/printed_logic_processor.png",
             icon_size = 128,
-            subgroup = "data-terminal",
+            subgroup = "component",
             order = "AE2-component[printed-logic-processor]",
             stack_size = 1
         }, -- receita
         {
             type = "recipe",
             name = "printed-logic-processor-recipe",
+            icon = path_main .. "graficos/itens/printed_logic_processor.png",
+            icon_size = 128,
+            subgroup = "component",
+            order = "AE2-component[printed-silicon]",
             category = "inscriber",
             enabled = true,
             energy_required = 20,
@@ -54,23 +68,32 @@ data:extend(
                 {"advanced-circuit", 1},
                 {"logic-processor-press", 1}
             },
-            result = {
-                {"printed-logic-processor", 1},
-                {"logic-processor-press", 1}
+            results = {
+                {name = "logic-processor-press", amount = 2},
+                {name = "printed-logic-processor", amount = 1}
             }
-        },
+        }
+    }
+)
+
+data:extend(
+    {
         {
             type = "item",
             name = "printed-calculation-processor",
             icon = path_main .. "graficos/itens/printed_calculation_processor.png",
             icon_size = 128,
-            subgroup = "data-terminal",
+            subgroup = "component",
             order = "AE2-component[printed-calculation-processor]",
             stack_size = 1
         }, -- receita
         {
             type = "recipe",
             name = "printed-calculation-processor-recipe",
+            icon = path_main .. "graficos/itens/printed_calculation_processor.png",
+            icon_size = 128,
+            subgroup = "component",
+            order = "AE2-component[printed-silicon]",
             category = "inscriber",
             enabled = true,
             energy_required = 20,
@@ -78,23 +101,31 @@ data:extend(
                 {"processing-unit", 1},
                 {"calculation-processor-press", 1}
             },
-            result = {
-                {"printed-calculation-processor", 1},
-                {"calculation-processor-press", 1}
+            results = {
+                {name = "calculation-processor-press", amount = 2},
+                {name = "printed-calculation-processor", amount = 1}
             }
-        },
+        }
+    }
+)
+data:extend(
+    {
         {
             type = "item",
             name = "printed-engineering-processor",
             icon = path_main .. "graficos/itens/printed_engineering_processor.png",
             icon_size = 128,
-            subgroup = "data-terminal",
+            subgroup = "component",
             order = "AE2-component[printed-engineering-processor]",
             stack_size = 1
         }, -- receita
         {
             type = "recipe",
             name = "printed-engineering-processor-recipe",
+            icon = path_main .. "graficos/itens/printed_engineering_processor.png",
+            icon_size = 128,
+            subgroup = "component",
+            order = "AE2-component[printed-silicon]",
             category = "inscriber",
             enabled = true,
             energy_required = 20,
@@ -102,14 +133,13 @@ data:extend(
                 {"certus-quartz-crystal", 1},
                 {"engineering-processor-press", 1}
             },
-            result = {
-                {"printed-engineering-processor", 1},
-                {"engineering-processor-press", 1}
+            results = {
+                {name = "engineering-processor-press", amount = 2},
+                {name = "printed-engineering-processor", amount = 1}
             }
         }
     }
 )
-
 
 -- PROCESSORS
 data:extend(
@@ -120,7 +150,7 @@ data:extend(
             name = "logic-processor",
             icon = path_main .. "graficos/itens/logic_processor.png",
             icon_size = 128,
-            subgroup = "data-terminal",
+            subgroup = "processing",
             order = "AE2-processing[logic-processor]",
             stack_size = 1
         }, -- receita
@@ -143,7 +173,7 @@ data:extend(
             name = "calculation-processor",
             icon = path_main .. "graficos/itens/calculation_processor.png",
             icon_size = 128,
-            subgroup = "data-terminal",
+            subgroup = "processing",
             order = "AE2-processing[calculation-processor]",
             stack_size = 1
         }, -- receita
@@ -166,7 +196,7 @@ data:extend(
             name = "engineering-processor",
             icon = path_main .. "graficos/itens/engineering_processor.png",
             icon_size = 128,
-            subgroup = "data-terminal",
+            subgroup = "processing",
             order = "AE2-processing[engineering-processor]",
             stack_size = 1
         }, -- receita
@@ -182,6 +212,6 @@ data:extend(
                 {"printed-silicon", 1}
             },
             result = "engineering-processor"
-        },
+        }
     }
 )
