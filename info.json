@@ -11,7 +11,7 @@
         "base >= 1.1.100",
         "flib",
         "stdlib",
-        "?All-The-Mods-Translated-BR >= 0.0.28"
+        "?All-The-Mods-Translated-BR >= 0.0.30"
     ],
     "license": "GNU General Public License v3.0",
     "thumbnail": "thumbnail.png"
