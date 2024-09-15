@@ -3,12 +3,12 @@ Applied Energistics 2
 
 ## instruções
 Depois de baixar o arquivo renomeie ele para
-Applied-Energistics-2_0.4.10.zip
+Applied-Energistics-2_0.4.12.zip
 para que possa ser executado.
 
 |                                  | Em desenvolvimento   | "Versão Estavel"  |
 |----------------------------------|----------------------|-------------------|
-|                        **Versão**|                0.4.11 |              0.4.10|
+|                        **Versão**|                0.4.13 |              0.4.12|
 | **Atualização Auto Via factorio**| :heavy_check_mark:   |:heavy_check_mark: |
 |                       **Discord**| :heavy_check_mark:   |               :x: |
 |              **Reporte de Erros**| :heavy_check_mark:   |               :x: |

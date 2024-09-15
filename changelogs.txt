@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.12
+Date: 15/09/2024
+    changes:
+      - updated stable version.
+      - updated new blocks.
+      - updated assets and icons.
+    bugsFixed:
+      - updated bugs.
+      - updated bugs in control.
+      - updated assets corruption.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.11
 Date: 11/09/2024
     changes:
