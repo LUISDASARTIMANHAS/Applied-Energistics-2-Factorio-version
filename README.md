@@ -23,17 +23,17 @@ Disponível em: https://github.com/LUISDASARTIMANHAS/Applied-Energistics-2-Facto
 
 ## Wiki
 
-
 ### Autocrafting
-![CPU 1K](https://assets-mod.factorio.com/assets/e01562f6bf6abc4bc3e129643d9d284693f16e31.png)
-![CPU 4K](https://assets-mod.factorio.com/assets/0e17c82ec016c1af5aab7cac66af15d8f9c942e2.thumb.png)
-![CPU 16K](https://assets-mod.factorio.com/assets/6483c4defe9f7ec9b2f6db7e7e5534224550b339.thumb.png)
-![CPU 64K](https://assets-mod.factorio.com/assets/85b75dc6443665cc1c1d2101deb1c190f7d43421.thumb.png)
+![CPU 1K](https://assets-mod.factorio.com/assets/99ddbdd2b8aa7ae10464dcd8991b7e18314eb0a7.png)
+![CPU 4K](https://assets-mod.factorio.com/assets/fce80be80cf8bf2aca4872093f715642e79bebfb.png)
+![CPU 16K](https://assets-mod.factorio.com/assets/c4b9916700e56fbb45c5113bb43bf573fafad3de.png)
+![CPU 64K](https://assets-mod.factorio.com/assets/9514817cc7194c1c224404d41abbc7171ee0600a.png)
+![CPU 256K](https://assets-mod.factorio.com/assets/ebfa86c0fd8c13783f49904fd22e0445e4b8c085.png)
 ![](https://assets-mod.factorio.com/assets/cf8a76bef88684f52ed48d1ac739dffcdfa0318d.png)
 
 Autocrafting é uma das principais funções do AE2. Em vez de ter que criar manualmente o número correto de cada subingrediente e trabalhar como uma espécie de plebeu, você pode pedir ao seu sistema ME para fazer isso por você. Ou crie itens automaticamente e exporte-os para algum lugar. Ou mantenha automaticamente certas quantidades de itens em estoque por meio de um comportamento emergente inteligente. Ele também funciona com fluidos e, se você tiver certos complementos para tipos de materiais mod extras, como gases Mekanism, esses materiais também. É muito bom.
 /
-Autocrafting is one of the primary functions of AE2. Instead of manually having to craft the correct number of each sub-ingredient and labor away like some sort of plebian, you can ask your ME system to do it for you. Or automatically craft itens and export them somewhere. Or automatically keep certain amounts of itens in stock through clever emergent behavior. It also works with fluids, and, if you have certain addons for extra mod material types, like Mekanism gasses, those materials too. It's pretty great.
+Autocrafting is one of the primary functions of AE2. Instead of manually having to craft the correct number of each sub-ingredient and labor away like some sort of plebian, you can ask your ME system to do it for you. Or automatically craft items and export them somewhere. Or automatically keep certain amounts of items in stock through clever emergent behavior. It also works with fluids, and, if you have certain addons for extra mod material types, like Mekanism gasses, those materials too. It's pretty great.
 
 Topic Link: [Autocrafting](https://guide.appliedenergistics.org/#/1.20.1/ae2:ae2-mechanics/autocrafting.md)
 
@@ -45,7 +45,7 @@ Storage Cells are defined by both bytes and types. Bytes, like in your actual co
 Topic Link: [Bytes and Types](https://guide.appliedenergistics.org/#/1.20.1/ae2:ae2-mechanics/bytes-and-types.md)
 
 ### Certus Growth
-![charged Certus quartz](https://assets-mod.factorio.com/assets/956ee17f1fb078da54a373332055d3b7a6602c34.png)
+![charged Certus quartz](https://assets-mod.factorio.com/assets/59215a0855176893d5f861aba06527640d7f035b.png)
 Os Cristais de quartzo Certus brotarão de blocos de certus em brotamento , semelhantes à ametista. Se você quebrar um botão que não terminou de crescer, ele deixará cair um Pó de Quartzo Certus , inalterado pela sorte. Se você quebrar um aglomerado totalmente crescido, ele derrubará quatro Certus Quartz Crystal s, e a sorte aumentará esse número.
 /
 Certus quartz buds will sprout from budding certus blocks, similar to amethyst. If you break a bud that is not finished growing, it will drop one Certus Quartz Dust, unchanged by fortune. If you break a fully grown cluster, it will drop four Certus Quartz Crystals, and fortune will increase this number.
@@ -61,7 +61,7 @@ While ME networks are also created by adjacent ME-capable machines, cables are t
 
 Differently colored cables can be used to ensure adjacent cables do not connected to each other, allowing channels to be distributed more efficiently. They also affect the color of terminals connected to them, so you don't have to have all your terminals be purple. Fluix cables connect to every other color.
 
-Topic Link: [Cables](https://guide.appliedenergistics.org/#/1.20.1/ae2:itens-blocks-machines/cables.md)
+Topic Link: [Cables](https://guide.appliedenergistics.org/#/1.20.1/ae2:items-blocks-machines/cables.md)
 
 ### Channels
 As redes ME da Applied Energistics 2 exigem canais para suportar dispositivos que usam armazenamento em rede ou outros serviços de rede. Pense em canais como cabos USB para todos os seus dispositivos. Um computador possui um determinado número de portas USB e só pode suportar um determinado número de dispositivos conectados a ele. A maioria das máquinas, dispositivos de bloco completo e cabos padrão só podem passar por até 8 canais. Você pode pensar em dispositivos de bloco completo e cabos padrão como um pacote de 8 "fios de canal". No entanto, cabos densos podem suportar até 32 canais. Os únicos outros dispositivos capazes de transmitir 32 são o ME P2P Tunnel e o Quantum Network Bridge. Cada vez que um dispositivo usa um canal, imagine retirar um “fio” USB do pacote, o que obviamente significa que o “fio” não estará disponível mais adiante.
@@ -71,7 +71,7 @@ Applied Energistics 2's ME Networks require Channels to support devices which us
 Topic Link: [Channels](https://guide.appliedenergistics.org/#/1.20.1/ae2:ae2-mechanics/channels.md)
 
 ### Devices
-![ME Drive](https://assets-mod.factorio.com/assets/c46c52c0adc88ae1fb691ad418d4cbd5ea2a3e0d.png)
+![ME Drive](https://assets-mod.factorio.com/assets/c1c8ffd656ba16932ec8cf2cb87908a82d360396.png)
 Um "Dispositivo" refere-se a um componente de rede AE2 que executa alguma função relacionada à própria rede. Quase sempre requerem um canal, com a notável exceção dos Emissores de Nível .
 Alguns exemplos incluem:
 
@@ -92,7 +92,7 @@ ME Drive
 
 Topic Link: [Devices](https://guide.appliedenergistics.org/#/1.20.1/ae2:ae2-mechanics/devices.md)
 
-### Import, Export, and Storage
+###Import, Export, and Storage
 Um conceito importante no AE2 é a ideia de armazenamento em rede. É o local onde o conteúdo de uma rede é armazenado, geralmente células de armazenamento ou qualquer inventário ao qual um barramento de armazenamento ME esteja conectado. A maioria dos dispositivos AE2 interage com ele de uma forma ou de outra.
 
 Por exemplo,
@@ -110,13 +110,13 @@ For example,
 ME Import Busses push things into network storage
 ME Export Busses pull things from network storage
 ME Interfaces both pull from and push to network storage
-Terminals both push to and pull from network storage when you insert or take itens, or to refill the crafting slots
+Terminals both push to and pull from network storage when you insert or take items, or to refill the crafting slots
 ME Storage Busses don't really push to or pull from storage, they push to or pull from the connected inventory in order to use it as network storage (so really other devices push to or pull from them)
 
 Topic Link: [Import, Export, and Storage](https://guide.appliedenergistics.org/#/1.20.1/ae2:ae2-mechanics/import-export-storage.md)
 
 ### Meteorites
-![misterious cube](https://assets-mod.factorio.com/assets/f98e39aa522dd861a627c38f4211ae1c81f6a311.png)
+![misterious cube](https://assets-mod.factorio.com/assets/f755d6f4f0f9c1ae00764464449db4748aea802e.png)
 Os meteoritos são o ponto de partida para usar o AE2. Eles fornecem materiais essenciais: blocos de certus de vários tipos e um Cubo Misterioso no centro.
 
 Os primeiros passos fornecerão informações sobre o que fazer quando você encontrar um.
@@ -136,11 +136,10 @@ Topic Link: [Meteorites](https://guide.appliedenergistics.org/#/1.20.1/ae2:ae2-m
 
 Storage Cell Contents Vs Cost
 
-| ME Item Storage Cell |Bytes   |Types |Bytes Per Type |Certus |
-|----------------------|--------|------|---------------|-------|
-|1k 	                 |1,024	  |63    |8              |4      |
-|4k                    |4,096	  |63    |32             |14     |
-|16k                   |16,384  |63    |128            |45     |	
-|64k                   |65,536  |63    |512            |137    |
-|256k                  |262,144 |63    |2048           |414    |
-
+| ME Item Storage Cell |Bytes       |Types       |Bytes Per Type   |Certus |
+|--------------------|----------|---------|----------------|-------|
+|1k 	                                 |1,024	       |63            |8                             |4          |
+|4k                                   |4,096	       |63            |32                          |14        |
+|16k                                 |16,384       |63            |128                        |45       |	
+|64k                                 |65,536       |63            |512                        |137    |
+|256k                              |262,144     |63            |2048                     |414    |
