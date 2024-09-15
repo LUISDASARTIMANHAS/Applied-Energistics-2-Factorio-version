@@ -11,7 +11,7 @@ require("data/processors_recipe.lua")
 -- presets Basicos do mods
 require("graficos/style.lua")
 require("data/AE2_grupos.lua")
-require("control/charged-certus-quartz-crystal.lua")
+require("control/certus-quartz-crystal.lua")
 require("control/cubo-misterioso.lua")
 
 -- blocos
