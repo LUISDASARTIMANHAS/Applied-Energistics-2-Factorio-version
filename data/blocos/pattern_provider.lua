@@ -4,7 +4,7 @@
 --     {
 --         type = "assembling-machine",
 --         name = "pattern-provider-entidade",
---         icon = path_main .. "graficos/Blocos/pattern_provider.png",
+--         icon = path_main .. "graficos/blocos/pattern_provider.png",
 --         icon_size = 128,
 --         icon_mipmaps = 4,
 --         minable = { mining_time = 1, result = "pattern-provider" },

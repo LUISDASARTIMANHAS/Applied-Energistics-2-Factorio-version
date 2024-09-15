@@ -4,7 +4,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = "molecular-assembler-entidade",
-        icon = path_main .. "graficos/Blocos/molecular_assembler.png",
+        icon = path_main .. "graficos/blocos/molecular_assembler.png",
         icon_size = 128,
         icon_mipmaps = 4,
         minable = { mining_time = 3, result = "molecular-assembler" },

@@ -4,7 +4,7 @@ data:extend({
     {
         type = "container",
         name = "drive-entidade",
-        icon = path_main .. "graficos/Blocos/drive.png",
+        icon = path_main .. "graficos/blocos/drive.png",
         icon_size = 128,
         icon_mipmaps = 4,
         minable = { mining_time = 1, result = "drive" },
@@ -98,14 +98,14 @@ data:extend({
         picture = {
             layers = {
                 {
-                    filename = path_main .. "graficos/Blocos/drive.png",
+                    filename = path_main .. "graficos/blocos/drive.png",
                     height = 128,
                     shift = { 0, -0.015625 },
                     priority = "extra-high",
                     width = 128
                 },
                 {
-                    filename = path_main .. "graficos/Blocos/drive.png",
+                    filename = path_main .. "graficos/blocos/drive.png",
                     height = 128,
                     shift = { 0.3125, 0.203125 },
                     priority = "extra-high",

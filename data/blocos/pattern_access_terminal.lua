@@ -4,7 +4,7 @@
 --     {
 --         type = "assembling-machine",
 --         name = "pattern-access-terminal-entidade",
---         icon = path_main .. "graficos/Blocos/pattern_access_terminal.png",
+--         icon = path_main .. "graficos/blocos/pattern_access_terminal.png",
 --         icon_size = 128,
 --         icon_mipmaps = 4,
 --         minable = { mining_time = 1, result = "pattern-access-terminal" },

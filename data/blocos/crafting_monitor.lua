@@ -4,7 +4,7 @@
 --     {
 --         type = "assembling-machine",
 --         name = "crafting-monitor-entidade",
---         icon = path_main .. "graficos/Blocos/crafting_monitor.png",
+--         icon = path_main .. "graficos/blocos/crafting_monitor.png",
 --         icon_size = 128,
 --         icon_mipmaps = 4,
 --         minable = { mining_time = 1, result = "crafting-monitor" },

@@ -4,7 +4,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = "4k-crafting-storage-entidade",
-        icon = path_main .. "graficos/Blocos/4k_crafting_storage.png",
+        icon = path_main .. "graficos/blocos/4k_crafting_storage.png",
         icon_size = 128,
         icon_mipmaps = 4,
         minable = { mining_time = 1, result = "4k-crafting-storage" },
@@ -103,7 +103,7 @@ data:extend({
             layers = {
                 {
                     frame_count = 1,
-                    filename = path_main .. "graficos/Blocos/4k_crafting_storage.png",
+                    filename = path_main .. "graficos/blocos/4k_crafting_storage.png",
                     hr_version = {
                         frame_count = 1,
                         filename = "__base__/graphics/entity/assembling-machine-2/hr-assembling-machine-2.png",

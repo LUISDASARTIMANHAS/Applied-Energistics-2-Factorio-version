@@ -4,7 +4,7 @@
 --     {
 --         type = "assembling-machine",
 --         name = "interface-entidade",
---         icon = path_main .. "graficos/Blocos/interface.png",
+--         icon = path_main .. "graficos/blocos/interface.png",
 --         icon_size = 128,
 --         icon_mipmaps = 4,
 --         minable = { mining_time = 1, result = "interface" },
