@@ -4,7 +4,7 @@ data:extend({
   {
     type = "resource",
     name = "certus-quartz-crystal-resource",
-    icon = path_main .. "graficos/items/charged_certus_quartz_crystal.png", -- Adicione o ícone do minério
+    icon = path_main .. "graficos/itens/charged_certus_quartz_crystal.png", -- Adicione o ícone do minério
     icon_size = 128,
     icon_mipmaps = 4,
     flags = { "placeable-neutral" },
