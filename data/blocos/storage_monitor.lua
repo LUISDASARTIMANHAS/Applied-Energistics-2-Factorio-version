@@ -1,10 +1,11 @@
--- local path_main = "__Applied-Energistics-2__/"
+-- local LDA = require('__LDA-LIB__/init')
+local PATH = LDA.setBasePath('Applied-Energistics-2')
 
 -- data:extend({
 --     {
 --         type = "assembling-machine",
 --         name = "storage-monitor-entidade",
---         icon = path_main .. "graficos/blocos/storage_monitor.png",
+--         icon = PATH .. "graficos/blocos/storage_monitor.png",
 --         icon_size = 128,
 --         icon_mipmaps = 4,
 --         minable = { mining_time = 1, result = "storage-monitor" },

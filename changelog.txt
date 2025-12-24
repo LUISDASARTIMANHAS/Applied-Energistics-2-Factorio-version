@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.13
+Date: 24/12/2025
+  changes:
+    - Updates integration with LDA-LIB
+    - Adjusts the base path for the Applied Energistics 2 mod.
+  bugsFixed:
+    - updated bugs.
+    - updated version supports
+---------------------------------------------------------------------------------------------------
 Version: 0.4.12
 Date: 15/09/2024
   changes:

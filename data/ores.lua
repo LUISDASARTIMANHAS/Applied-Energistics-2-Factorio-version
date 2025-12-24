@@ -1,4 +1,7 @@
-local path_main = "__Applied-Energistics-2__/"
+local LDA = require('__LDA-LIB__/init')
+local PATH = LDA.setBasePath('Applied-Energistics-2')
+-- createSmeltingItemWithRecipe(name, time, qtde, ingredients,crafted_in,alternative_unlock_methods)
+
 
 -- category = "advanced-crafting" maquinas de montagem tier 2 e 3
 -- category = "basic-crafting" maquinas de montagem tier 1
@@ -13,7 +16,7 @@ data:extend(
         {
             type = "item",
             name = "certus-quartz-crystal",
-            icon = path_main .. "graficos/itens/certus_quartz_crystal.png",
+            icon = PATH .. "graficos/itens/certus_quartz_crystal.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[certus-quartz-crystal]",
@@ -28,7 +31,7 @@ data:extend(
         {
             type = "item",
             name = "quartz",
-            icon = path_main .. "graficos/itens/quartz.png",
+            icon = PATH .. "graficos/itens/quartz.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[quartz]",
@@ -52,7 +55,7 @@ data:extend(
         {
             type = "item",
             name = "charged-certus-quartz-crystal",
-            icon = path_main .. "graficos/itens/charged_certus_quartz_crystal.png",
+            icon = PATH .. "graficos/itens/charged_certus_quartz_crystal.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[charged-certus-quartz-crystal]",
@@ -92,7 +95,7 @@ data:extend(
         {
             type = "item",
             name = "certus-quartz-dust",
-            icon = path_main .. "graficos/itens/certus_quartz_dust.png",
+            icon = PATH .. "graficos/itens/certus_quartz_dust.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[certus-quartz-dust]",
@@ -115,7 +118,7 @@ data:extend(
         {
             type = "item",
             name = "silicon",
-            icon = path_main .. "graficos/itens/silicon.png",
+            icon = PATH .. "graficos/itens/silicon.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[silicon]",
@@ -139,7 +142,7 @@ data:extend(
         {
             type = "item",
             name = "fluix-crystal",
-            icon = path_main .. "graficos/itens/fluix_crystal.png",
+            icon = PATH .. "graficos/itens/fluix_crystal.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[fluix-crystal]",
@@ -195,7 +198,7 @@ data:extend(
         {
             type = "item",
             name = "fluix-dust",
-            icon = path_main .. "graficos/itens/fluix_dust.png",
+            icon = PATH .. "graficos/itens/fluix_dust.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[certus-quartz-dust]",
@@ -218,7 +221,7 @@ data:extend(
         {
             type = "item",
             name = "fluix-block",
-            icon = path_main .. "graficos/blocos/fluix_block.png",
+            icon = PATH .. "graficos/blocos/fluix_block.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[fluix-block]",
@@ -244,7 +247,7 @@ data:extend(
         {
             type = "item",
             name = "silicon-press",
-            icon = path_main .. "graficos/itens/silicon_press.png",
+            icon = PATH .. "graficos/itens/silicon_press.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[silicon-press]",
@@ -265,7 +268,7 @@ data:extend(
         {
             type = "item",
             name = "engineering-processor-press",
-            icon = path_main .. "graficos/itens/engineering_processor_press.png",
+            icon = PATH .. "graficos/itens/engineering_processor_press.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[engineering-processor-press]",
@@ -285,7 +288,7 @@ data:extend(
         {
             type = "item",
             name = "logic-processor-press",
-            icon = path_main .. "graficos/itens/logic_processor_press.png",
+            icon = PATH .. "graficos/itens/logic_processor_press.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[logic-processor-press]",
@@ -305,7 +308,7 @@ data:extend(
         {
             type = "item",
             name = "calculation-processor-press",
-            icon = path_main .. "graficos/itens/calculation_processor_press.png",
+            icon = PATH .. "graficos/itens/calculation_processor_press.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[calculation-processor-press]",
@@ -331,7 +334,7 @@ data:extend(
         {
             type = "item",
             name = "certus-quartz-block",
-            icon = path_main .. "graficos/blocos/quartz_block.png",
+            icon = PATH .. "graficos/blocos/quartz_block.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[certus-quartz-block]",
@@ -354,7 +357,7 @@ data:extend(
         {
             type = "item",
             name = "iron-block",
-            icon = path_main .. "graficos/blocos/iron_block.png",
+            icon = PATH .. "graficos/blocos/iron_block.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[iron-block]",
@@ -379,7 +382,7 @@ data:extend(
         {
             type = "item",
             name = "compressed-iron-block",
-            icon = path_main .. "graficos/blocos/compressed_iron_block.png",
+            icon = PATH .. "graficos/blocos/compressed_iron_block.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[compressed-iron-block]",

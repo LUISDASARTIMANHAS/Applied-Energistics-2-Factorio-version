@@ -1,0 +1,9 @@
+.env
+*.cmd
+.gitignore
+*.zip
+*.git
+./.vscode/
+*.bat
+*.exe
+exclusions.txt

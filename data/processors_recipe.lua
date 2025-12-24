@@ -1,4 +1,5 @@
-local path_main = "__Applied-Energistics-2__/"
+local LDA = require('__LDA-LIB__/init')
+local PATH = LDA.setBasePath('Applied-Energistics-2')
 -- category = "advanced-crafting" maquinas de montagem tier 2 e 3
 -- category = "basic-crafting" maquinas de montagem tier 1
 -- category = "crafting" feito a mão
@@ -14,7 +15,7 @@ data:extend(
         {
             type = "item",
             name = "printed-silicon",
-            icon = path_main .. "graficos/itens/printed_silicon.png",
+            icon = PATH .. "graficos/itens/printed_silicon.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[printed-silicon]",
@@ -23,7 +24,7 @@ data:extend(
         {
             type = "recipe",
             name = "printed-silicon-recipe",
-            icon = path_main .. "graficos/itens/printed_silicon.png",
+            icon = PATH .. "graficos/itens/printed_silicon.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[printed-silicon]",
@@ -48,7 +49,7 @@ data:extend(
         {
             type = "item",
             name = "printed-logic-processor",
-            icon = path_main .. "graficos/itens/printed_logic_processor.png",
+            icon = PATH .. "graficos/itens/printed_logic_processor.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[printed-logic-processor]",
@@ -57,7 +58,7 @@ data:extend(
         {
             type = "recipe",
             name = "printed-logic-processor-recipe",
-            icon = path_main .. "graficos/itens/printed_logic_processor.png",
+            icon = PATH .. "graficos/itens/printed_logic_processor.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[printed-silicon]",
@@ -81,7 +82,7 @@ data:extend(
         {
             type = "item",
             name = "printed-calculation-processor",
-            icon = path_main .. "graficos/itens/printed_calculation_processor.png",
+            icon = PATH .. "graficos/itens/printed_calculation_processor.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[printed-calculation-processor]",
@@ -90,7 +91,7 @@ data:extend(
         {
             type = "recipe",
             name = "printed-calculation-processor-recipe",
-            icon = path_main .. "graficos/itens/printed_calculation_processor.png",
+            icon = PATH .. "graficos/itens/printed_calculation_processor.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[printed-silicon]",
@@ -113,7 +114,7 @@ data:extend(
         {
             type = "item",
             name = "printed-engineering-processor",
-            icon = path_main .. "graficos/itens/printed_engineering_processor.png",
+            icon = PATH .. "graficos/itens/printed_engineering_processor.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[printed-engineering-processor]",
@@ -122,7 +123,7 @@ data:extend(
         {
             type = "recipe",
             name = "printed-engineering-processor-recipe",
-            icon = path_main .. "graficos/itens/printed_engineering_processor.png",
+            icon = PATH .. "graficos/itens/printed_engineering_processor.png",
             icon_size = 128,
             subgroup = "component",
             order = "AE2-component[printed-silicon]",
@@ -148,7 +149,7 @@ data:extend(
         {
             type = "item",
             name = "logic-processor",
-            icon = path_main .. "graficos/itens/logic_processor.png",
+            icon = PATH .. "graficos/itens/logic_processor.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[logic-processor]",
@@ -171,7 +172,7 @@ data:extend(
         {
             type = "item",
             name = "calculation-processor",
-            icon = path_main .. "graficos/itens/calculation_processor.png",
+            icon = PATH .. "graficos/itens/calculation_processor.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[calculation-processor]",
@@ -194,7 +195,7 @@ data:extend(
         {
             type = "item",
             name = "engineering-processor",
-            icon = path_main .. "graficos/itens/engineering_processor.png",
+            icon = PATH .. "graficos/itens/engineering_processor.png",
             icon_size = 128,
             subgroup = "processing",
             order = "AE2-processing[engineering-processor]",

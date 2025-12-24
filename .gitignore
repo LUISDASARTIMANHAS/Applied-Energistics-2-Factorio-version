@@ -2,3 +2,6 @@
 .vscode/
 .git
 .env
+**Thumbs.db
+Thumbs.db
+*.db

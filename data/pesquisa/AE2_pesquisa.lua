@@ -1,9 +1,10 @@
-local path_main = "__Applied-Energistics-2__/"
+local LDA = require('__LDA-LIB__/init')
+local PATH = LDA.setBasePath('Applied-Energistics-2')
 
 data:extend({ {
     type = "technology",
     name = "AE2",
-    icon = path_main.. "graficos/technology/AE2.png",
+    icon = PATH.. "graficos/technology/AE2.png",
     icon_size = 126,
     icon_mipmaps = 4,
     prerequisites = {
@@ -100,7 +101,7 @@ data:extend({
     {
     type = "technology",
     name = "AE2-singularidade",
-    icon = path_main.. "graficos/technology/singularity.png",
+    icon = PATH.. "graficos/technology/singularity.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {
@@ -135,7 +136,7 @@ data:extend({
 data:extend({ {
     type = "technology",
     name = "AE2-autocraft",
-    icon = path_main.. "graficos/technology/autocraft.png",
+    icon = PATH.. "graficos/technology/autocraft.png",
     icon_size = 128,
     icon_mipmaps = 4,
     prerequisites = {

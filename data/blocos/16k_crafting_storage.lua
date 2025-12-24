@@ -1,10 +1,11 @@
-local path_main = "__Applied-Energistics-2__/"
+local LDA = require('__LDA-LIB__/init')
+local PATH = LDA.setBasePath('Applied-Energistics-2')
 
 data:extend({
     {
         type = "assembling-machine",
         name = "16k-crafting-storage-entidade",
-        icon = path_main .. "graficos/blocos/16k_crafting_storage.png",
+        icon = PATH .. "graficos/blocos/16k_crafting_storage.png",
         icon_size = 128,
         icon_mipmaps = 4,
         minable = { mining_time = 1, result = "16k-crafting-storage" },
@@ -103,10 +104,10 @@ data:extend({
             layers = {
                 {
                     frame_count = 1,
-                    filename = path_main .. "graficos/blocos/16k_crafting_storage.png",
+                    filename = PATH .. "graficos/blocos/16k_crafting_storage.png",
                     hr_version = {
                         frame_count = 1,
-                        filename = path_main .. "graficos/blocos/16k_crafting_storage.png",
+                        filename = PATH .. "graficos/blocos/16k_crafting_storage.png",
                         height = 128,
                         line_length = 1,
                         shift = { 0, 0.125 },
