@@ -6,4 +6,5 @@
 ./.vscode/
 *.bat
 *.exe
+*.ps1
 exclusions.txt

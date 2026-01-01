@@ -5,6 +5,8 @@ local PATH = LDA.setBasePath("Applied-Energistics-2")
 -- createItemWithRecipe(name, subgroup, stack_size, crafted_in, time, ingredients, results,alternative_unlock_methods,isEnabled,pictures)
 -- createAssemblerItemWithRecipe(name, time, qtde, ingredients, stack_size,alternative_unlock_methods,isEnabled)
 -- createRecipe(typeIcon, name, crafted_in, time, ingredients, results,alternative_unlock_methods,enabled)
+-- createBlockItemWithRecipe(name, subgroup, stack_size, crafted_in, time, ingredients, results,alternative_unlock_methods,isEnabled,icon_size,pick_sound,drop_sound)
+
 
 -- category = "advanced-crafting" maquinas de montagem tier 2 e 3
 -- category = "basic-crafting" maquinas de montagem tier 1
@@ -19,7 +21,7 @@ data:extend(
         {
             type = "item",
             name = "certus-quartz-crystal",
-            icon = PATH .. "graficos/itens/certus_quartz_crystal.png",
+            icon = PATH .. "graficos/itens/certus-quartz-crystal.png",
             icon_size = 128,
             subgroup = "resources-generated",
             order = "AE2-resources-generated[certus-quartz-crystal]",
@@ -222,7 +224,7 @@ data:extend(
         9,
         1,
         {
-            {type = "item", name = "certus-quartz-crystal", amount = 9}
+            {type = "item", name = "iron-plate", amount = 9}
         },
         64,
         nil,
