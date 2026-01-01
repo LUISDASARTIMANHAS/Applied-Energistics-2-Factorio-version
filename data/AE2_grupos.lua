@@ -9,8 +9,9 @@ local ae2_subgroups = {
     "resources-generated"
 }
 
-LDAFunctions.createItemGroup(
--- name
+local ae2Category =
+    LDAFunctions.createItemGroup(
+    -- name
     "AE2-category",
     -- order
     "e",
@@ -21,8 +22,9 @@ LDAFunctions.createItemGroup(
     -- item-subgroup
     ae2_subgroups,
     -- icon_mipmaps
-    2 
+    2
 )
+data:extend(ae2Category)
 
 -- data:extend(
 

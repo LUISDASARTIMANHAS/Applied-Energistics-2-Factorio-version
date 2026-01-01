@@ -1,0 +1,3 @@
+Falha ao carregar mods: Error in assignID: item-subgroup with name 'resources-generated' does not exist.
+
+Source: certus-quartz-crystal (item).

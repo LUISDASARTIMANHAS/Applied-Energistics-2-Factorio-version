@@ -1,7 +1,10 @@
-local LDA = require('__LDA-LIB__/init')
-local PATH = LDA.setBasePath('Applied-Energistics-2')
+local LDA = require("__LDA-LIB__/init")
+local PATH = LDA.setBasePath("Applied-Energistics-2")
+-- createOre(name, stack_size, fuel_category, fuel_value)
 -- createSmeltingItemWithRecipe(name, time, qtde, ingredients,crafted_in,alternative_unlock_methods)
-
+-- createItemWithRecipe(name, subgroup, stack_size, crafted_in, time, ingredients, results,alternative_unlock_methods,isEnabled,pictures)
+-- createAssemblerItemWithRecipe(name, time, qtde, ingredients, stack_size,alternative_unlock_methods,isEnabled)
+-- createRecipe(typeIcon, name, crafted_in, time, ingredients, results,alternative_unlock_methods,enabled)
 
 -- category = "advanced-crafting" maquinas de montagem tier 2 e 3
 -- category = "basic-crafting" maquinas de montagem tier 1
@@ -25,378 +28,204 @@ data:extend(
     }
 )
 
+-- nether-quartz-ore
+data:extend(LDA.createOre("nether-quartz", 64))
+
+-- quartz
 data:extend(
-    {
-        -- definindo o item
+    LDA.createSmeltingItemWithRecipe(
+        "quartz",
+        20,
+        1,
         {
-            type = "item",
-            name = "quartz",
-            icon = PATH .. "graficos/itens/quartz.png",
-            icon_size = 128,
-            subgroup = "resources-generated",
-            order = "AE2-resources-generated[quartz]",
-            stack_size = 64
-        }, -- receita
-        {
-            type = "recipe",
-            name = "quartz-recipe",
-            category = "charger",
-            enabled = true,
-            energy_required = 20,
-            ingredients = {{"stone", 20}},
-            result = "quartz"
+            {type = "item", name = "nether-quartz-ore", amount = 1}
         }
-    }
+    )
 )
 
+-- certus-quartz-dust
 data:extend(
-    {
-        -- definindo o item
+    LDA.createItemWithRecipe(
+        "certus-quartz-dust",
+        "resources-generated",
+        -- stack_size
+        64,
+        "inscriber",
+        60,
+        -- ingredients
         {
-            type = "item",
-            name = "charged-certus-quartz-crystal",
-            icon = PATH .. "graficos/itens/charged_certus_quartz_crystal.png",
-            icon_size = 128,
-            subgroup = "resources-generated",
-            order = "AE2-resources-generated[charged-certus-quartz-crystal]",
-            stack_size = 64
-        }, -- receita
-        {
-            type = "recipe",
-            name = "charged-certus-quartz-crystal-recipe",
-            category = "charger",
-            enabled = true,
-            energy_required = 120,
-            ingredients = {{"certus-quartz-crystal", 1}},
-            result = "charged-certus-quartz-crystal"
+            {type = "item", name = "certus-quartz-crystal", amount = 1}
         },
+        -- results
         {
-            type = "recipe",
-            name = "charged-certus-quartz-crystal-recipe",
-            category = "advanced-crafting",
-            enabled = true,
-            energy_required = 45,
-            ingredients = {
-                {"certus-quartz-dust", 1},
-                {
-                    type = "fluid",
-                    name = "water",
-                    amount = 100
-                }
-            },
-            result = "charged-certus-quartz-crystal"
+            {type = "item", name = "certus-quartz-dust", amount = 1}
         }
-    }
+    )
 )
 
+-- silicon
 data:extend(
-    {
-        -- definindo o item
+    LDA.createSmeltingItemWithRecipe(
+        "silicon",
+        20,
+        1,
         {
-            type = "item",
-            name = "certus-quartz-dust",
-            icon = PATH .. "graficos/itens/certus_quartz_dust.png",
-            icon_size = 128,
-            subgroup = "resources-generated",
-            order = "AE2-resources-generated[certus-quartz-dust]",
-            stack_size = 64
-        }, -- receita
-        {
-            type = "recipe",
-            name = "certus-quartz-dust-recipe",
-            category = "inscriber",
-            enabled = true,
-            ingredients = {{"certus-quartz-crystal", 1}},
-            result = "certus-quartz-dust"
+            {type = "item", name = "certus-quartz-dust", amount = 1}
         }
-    }
+    )
 )
 
+-- charged-certus-quartz-crystal
 data:extend(
-    {
-        -- definindo o item
+    LDA.createItemWithRecipe(
+        "charged-certus-quartz-crystal",
+        "resources-generated",
+        -- stack_size
+        64,
+        "charger",
+        120,
+        -- ingredients
         {
-            type = "item",
-            name = "silicon",
-            icon = PATH .. "graficos/itens/silicon.png",
-            icon_size = 128,
-            subgroup = "resources-generated",
-            order = "AE2-resources-generated[silicon]",
-            stack_size = 64
-        }, -- receita
-        {
-            type = "recipe",
-            name = "silicon-recipe",
-            category = "smelting",
-            enabled = true,
-            energy_required = 20,
-            ingredients = {{"certus-quartz-dust", 1}},
-            result = "silicon"
-        }
-    }
-)
-
-data:extend(
-    {
-        -- definindo o item
-        {
-            type = "item",
-            name = "fluix-crystal",
-            icon = PATH .. "graficos/itens/fluix_crystal.png",
-            icon_size = 128,
-            subgroup = "resources-generated",
-            order = "AE2-resources-generated[fluix-crystal]",
-            stack_size = 64
-        }, -- receita
-        {
-            type = "recipe",
-            name = "fluix-crystal-recipe",
-            category = "advanced-crafting",
-            enabled = true,
-            always_show_madein = true,
-            ingredients = {
-                {
-                    {"charged-certus-quartz-crystal", 1},
-                    {"copper-cable", 1},
-                    {"quartz", 1},
-                    {
-                        type = "fluid",
-                        name = "water",
-                        amount = 100
-                    }
-                }
-            },
-            energy_required = 60,
-            result = "fluix-crystal"
+            {type = "item", name = "certus-quartz-crystal", amount = 1}
         },
+        -- results
         {
-            type = "recipe",
-            name = "fluix-crystal-recipe",
-            category = "advanced-crafting",
-            enabled = true,
-            always_show_madein = true,
-            ingredients = {
-                {
-                    {"fluix-dust", 1},
-                    {"charged-certus-quartz-crystal", 1},
-                    {
-                        type = "fluid",
-                        name = "water",
-                        amount = 100
-                    }
-                }
-            },
-            energy_required = 60,
-            result = "fluix-crystal"
+            {type = "item", name = "charged-certus-quartz-crystal", amount = 1}
         }
-    }
+    )
 )
 
+-- fluix-crystal
 data:extend(
-    {
-        -- definindo o item
+    LDA.createAssemblerItemWithRecipe(
+        "fluix-crystal",
+        60,
+        1,
         {
-            type = "item",
-            name = "fluix-dust",
-            icon = PATH .. "graficos/itens/fluix_dust.png",
-            icon_size = 128,
-            subgroup = "resources-generated",
-            order = "AE2-resources-generated[certus-quartz-dust]",
-            stack_size = 64
-        }, -- receita
+            {type = "item", name = "charged-certus-quartz-crystal", amount = 1},
+            {type = "item", name = "copper-cable", amount = 1},
+            {type = "item", name = "quartz", amount = 1},
+            {type = "fluid", name = "water", amount = 100}
+        },
+        64,
+        nil,
+        true
+    ),
+    LDA.createRecipe(
+        "item",
+        "fluix-crystal",
+        "throw-in-water",
+        60,
         {
-            type = "recipe",
-            name = "fluix-dust-recipe",
-            category = "inscriber",
-            enabled = true,
-            ingredients = {{"fluix-crystal", 1}},
-            result = "fluix-dust"
-        }
-    }
+            {type = "item", name = "fluix-dust", amount = 1},
+            {type = "item", name = "charged-certus-quartz-crystal", amount = 1},
+            {type = "fluid", name = "water", amount = 100}
+        },
+        {type = "item", name = "fluix-crystal", amount = 1}
+    )
 )
 
+-- fluix-dust
 data:extend(
-    {
-        -- definindo o item
+    LDA.createItemWithRecipe(
+        "fluix-dust",
+        "resources-generated",
+        -- stack_size
+        64,
+        "inscriber",
+        60,
+        -- ingredients
         {
-            type = "item",
-            name = "fluix-block",
-            icon = PATH .. "graficos/blocos/fluix_block.png",
-            icon_size = 128,
-            subgroup = "resources-generated",
-            order = "AE2-resources-generated[fluix-block]",
-            stack_size = 64
-        }, -- receita
-        {
-            type = "recipe",
-            name = "fluix-crystal-recipe",
-            category = "crafting",
-            enabled = true,
-            always_show_madein = true,
-            ingredients = {{"fluix-crystal", 4}},
-            energy_required = 10,
-            result = "fluix-block"
-        }
-    }
-)
-
--- ========== PROCESSOR PRECESS REPLICATION ==========
-data:extend(
-    {
-        -- definindo o item
-        {
-            type = "item",
-            name = "silicon-press",
-            icon = PATH .. "graficos/itens/silicon_press.png",
-            icon_size = 128,
-            subgroup = "processing",
-            order = "AE2-processing[silicon-press]",
-            stack_size = 1
-        }, -- receita
-        {
-            type = "recipe",
-            name = "silicon-press-recipe",
-            category = "inscriber",
-            enabled = true,
-            always_show_madein = true,
-            ingredients = {{"iron-block", 1}, {"silicon-press", 1}},
-            energy_required = 120,
-            result_count = 2,
-            result = "silicon-press"
+            {type = "item", name = "fluix-crystal", amount = 1}
         },
-        -- definindo o item
+        -- results
         {
-            type = "item",
-            name = "engineering-processor-press",
-            icon = PATH .. "graficos/itens/engineering_processor_press.png",
-            icon_size = 128,
-            subgroup = "processing",
-            order = "AE2-processing[engineering-processor-press]",
-            stack_size = 64
-        }, -- receita
-        {
-            type = "recipe",
-            name = "engineering-processor-press-recipe",
-            category = "inscriber",
-            enabled = true,
-            ingredients = {{"engineering-processor-press", 1}, {"iron-block", 1}},
-            energy_required = 120,
-            result_count = 2,
-            result = "engineering-processor-press"
+            {type = "item", name = "fluix-dust", amount = 1}
         },
-        -- definindo o item
-        {
-            type = "item",
-            name = "logic-processor-press",
-            icon = PATH .. "graficos/itens/logic_processor_press.png",
-            icon_size = 128,
-            subgroup = "processing",
-            order = "AE2-processing[logic-processor-press]",
-            stack_size = 1
-        }, -- receita
-        {
-            type = "recipe",
-            name = "logic-processor-press-recipe",
-            category = "inscriber",
-            enabled = true,
-            ingredients = {{"logic-processor-press", 1}, {"iron-block", 1}},
-            energy_required = 120,
-            result_count = 2,
-            result = "logic-processor-press"
-        },
-        -- definindo o item
-        {
-            type = "item",
-            name = "calculation-processor-press",
-            icon = PATH .. "graficos/itens/calculation_processor_press.png",
-            icon_size = 128,
-            subgroup = "processing",
-            order = "AE2-processing[calculation-processor-press]",
-            stack_size = 1
-        }, -- receita
-        {
-            type = "recipe",
-            name = "calculation-processor-press-recipe",
-            category = "inscriber",
-            enabled = true,
-            ingredients = {{"calculation-processor-press", 1}, {"iron-block", 1}},
-            energy_required = 120,
-            result_count = 2,
-            result = "calculation-processor-press"
-        }
-    }
+        nil,
+        true
+    )
 )
 
 -- ============blocos==========
+
+-- fluix-block
 data:extend(
-    {
-        -- definindo o item
+    LDA.createItemWithRecipe(
+        "fluix-block",
+        "resources-generated",
+        -- stack_size
+        64,
+        "crafting",
+        10,
+        -- ingredients
         {
-            type = "item",
-            name = "certus-quartz-block",
-            icon = PATH .. "graficos/blocos/quartz_block.png",
-            icon_size = 128,
-            subgroup = "resources-generated",
-            order = "AE2-resources-generated[certus-quartz-block]",
-            stack_size = 1
-        }, -- receita
+            {type = "item", name = "fluix-crystal", amount = 4}
+        },
+        -- results
         {
-            type = "recipe",
-            name = "certus-quartz-block-recipe",
-            category = "crafting",
-            enabled = true,
-            ingredients = {{"certus-quartz-crystal", 4}},
-            result = "certus-quartz-block"
-        }
-    }
+            {type = "item", name = "fluix-block", amount = 1}
+        },
+        nil,
+        true
+    )
 )
 
+-- certus-quartz-block
 data:extend(
-    {
-        -- definindo o item
+    LDA.createItemWithRecipe(
+        "certus-quartz-block",
+        "resources-generated",
+        -- stack_size
+        1,
+        "crafting",
+        4,
+        -- ingredients
         {
-            type = "item",
-            name = "iron-block",
-            icon = PATH .. "graficos/blocos/iron_block.png",
-            icon_size = 128,
-            subgroup = "component",
-            order = "AE2-component[iron-block]",
-            stack_size = 64
-        }, -- receita
+            {type = "item", name = "certus-quartz-crystal", amount = 4}
+        },
+        -- results
         {
-            type = "recipe",
-            name = "iron-block-recipe",
-            category = "basic-crafting",
-            enabled = true,
-            always_show_madein = true,
-            ingredients = {{"iron-plate", 9}},
-            energy_required = 9,
-            result = "iron-block"
-        }
-    }
+            {type = "item", name = "certus-quartz-block", amount = 1}
+        },
+        nil,
+        true
+    )
 )
 
+-- iron-block
 data:extend(
-    {
-        -- definindo o item
+    LDA.createItemWithRecipe(
+        "iron-block",
+        "component",
+        -- stack_size
+        64,
+        "basic-crafting",
+        9,
+        -- ingredients
         {
-            type = "item",
-            name = "compressed-iron-block",
-            icon = PATH .. "graficos/blocos/compressed_iron_block.png",
-            icon_size = 128,
-            subgroup = "component",
-            order = "AE2-component[compressed-iron-block]",
-            stack_size = 64
-        }, -- receita
+            {type = "item", name = "certus-quartz-crystal", amount = 9}
+        },
+        -- results
         {
-            type = "recipe",
-            name = "compressed-iron-block-recipe",
-            category = "advanced-crafting",
-            enabled = true,
-            always_show_madein = true,
-            ingredients = {{"iron-block", 9}},
-            energy_required = 12,
-            result = "compressed-iron-block"
-        }
-    }
+            {type = "item", name = "iron-block", amount = 1}
+        },
+        nil,
+        true
+    )
+)
+
+-- compressed-iron-block
+data:extend(
+    LDA.createAssemblerItemWithRecipe(
+        "compressed-iron-block",
+        9,
+        1,
+        {
+            {type = "item", name = "certus-quartz-crystal", amount = 9}
+        },
+        64,
+        nil,
+        true
+    )
 )

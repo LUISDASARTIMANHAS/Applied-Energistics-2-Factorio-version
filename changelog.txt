@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.14
+Date: 01/01/2026
+  changes:
+    - add utils functions 
+  bugsFixed:
+    - updated bugs.
+    - updated recipes bugs
+    - updated processors
+    - updated printed processors
+    - updated press
+    - updated items
+---------------------------------------------------------------------------------------------------
 Version: 0.4.13
 Date: 24/12/2025
   changes:

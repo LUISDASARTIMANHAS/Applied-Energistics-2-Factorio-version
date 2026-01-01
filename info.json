@@ -1,6 +1,6 @@
 {
     "name": "Applied-Energistics-2",
-    "version": "0.4.13",
+    "version": "0.4.14",
     "title": "Applied Energistics 2",
     "author": "LUIS DAS ARTIMANHAS",
     "contact": "luisaugustodesouza785@gmail.com",
@@ -10,7 +10,7 @@
     "dependencies": [
         "base >= 2.0.0",
         "flib",
-        "LDA-LIB >= 0.0.5",
+        "LDA-LIB >= 0.0.6",
         "?All-The-Mods-Translated-BR >= 0.0.38"
     ],
     "license": "GNU General Public License v3.0",

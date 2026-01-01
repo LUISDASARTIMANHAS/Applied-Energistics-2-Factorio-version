@@ -18,6 +18,7 @@ data:extend(
     LDAFunctions.createItemWithRecipe(
         "formation-core",
         "component",
+        -- stack_size
         64,
         "crafting",
         60,
@@ -30,9 +31,7 @@ data:extend(
         -- results
         {
             {type = "item", name = "formation-core", amount =1},
-        },
-        -- stack_size
-        64
+        }
     )
 )
 
@@ -42,6 +41,7 @@ data:extend(
     LDAFunctions.createItemWithRecipe(
         "annihilation-core",
         "component",
+        -- stack_size
         64,
         "crafting",
         60,
@@ -54,8 +54,6 @@ data:extend(
         -- results
         {
             {type = "item", name = "annihilation-core", amount =1},
-        },
-        -- stack_size
-        64
+        }
     )
 )

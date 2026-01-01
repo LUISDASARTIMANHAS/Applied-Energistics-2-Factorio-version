@@ -1,4 +1,4 @@
--- local LDA = require('__LDA-LIB__/init')
+local LDA = require('__LDA-LIB__/init')
 local PATH = LDA.setBasePath('Applied-Energistics-2')
 
 -- data:extend({

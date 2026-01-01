@@ -1,17 +1,17 @@
--- recursos e itens
-require("data.ores")
-require("data.items")
-
--- pesquisas
-require("data/pesquisa/AE2_pesquisa.lua")
-
--- receitas
--- require("data/processors_recipe.lua")
-
 -- presets Basicos do mods
 require("data.AE2_grupos")
 -- require("control/certus-quartz-crystal.lua")
 -- require("control/cubo-misterioso.lua")
+
+-- recursos
+require("data.ores")
+
+-- receitas
+require("data.processors")
+require("data.items")
+
+-- pesquisas
+require("data/pesquisa/AE2_pesquisa.lua")
 
 -- blocos
 -- require("data/blocos/1k_crafting_storage.lua")
