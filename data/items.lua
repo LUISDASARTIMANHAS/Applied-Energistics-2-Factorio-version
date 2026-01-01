@@ -26,7 +26,7 @@ data:extend(
         {
             {type = "item", name = "logic-processor", amount =1},
             {type = "item", name = "charged-certus-quartz-crystal", amount = 1},
-            {type = "item", name = "flux-dust", amount = 1}
+            {type = "item", name = "fluix-dust", amount = 1}
         },
         -- results
         {
@@ -49,7 +49,7 @@ data:extend(
         {
             {type = "item", name = "logic-processor", amount =1},
             {type = "item", name = "quartz", amount = 1},
-            {type = "item", name = "flux-dust", amount = 1}
+            {type = "item", name = "fluix-dust", amount = 1}
         },
         -- results
         {

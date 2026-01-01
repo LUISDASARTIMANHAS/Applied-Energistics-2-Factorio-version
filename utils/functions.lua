@@ -9,7 +9,7 @@ local LDA = require("__LDA-LIB__/init")
 -- category = "inscriber"
 
 function Module.createProcessor(processorType)
-    return LDA.createItemWithRecipe(
+    local processor = LDA.createItemWithRecipe(
         processorType .. "-processor",
         "processing",
         -- stack_size
@@ -29,10 +29,11 @@ function Module.createProcessor(processorType)
         nil,
         true
     )
+    return processor
 end
 
 function Module.createPrintedItem(itemType,ingredientItem)
-    return LDA.createItemWithRecipe(
+    local printedItem = LDA.createItemWithRecipe(
         "printed-"..itemType,
         "component",
         -- stack_size
@@ -52,11 +53,12 @@ function Module.createPrintedItem(itemType,ingredientItem)
         nil,
         true
     )
+    return printedItem
 end
 
 
 function Module.createPressItem(pressType)
-    return LDA.createItemWithRecipe(
+    local pressItem = LDA.createItemWithRecipe(
         pressType.."-press",
         "processing",
         -- stack_size
@@ -75,6 +77,7 @@ function Module.createPressItem(pressType)
         nil,
         true
     )
+    return pressItem
 end
 
 return Module
