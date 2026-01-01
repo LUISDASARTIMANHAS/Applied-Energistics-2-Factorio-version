@@ -1,5 +1,5 @@
 -- presets Basicos do mods
-require("data.AE2_grupos")
+require("data.AE2-grupos")
 -- require("control/certus-quartz-crystal.lua")
 -- require("control/cubo-misterioso.lua")
 
