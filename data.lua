@@ -11,6 +11,7 @@ require("data.processors")
 -- require("data.items")
 
 -- pesquisas
+require("data.technology.tier-1")
 -- require("data.pesquisa.AE2_pesquisa")
 -- require("data.pesquisa.on_craft_triggers_pesquisa")
 

@@ -19,7 +19,7 @@ local ae2Category =
     -- icon
     -- "__Applied-Energistics-2__/graphics/technology/AE2.png",
     -- icon_size
-    126,
+    128,
     -- item-subgroup
     ae2_subgroups,
     -- icon_mipmaps

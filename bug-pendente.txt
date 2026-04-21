@@ -1,275 +1,301 @@
-Cara, isso aqui já tá **bem pensado** — você não só fez uma tech tree, você criou uma **progressão baseada em comportamento do jogador**, que é exatamente o que faz Applied Energistics 2 ser interessante 👏
+# 🌐 TIER 1 — Fundamentos de Energia
 
-Mas dá pra refinar pra ficar ainda mais redondo (principalmente em pacing e evitar “quebras” na progressão).
+### 1.1 Cristais Básicos
 
----
+* **Pré-requisitos:** nenhum
+* **Trigger:** Minerar 10x Certus Quartz
+* **Libera:** Certus Quartz Crystal, Charged Certus Quartz Crystal
 
-# 🔍 **O QUE VOCÊ FEZ CERTO (muito importante)**
+### 1.2 Poeiras Energéticas
 
-### ✅ Progressão por ação
+* **Pré-requisitos:** Cristais Básicos
+* **Custo:**
 
-* Minerar → desbloqueia
-* Craftar → desbloqueia
-
-👉 Isso cria descoberta natural (perfeito)
-
----
-
-### ✅ Encadeamento lógico
-
-```
-mysterious-cube → certus
-certus ore → charger
-charger → fluix
-```
-
-👉 Isso já conta uma “história tecnológica”
+  * 20x Certus Quartz Dust
+  * 20x Redstone
+* **Libera:** Fluix Dust
 
 ---
 
-# ⚠️ **PONTOS QUE PODEM DAR PROBLEMA**
+# ⚡ TIER 2 — Fluix e Núcleo Inicial
 
-## 1. 🔓 Unlock muito “em lote”
+### 2.1 Cristais Fluix
 
-Aqui:
+* **Pré-requisitos:** Poeiras Energéticas
+* **Trigger:** Criar 10x Fluix Crystal
+* **Libera:** Fluix Crystal
 
-```lua
-{
-    "certus-quartz-crystal",
-    "certus-quartz-dust",
-    "damaged-budding-certus-quartz",
-    "chipped-budding-certus-quartz",
-    "flawed-budding-certus-quartz",
-    "certus-quartz-block"
-}
-```
+### 2.2 Primeira Energia AE
 
-👉 Você libera **muita coisa de uma vez**
+* **Pré-requisitos:** Cristais Fluix
+* **Custo:**
 
-💡 Problema:
-
-* jogador não entende o que é importante
-* perde sensação de progressão
-
-### ✔️ Melhor:
-
-Dividir em micro-techs:
-
-```lua
--- base
-certus-quartz-crystal
-
--- depois
-certus-processing (dust)
-
--- depois
-budding-blocks
-```
+  * 5x Fluix Crystal
+  * 10x Iron Ingot
+* **Libera:** Energy Acceptor
 
 ---
 
-## 2. ⚡ Fluix desbloqueado só por craft
+# 🔌 TIER 3 — Rede Inicial
 
-```lua
-LDA.createTechnologyCraftEntityTrigger(...)
-```
+### 3.1 Cabos ME
 
-👉 Aqui você perde a “mágica” do AE2
+* **Pré-requisitos:** Primeira Energia AE
+* **Trigger:** Criar 20x ME Glass Cable
+* **Libera:** ME Glass Cable
 
-💡 No AE2, Fluix é um ritual (água + itens)
+### 3.2 Interface de Rede
 
-### ✔️ Melhor trigger possível:
+* **Pré-requisitos:** Cabos ME
+* **Custo:**
 
-* jogar itens na água
-* ou obter fluix pela primeira vez
-
-Se não tiver isso tecnicamente:
-👉 usar **craft + item obtido**
-
----
-
-## 3. 🔁 Falta de “loop” de dependência
-
-Atualmente é linear:
-
-```
-A → B → C → D
-```
-
-Mas o ideal é:
-
-```
-A → B → C
-     ↓
-     precisa de A melhorado
-```
-
-💡 Exemplo:
-
-* Charger → precisa energia
-* energia → precisa novos itens
+  * 10x Fluix Crystal
+  * 5x Logic Processor
+* **Libera:** ME Interface
 
 ---
 
-# 🔧 **VERSÃO MELHORADA (baseada no seu código)**
+# 🧠 TIER 4 — Processadores
 
-Aqui vai uma sugestão mantendo seu estilo:
+### 4.1 Lógica AE
 
----
+* **Pré-requisitos:** Interface de Rede
+* **Trigger:** Criar 5x Logic Processor
+* **Libera:** Logic Processor
 
-## 🌱 Certus base (separado)
+### 4.2 Engenharia AE
 
-```lua
-LDA.createTechnologyMineEntityTrigger(
-    "certus-discovery",
-    {
-        "certus-quartz-crystal"
-    },
-    {"automation-3"},
-    "mysterious-cube"
-)
-```
+* **Pré-requisitos:** Lógica AE
+* **Custo:**
+
+  * 5x Logic Processor
+  * 5x Silicon
+* **Libera:** Engineering Processor
 
 ---
 
-## 🔧 Processamento
+# 📦 TIER 5 — Armazenamento
 
-```lua
-LDA.createTechnologyCraftEntityTrigger(
-    "certus-processing",
-    {
-        "certus-quartz-dust"
-    },
-    {"certus-discovery"},
-    "certus-quartz-crystal", 1
-)
-```
+### 5.1 Células Básicas
 
----
+* **Pré-requisitos:** Engenharia AE
+* **Trigger:** Criar 3x 1k Storage Cell
+* **Libera:** 1k Storage Cell
 
-## 💎 Crescimento (budding)
+### 5.2 Drive de Armazenamento
 
-```lua
-LDA.createTechnologyCraftEntityTrigger(
-    "crystal-growth",
-    {
-        "damaged-budding-certus-quartz",
-        "chipped-budding-certus-quartz",
-        "flawed-budding-certus-quartz"
-    },
-    {"certus-processing"},
-    "certus-quartz-dust", 1
-)
-```
+* **Pré-requisitos:** Células Básicas
+* **Custo:**
+
+  * 10x Fluix Crystal
+  * 5x Engineering Processor
+* **Libera:** ME Drive
 
 ---
 
-## ⚡ Charger
+# 🖥️ TIER 6 — Acesso ao Sistema
 
-```lua
-LDA.createTechnologyMineEntityTrigger(
-    "the-charger",
-    {
-        "charger"
-    },
-    {"certus-discovery"},
-    "certus-quartz-crystal-ore"
-)
-```
+### 6.1 Terminal ME
 
----
+* **Pré-requisitos:** Drive de Armazenamento
+* **Trigger:** Criar 1x ME Terminal
+* **Libera:** ME Terminal
 
-## 🔋 Energia (novo tier que você não colocou)
+### 6.2 Terminal de Crafting
 
-```lua
-LDA.createTechnologyCraftEntityTrigger(
-    "ae2-energy",
-    {
-        "energy-acceptor"
-    },
-    {"the-charger"},
-    "charger",1
-)
-```
+* **Pré-requisitos:** Terminal ME
+* **Custo:**
+
+  * 1x ME Terminal
+  * 2x Calculation Processor
+* **Libera:** ME Crafting Terminal
 
 ---
 
-## 🌊 Fluix (melhorado)
+# ⚙️ TIER 7 — Automação Inicial
 
-```lua
-LDA.createTechnologyCraftEntityTrigger(
-    "fluix-discovery",
-    {
-        "fluix-crystal",
-        "fluix-dust",
-        "charged-certus-quartz-crystal"
-    },
-    {"ae2-energy"},
-    "charged-certus-quartz-crystal",1
-)
-```
+### 7.1 Importação
 
----
+* **Pré-requisitos:** Terminal de Crafting
+* **Trigger:** Criar 2x ME Import Bus
+* **Libera:** ME Import Bus
 
-# 🧠 **IDEIAS AVANÇADAS (isso aqui deixa MUITO bom)**
+### 7.2 Exportação
 
-## 🎯 1. Unlock por “primeira vez segurando item”
+* **Pré-requisitos:** Importação
+* **Custo:**
 
-Se der:
-
-* pegar fluix → desbloqueia automação
+  * 2x ME Import Bus
+  * 5x Fluix Crystal
+* **Libera:** ME Export Bus
 
 ---
 
-## 🔌 2. Unlock por uso
+# 🔁 TIER 8 — Autocrafting
 
-Ex:
+### 8.1 CPU de Crafting
 
-* conectar energia → desbloqueia ME system
+* **Pré-requisitos:** Exportação
+* **Trigger:** Criar 1x Crafting Storage
+* **Libera:** Crafting Storage
 
----
+### 8.2 Unidade de Processamento
 
-## 📦 3. Gate de curiosidade
+* **Pré-requisitos:** CPU de Crafting
+* **Custo:**
 
-Ex:
-
-* criar item inútil → desbloqueia algo forte
-
----
-
-## 🔥 4. Anti-skip
-
-Evita jogador pular etapas:
-
-Ex:
-
-```lua
-prerequisites = {"fluix-discovery"}
-```
+  * 2x Engineering Processor
+  * 2x Calculation Processor
+* **Libera:** Crafting Unit
 
 ---
 
-# 🧩 RESUMO
+# 🧩 TIER 9 — Padrões
 
-Seu sistema já está:
+### 9.1 Terminal de Padrões
 
-* ✔ funcional
-* ✔ lógico
-* ✔ divertido
+* **Pré-requisitos:** Unidade de Processamento
+* **Trigger:** Criar 1x Pattern Terminal
+* **Libera:** Pattern Terminal
 
-Mas pode melhorar com:
+### 9.2 Interfaces Avançadas
 
-* menos unlock em massa
-* mais etapas pequenas
-* triggers mais “temáticos”
-* loops de dependência
+* **Pré-requisitos:** Terminal de Padrões
+* **Custo:**
+
+  * 2x ME Interface
+  * 5x Logic Processor
+* **Libera:** Interfaces otimizadas (uso em autocrafting)
 
 ---
 
-Se quiser, posso:
+# 🚀 TIER 10 — Expansão de Rede
 
-* revisar **toda sua árvore completa**
-* sugerir **nomes estilo AE2 (tipo “A Quick Aside on Fluix”)**
-* ou montar **um design tipo modpack expert (nível brutal 😈)**
+### 10.1 Controlador ME
 
-Qual direção você quer seguir?
+* **Pré-requisitos:** Interfaces Avançadas
+* **Trigger:** Criar 1x ME Controller
+* **Libera:** ME Controller
+
+### 10.2 Cabos Densos
+
+* **Pré-requisitos:** Controlador ME
+* **Custo:**
+
+  * 20x Fluix Crystal
+  * 10x Glass Cable
+* **Libera:** Dense Cable
+
+---
+
+# 🧮 TIER 11 — Otimização
+
+### 11.1 Aceleradores
+
+* **Pré-requisitos:** Cabos Densos
+* **Trigger:** Criar 4x Acceleration Card
+* **Libera:** Acceleration Card
+
+### 11.2 Upgrades
+
+* **Pré-requisitos:** Aceleradores
+* **Custo:**
+
+  * 5x Logic Processor
+  * 5x Redstone
+* **Libera:** Capacity Card
+
+---
+
+# 📡 TIER 12 — Redes Sem Fio
+
+### 12.1 Terminal Wireless
+
+* **Pré-requisitos:** Upgrades
+* **Trigger:** Criar 1x Wireless Terminal
+* **Libera:** Wireless Terminal
+
+### 12.2 Booster Wireless
+
+* **Pré-requisitos:** Terminal Wireless
+* **Custo:**
+
+  * 10x Fluix Pearl
+  * 5x Ender Pearl
+* **Libera:** Wireless Booster
+
+---
+
+# 🏭 TIER 13 — Automação Avançada
+
+### 13.1 P2P Tunnel
+
+* **Pré-requisitos:** Booster Wireless
+* **Trigger:** Criar 2x P2P Tunnel
+* **Libera:** P2P Tunnel
+
+### 13.2 Sub-redes
+
+* **Pré-requisitos:** P2P Tunnel
+* **Custo:**
+
+  * 5x ME Interface
+  * 5x Smart Cable
+* **Libera:** Estrutura de sub-redes
+
+---
+
+# ⚡ TIER 14 — Energia Avançada
+
+### 14.1 Energy Cell
+
+* **Pré-requisitos:** Sub-redes
+* **Trigger:** Criar 2x Energy Cell
+* **Libera:** Energy Cell
+
+### 14.2 Dense Energy Cell
+
+* **Pré-requisitos:** Energy Cell
+* **Custo:**
+
+  * 4x Energy Cell
+  * 10x Fluix Crystal
+* **Libera:** Dense Energy Cell
+
+---
+
+# 🔬 TIER 15 — Quantum Network
+
+### 15.1 Quantum Ring
+
+* **Pré-requisitos:** Dense Energy Cell
+* **Trigger:** Criar 4x Quantum Ring
+* **Libera:** Quantum Ring
+
+### 15.2 Quantum Link
+
+* **Pré-requisitos:** Quantum Ring
+* **Custo:**
+
+  * 2x Quantum Ring
+  * 2x Engineering Processor
+* **Libera:** Quantum Link Chamber
+
+---
+
+# 🌌 TIER 16 — Endgame AE
+
+### 16.1 Sistema Total
+
+* **Pré-requisitos:** Quantum Link
+* **Trigger:** Criar sistema com 100+ canais ativos
+* **Libera:** Otimização total da rede
+
+### 16.2 Autocrafting Perfeito
+
+* **Pré-requisitos:** Sistema Total
+* **Custo:**
+
+  * 10x Crafting Unit
+  * 10x Pattern Terminal
+* **Libera:** Sistema autocrafting completo e paralelo
