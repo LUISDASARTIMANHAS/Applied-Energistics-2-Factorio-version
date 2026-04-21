@@ -13,7 +13,7 @@ data:extend(
             "certus-discovery",
             -- unlocks
             {
-                "certus-quartz-block",
+                "certus-quartz-crystal-block",
                 "certus-quartz-dust",
                 "inscriber"
             },

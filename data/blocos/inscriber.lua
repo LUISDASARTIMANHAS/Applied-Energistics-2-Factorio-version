@@ -2,18 +2,23 @@ local LDA = require("__LDA-LIB__/init")
 local PATH = LDA.setBasePath("Applied-Energistics-2")
 local LDAUtils = LDA.utils
 local utilsEnergySource = LDA.utilsEnergySource
--- createElectricEnergySource(usage_priority: any, buffer_capacity: any, input_flow_limit: any, output_flow_limit: any, emissions_per_minute: any, render_no_power_icon: any, render_no_network_icon: any, params: any)
+-- LDA.utilsEnergySource.createElectricEnergySource(usage_priority, buffer_capacity, input_flow_limit, output_flow_limit, emissions_per_minute, render_no_power_icon, render_no_network_icon, params)
+-- LDA.utils.createResistance(resistenceType, percent)
+-- LDA.utils.getFullResistance(percent)
+-- LDA.utils.createModuleSpec(slots, icon_shift)
+-- LDA.utils.getAudio(filename, volume)
+-- LDA.utils.getSequentialAudioList(base_filename, start_index, end_index, volume)
 
 data:extend(
     {
         {
             type = "assembling-machine",
-            name = "inscriber-entidade",
+            name = "inscriber",
             -- category = "entity",
             icon = PATH .. "graphics/entity/inscriber.png",
             icon_size = 128,
             icon_mipmaps = 4,
-            minable = {mining_time = 1, result = "inscriber"},
+            minable = {mining_time = 2, result = "inscriber"},
             max_health = 350,
             crafting_speed = 4,
             ingredient_count = 3,
@@ -42,12 +47,7 @@ data:extend(
                 false,
                 false
             ),
-            resistances = {
-                {
-                    type = "fire",
-                    percent = 70
-                }
-            },
+            resistances = {LDAUtils.createResistance("fire", 70)},
             damaged_trigger_effect = {
                 entity_name = "spark-explosion",
                 type = "create-entity",
@@ -71,40 +71,21 @@ data:extend(
                 item = "inscriber",
                 count = 1
             },
-            module_specification = {
-                module_slots = 2,
-                module_info_icon_shift = {0, 0.5}
-            },
-            working_sound = {
-                sound = {
-                    {filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.45}
-                },
-                fade_in_ticks = 4,
-                audible_distance_modifier = 0.5,
-                fade_out_ticks = 20
-            },
-            vehicle_impact_sound = {
-                {
-                    filename = "__base__/sound/car-metal-impact-2.ogg",
-                    volume = 0.5
-                },
-                {
-                    filename = "__base__/sound/car-metal-impact-3.ogg",
-                    volume = 0.5
-                },
-                {
-                    filename = "__base__/sound/car-metal-impact-4.ogg",
-                    volume = 0.5
-                },
-                {
-                    filename = "__base__/sound/car-metal-impact-5.ogg",
-                    volume = 0.5
-                },
-                {
-                    filename = "__base__/sound/car-metal-impact-6.ogg",
-                    volume = 0.5
-                }
-            },
+            module_specification = LDAUtils.createModuleSpec(2, {0, 0.5}),
+            -- working_sound = {
+            --     sound = {
+            --         {filename = "__base__/sound/assembling-machine-t2-1.ogg", volume = 0.45}
+            --     },
+            --     fade_in_ticks = 4,
+            --     audible_distance_modifier = 0.5,
+            --     fade_out_ticks = 20
+            -- },
+            vehicle_impact_sound = LDAUtils.getSequentialAudioList(
+                "__base__/sound/car-metal-impact-", -- Nome base do arquivo
+                2, -- Começa no 2 (car-metal-impact-2.ogg)
+                6, -- Termina no 6 (car-metal-impact-6.ogg)
+                0.5 -- Volume (opcional, mas bom manter)
+            ),
             animation = {
                 layers = {
                     {
@@ -128,18 +109,8 @@ data:extend(
                     }
                 }
             },
-            close_sound = {
-                {
-                    filename = "__base__/sound/machine-close.ogg",
-                    volume = 0.5
-                }
-            },
-            open_sound = {
-                {
-                    filename = "__base__/sound/machine-open.ogg",
-                    volume = 0.5
-                }
-            }
+            close_sound = {LDAUtils.getAudio("__base__/sound/machine-close")},
+            open_sound = {LDAUtils.getAudio("__base__/sound/machine-open")}
         }
     }
 )

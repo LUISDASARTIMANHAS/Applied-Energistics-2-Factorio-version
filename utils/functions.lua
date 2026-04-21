@@ -14,6 +14,7 @@ local LDA = require("__LDA-LIB__/init")
 -- LDA.createTechnologyTrigger(name, unlocks, prerequisites, research_trigger)
 -- LDA.createTechnologyCraftEntityTrigger(name, unlocks, prerequisites, item, count)
 -- LDA.createTechnologyMineEntityTrigger(name, unlocks, prerequisites, mine_entity)
+-- LDA.createAssemblerItemWithRecipe(name, time, qtde, ingredients, stack_size, alt_unlocks, isEnabled)
 
 -- category = "advanced-crafting" maquinas de montagem tier 2 e 3
 -- category = "basic-crafting" maquinas de montagem tier 1
@@ -96,20 +97,30 @@ function Module.createPressItem(pressType)
     return pressItem
 end
 
+function Module.createItemBlocks(name, ingredientsName, ingredientsAmount)
+    -- LDA.createAssemblerItemWithRecipe(name, time, qtde, ingredients, stack_size, alt_unlocks, isEnabled)
+    local blockItem =
+        LDA.createAssemblerItemWithRecipe(
+        name .. "-block",
+        10,
+        1,
+        -- ingredients
+        {
+            {type = "item", name = ingredientsName, amount = ingredientsAmount or 9}
+        },
+        -- stack_size
+        64,
+        nil,
+        true
+    )
+    return blockItem
+end
+
 -- Blocos de quartzo Certus em formação, imperfeitos, lascados e danificados, podem ser criados jogando o bloco em formação do nível anterior (ou um Bloco de Quartzo Certus ) em água com um ou mais Cristais de Quartzo Certus Carregados .
 
 -- Flawless budding certus budding não pode ser fabricado, apenas encontrado no mundo.
-function Module.BuddingCertusQuartz(name,ingredients)
-    return LDA.createThrowInWaterItemWithRecipe(
-        name,
-        60,
-        1,
-        ingredients,
-        1,
-        1000,
-        {"budding-certus-blocks"},
-        false
-    )
+function Module.BuddingCertusQuartz(name, ingredients)
+    return LDA.createThrowInWaterItemWithRecipe(name, 60, 1, ingredients, 1, 1000, {"budding-certus-blocks"}, false)
 end
 
 return Module

@@ -1,12 +1,12 @@
 local LDA = require("__LDA-LIB__/init")
 local PATH = LDA.setBasePath("Applied-Energistics-2")
+local functions = require("utils.functions")
 -- createOre(name, stack_size, fuel_category, fuel_value)
 -- createSmeltingItemWithRecipe(name, time, qtde, ingredients,crafted_in,alternative_unlock_methods)
 -- createItemWithRecipe(name, subgroup, stack_size, crafted_in, time, ingredients, results,alternative_unlock_methods,isEnabled,pictures)
 -- createAssemblerItemWithRecipe(name, time, qtde, ingredients, stack_size,alternative_unlock_methods,isEnabled)
 -- createRecipe(typeIcon, name, crafted_in, time, ingredients, results,alternative_unlock_methods,enabled)
 -- createBlockItemWithRecipe(name, subgroup, stack_size, crafted_in, time, ingredients, results,alternative_unlock_methods,isEnabled,icon_size,pick_sound,drop_sound)
-
 
 -- category = "advanced-crafting" maquinas de montagem tier 2 e 3
 -- category = "basic-crafting" maquinas de montagem tier 1
@@ -151,83 +151,22 @@ data:extend(
 
 -- ============blocos==========
 
--- fluix-block
+-- fluix-crystal-block
 data:extend(
-    LDA.createItemWithRecipe(
-        "fluix-block",
-        "resources-generated",
-        -- stack_size
-        64,
-        "crafting",
-        10,
-        -- ingredients
-        {
-            {type = "item", name = "fluix-crystal", amount = 4}
-        },
-        -- results
-        {
-            {type = "item", name = "fluix-block", amount = 1}
-        },
-        nil,
-        true
-    )
+    functions.createItemBlocks("fluix-crystal", "fluix-crystal", 4)
 )
 
--- certus-quartz-block
+-- certus-quartz-crystal-block
 data:extend(
-    LDA.createItemWithRecipe(
-        "certus-quartz-block",
-        "resources-generated",
-        -- stack_size
-        1,
-        "crafting",
-        4,
-        -- ingredients
-        {
-            {type = "item", name = "certus-quartz-crystal", amount = 4}
-        },
-        -- results
-        {
-            {type = "item", name = "certus-quartz-block", amount = 1}
-        },
-        nil,
-        true
-    )
+    functions.createItemBlocks("certus-quartz-crystal", "certus-quartz-crystal", 4)
 )
 
 -- iron-block
 data:extend(
-    LDA.createItemWithRecipe(
-        "iron-block",
-        "component",
-        -- stack_size
-        64,
-        "basic-crafting",
-        9,
-        -- ingredients
-        {
-            {type = "item", name = "certus-quartz-crystal", amount = 9}
-        },
-        -- results
-        {
-            {type = "item", name = "iron-block", amount = 1}
-        },
-        nil,
-        true
-    )
+    functions.createItemBlocks("iron", "iron-plate", 9)
 )
 
 -- compressed-iron-block
 data:extend(
-    LDA.createAssemblerItemWithRecipe(
-        "compressed-iron-block",
-        9,
-        1,
-        {
-            {type = "item", name = "iron-plate", amount = 9}
-        },
-        64,
-        nil,
-        true
-    )
+    functions.createItemBlocks("compressed-iron", "iron-block", 9)
 )

@@ -1,1 +1,1 @@
-Falha ao carregar mods: File __Applied-Energistics-2__/graphics/technology/certus-discovery-256x256.png not found
+Falha ao carregar mods: File __Applied-Energistics-2__/graphics/icons/certus-quartz-crystal-block.png not found
