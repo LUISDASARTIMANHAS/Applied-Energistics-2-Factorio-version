@@ -28,7 +28,7 @@ data:extend({
         localised_name = {"", "[AE2] Meteorite Spawn Interval (Minutes)"},
         localised_description = {"", "Define o intervalo, em minutos, entre o spawn dos meteoritos."},
         default_value = 60,
-        minimum_value = 2,
+        minimum_value = 10,
         maximum_value = 1440
     }
 })
