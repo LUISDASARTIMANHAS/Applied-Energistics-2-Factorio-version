@@ -296,29 +296,29 @@ data:extend(
     }
 )
 
-data:extend(
-    {
-        -- definindo o item
-        {
-            type = "item",
-            name = "inscriber",
-            icon = PATH .. "graphics/entity/inscriber.png",
-            icon_size = 128,
-            subgroup = "data-terminal",
-            order = "AE2-data-terminal[inscriber]",
-            place_result = "inscriber-entidade",
-            stack_size = 1
-        }, -- receita
-        {
-            type = "recipe",
-            name = "inscriber",
-            category = "advanced-crafting",
-            enabled = true,
-            ingredients = {{"iron-plate", 150}, {"copper-cable", 200}, {"copper-plate", 100}},
-            result = "inscriber"
-        }
-    }
-)
+-- data:extend(
+--     {
+--         -- definindo o item
+--         {
+--             type = "item",
+--             name = "inscriber",
+--             icon = PATH .. "graphics/entity/inscriber.png",
+--             icon_size = 128,
+--             subgroup = "data-terminal",
+--             order = "AE2-data-terminal[inscriber]",
+--             place_result = "inscriber-entidade",
+--             stack_size = 1
+--         }, -- receita
+--         {
+--             type = "recipe",
+--             name = "inscriber",
+--             category = "advanced-crafting",
+--             enabled = true,
+--             ingredients = {{"iron-plate", 150}, {"copper-cable", 200}, {"copper-plate", 100}},
+--             result = "inscriber"
+--         }
+--     }
+-- )
 
 data:extend(
     {

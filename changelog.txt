@@ -4,6 +4,7 @@ Date: 20/04/2026
   changes:
     - meteorite-loot
     - Adds technology system and adjustments to the data structure.
+    - Adds new items, recipes, and charts, and corrects file references.
     - meteorite-spawn
     - It is now ready to begin the tech tree development phase.
     - Adds a meteorite spawn system and associated settings.

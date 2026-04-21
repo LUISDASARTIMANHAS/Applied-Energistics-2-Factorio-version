@@ -14,12 +14,29 @@ data:extend(
             -- unlocks
             {
                 "certus-quartz-block",
+                "certus-quartz-dust",
                 "inscriber"
             },
             -- prerequisites
             {"automation-3"},
             -- mine_entity
             "crash-site-meteorite"
+        ),
+        -- energy-dusts
+        LDA.createTechnologyCraftEntityTrigger(
+            "energy-dusts",
+            -- unlocks
+            {
+                "fluix-crystal",
+                "fluix-dust",
+                "fluix-crystal-block"
+            },
+            -- prerequisites
+            {"certus-discovery"},
+            -- item
+            "certus-quartz-dust",
+            -- count
+            20
         ),
     }
 )

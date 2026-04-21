@@ -11,49 +11,62 @@ local LDAFunctions = require("__LDA-LIB__/init")
 -- createAssemblerItemWithRecipe(name, time, qtde, ingredients, stack_size,alternative_unlock_methods)
 -- createItemWithRecipe(name, subgroup, stack_size, crafted_in, time, ingredients, results,alternative_unlock_methods)
 
-
-
 -- formation-core
 data:extend(
-    LDAFunctions.createItemWithRecipe(
-        "formation-core",
-        "component",
-        -- stack_size
-        64,
-        "crafting",
-        60,
+    LDAFunctions.createAssemblerItemWithRecipe(
+        "inscriber",
+        20,
+        1,
         -- ingredients
         {
-            {type = "item", name = "logic-processor", amount =1},
-            {type = "item", name = "charged-certus-quartz-crystal", amount = 1},
-            {type = "item", name = "fluix-dust", amount = 1}
+            {type = "item", name = "iron-plate", amount = 50},
+            {type = "item", name = "copper-cable", amount = 20},
+            {type = "item", name = "copper-plate", amount = 10}
         },
-        -- results
-        {
-            {type = "item", name = "formation-core", amount =1},
-        }
+        1
     )
 )
 
+-- -- formation-core
+-- data:extend(
+--     LDAFunctions.createItemWithRecipe(
+--         "formation-core",
+--         "component",
+--         -- stack_size
+--         64,
+--         "crafting",
+--         60,
+--         -- ingredients
+--         {
+--             {type = "item", name = "logic-processor", amount =1},
+--             {type = "item", name = "charged-certus-quartz-crystal", amount = 1},
+--             {type = "item", name = "fluix-dust", amount = 1}
+--         },
+--         -- results
+--         {
+--             {type = "item", name = "formation-core", amount =1},
+--         }
+--     )
+-- )
 
--- formation-core
-data:extend(
-    LDAFunctions.createItemWithRecipe(
-        "annihilation-core",
-        "component",
-        -- stack_size
-        64,
-        "crafting",
-        60,
-        -- ingredients
-        {
-            {type = "item", name = "logic-processor", amount =1},
-            {type = "item", name = "quartz", amount = 1},
-            {type = "item", name = "fluix-dust", amount = 1}
-        },
-        -- results
-        {
-            {type = "item", name = "annihilation-core", amount =1},
-        }
-    )
-)
+-- -- formation-core
+-- data:extend(
+--     LDAFunctions.createItemWithRecipe(
+--         "annihilation-core",
+--         "component",
+--         -- stack_size
+--         64,
+--         "crafting",
+--         60,
+--         -- ingredients
+--         {
+--             {type = "item", name = "logic-processor", amount =1},
+--             {type = "item", name = "quartz", amount = 1},
+--             {type = "item", name = "fluix-dust", amount = 1}
+--         },
+--         -- results
+--         {
+--             {type = "item", name = "annihilation-core", amount =1},
+--         }
+--     )
+-- )

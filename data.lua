@@ -1,17 +1,17 @@
 -- presets Basicos do mods
-require("data.AE2-grupos")
-require("data.meteorite")
--- require("control/certus-quartz-crystal.lua")
+require("data/AE2-grupos")
+require("data/meteorite")
+-- require("control/certus-quartz-crystal")
 
 -- recursos
-require("data.ores")
+require("data/ores")
 
 -- receitas
-require("data.processors")
--- require("data.items")
+require("data/processors")
+require("data/items")
 
 -- pesquisas
-require("data.technology.tier-1")
+require("data/technology/tier-1")
 -- require("data.pesquisa.AE2_pesquisa")
 -- require("data.pesquisa.on_craft_triggers_pesquisa")
 
