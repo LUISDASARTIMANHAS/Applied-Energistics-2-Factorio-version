@@ -64,7 +64,7 @@ data:extend(
         {
             type = "item",
             name = "drive",
-            icon = PATH .. "graphics/entity/drive.png",
+            icon = PATH .. "graphics/entities/drive.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[drive]",
@@ -88,7 +88,7 @@ data:extend(
         {
             type = "item",
             name = "1k-crafting-storage",
-            icon = PATH .. "graphics/entity/1k_crafting_storage.png",
+            icon = PATH .. "graphics/entities/1k_crafting_storage.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[1k-crafting-storage]",
@@ -112,7 +112,7 @@ data:extend(
         {
             type = "item",
             name = "4k-crafting-storage",
-            icon = PATH .. "graphics/entity/4k_crafting_storage.png",
+            icon = PATH .. "graphics/entities/4k_crafting_storage.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[4k-crafting-storage]",
@@ -136,7 +136,7 @@ data:extend(
         {
             type = "item",
             name = "16k-crafting-storage",
-            icon = PATH .. "graphics/entity/16k_crafting_storage.png",
+            icon = PATH .. "graphics/entities/16k_crafting_storage.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[16k-crafting-storage]",
@@ -160,7 +160,7 @@ data:extend(
         {
             type = "item",
             name = "64k-crafting-storage",
-            icon = PATH .. "graphics/entity/64k_crafting_storage.png",
+            icon = PATH .. "graphics/entities/64k_crafting_storage.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[64k-crafting-storage]",
@@ -184,7 +184,7 @@ data:extend(
         {
             type = "item",
             name = "cable-pattern-provider",
-            icon = PATH .. "graphics/entity/cable_pattern_provider.png",
+            icon = PATH .. "graphics/entities/cable_pattern_provider.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[cable-pattern-provider]",
@@ -207,7 +207,7 @@ data:extend(
         {
             type = "item",
             name = "crafting-co-processing-unit",
-            icon = PATH .. "graphics/entity/crafting_co_processing_unit.png",
+            icon = PATH .. "graphics/entities/crafting_co_processing_unit.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[crafting-co-processing-unit]",
@@ -230,7 +230,7 @@ data:extend(
         {
             type = "item",
             name = "crafting-monitor",
-            icon = PATH .. "graphics/entity/crafting_monitor.png",
+            icon = PATH .. "graphics/entities/crafting_monitor.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[crafting-monitor]",
@@ -254,7 +254,7 @@ data:extend(
         {
             type = "item",
             name = "crafting-terminal",
-            icon = PATH .. "graphics/entity/crafting_terminal.png",
+            icon = PATH .. "graphics/entities/crafting_terminal.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[crafting-terminal]",
@@ -278,7 +278,7 @@ data:extend(
         {
             type = "item",
             name = "crafting-unit",
-            icon = PATH .. "graphics/entity/crafting_unit.png",
+            icon = PATH .. "graphics/entities/crafting_unit.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[crafting-unit]",
@@ -302,7 +302,7 @@ data:extend(
 --         {
 --             type = "item",
 --             name = "inscriber",
---             icon = PATH .. "graphics/entity/inscriber.png",
+--             icon = PATH .. "graphics/entities/inscriber.png",
 --             icon_size = 128,
 --             subgroup = "data-terminal",
 --             order = "AE2-data-terminal[inscriber]",
@@ -326,7 +326,7 @@ data:extend(
         {
             type = "item",
             name = "interface",
-            icon = PATH .. "graphics/entity/interface.png",
+            icon = PATH .. "graphics/entities/interface.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[interface]",
@@ -350,7 +350,7 @@ data:extend(
         {
             type = "item",
             name = "molecular-assembler",
-            icon = PATH .. "graphics/entity/molecular_assembler.png",
+            icon = PATH .. "graphics/entities/molecular_assembler.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[molecular-assembler]",
@@ -379,7 +379,7 @@ data:extend(
         {
             type = "item",
             name = "pattern-access-terminal",
-            icon = PATH .. "graphics/entity/pattern_access_terminal.png",
+            icon = PATH .. "graphics/entities/pattern_access_terminal.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[pattern-access-terminal]",
@@ -403,7 +403,7 @@ data:extend(
         {
             type = "item",
             name = "pattern-provider",
-            icon = PATH .. "graphics/entity/pattern_provider.png",
+            icon = PATH .. "graphics/entities/pattern_provider.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[pattern-provider]",
@@ -427,7 +427,7 @@ data:extend(
         {
             type = "item",
             name = "storage-monitor",
-            icon = PATH .. "graphics/entity/storage_monitor.png",
+            icon = PATH .. "graphics/entities/storage_monitor.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[storage-monitor]",
@@ -451,7 +451,7 @@ data:extend(
         {
             type = "item",
             name = "terminal",
-            icon = PATH .. "graphics/entity/terminal.png",
+            icon = PATH .. "graphics/entities/terminal.png",
             icon_size = 128,
             subgroup = "data-terminal",
             order = "AE2-data-terminal[terminal]",

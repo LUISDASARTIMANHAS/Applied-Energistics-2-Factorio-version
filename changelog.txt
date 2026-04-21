@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.16
-Date: 20/04/2026
+Date: 21/04/2026
   changes:
     - meteorite-loot
     - Adds technology system.
@@ -9,6 +9,15 @@ Date: 20/04/2026
     - It is now ready to begin the tech tree development phase.
     - Adds a meteorite spawn system and associated settings.
     - Adds new tiles
+    - Refactor entity paths and update technology triggers
+    - Updated entity icon paths from "graphics/entity/" to "graphics/entities/" in multiple files.
+    - Changed damaged_trigger_effect type from "create-entity" to "create-entity" in pattern_provider.lua, storage_monitor.lua, and terminal.lua.
+    - Modified item creation functions to use LDA.createBlockItemWithRecipe for the inscriber.
+    - Adjusted meteorite.lua to reflect changes in entity handling and updated loot functions.
+    - Refined technology triggers in AE2_pesquisa.lua and tier-1.lua to use plural forms for entities.
+    - Added new graphics for various entities including crafting storages, terminals, and monitors.
+    - Corrected localization keys from singular to plural for server entities in both English and Portuguese.
+    - Updated version numbers in info.json and ensured compatibility with LDA-LIB.
   bugsFixed:
     - updates icon references, and fixes error messages.
     - updated bugs.

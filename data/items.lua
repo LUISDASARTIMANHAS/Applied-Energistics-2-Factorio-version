@@ -10,20 +10,23 @@ local LDAFunctions = require("__LDA-LIB__/init")
 -- category = "charger"
 -- createAssemblerItemWithRecipe(name, time, qtde, ingredients, stack_size,alternative_unlock_methods)
 -- createItemWithRecipe(name, subgroup, stack_size, crafted_in, time, ingredients, results,alternative_unlock_methods)
+-- LDA.createBlockItemWithRecipe(name, subgroup, stack_size, crafted_in, time, ingredients, results, alt_unlocks, isEnabled, icon_size, pick_sound, drop_sound)
 
--- formation-core
+-- inscriber
 data:extend(
-    LDAFunctions.createAssemblerItemWithRecipe(
+    LDAFunctions.createBlockItemWithRecipe(
         "inscriber",
-        20,
+        "processing",
         1,
+        "advanced-crafting",
+        20,
         -- ingredients
         {
             {type = "item", name = "iron-plate", amount = 50},
             {type = "item", name = "copper-cable", amount = 20},
             {type = "item", name = "copper-plate", amount = 10}
         },
-        1
+        {{type = "item", name = "inscriber", amount = 1}}
     )
 )
 

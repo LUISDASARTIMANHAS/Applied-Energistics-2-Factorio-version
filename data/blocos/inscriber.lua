@@ -14,8 +14,8 @@ data:extend(
         {
             type = "assembling-machine",
             name = "inscriber",
-            -- category = "entity",
-            icon = PATH .. "graphics/entity/inscriber.png",
+            -- category = "entities",
+            icon = PATH .. "graphics/entities/inscriber.png",
             icon_size = 128,
             icon_mipmaps = 4,
             minable = {mining_time = 2, result = "inscriber"},
@@ -90,10 +90,10 @@ data:extend(
                 layers = {
                     {
                         frame_count = 1,
-                        filename = PATH .. "graphics/entity/inscriber.png",
+                        filename = PATH .. "graphics/entities/inscriber.png",
                         hr_version = {
                             frame_count = 1,
-                            filename = PATH .. "graphics/entity/inscriber.png",
+                            filename = PATH .. "graphics/entities/inscriber.png",
                             height = 128,
                             line_length = 1,
                             shift = {0, 0.125},

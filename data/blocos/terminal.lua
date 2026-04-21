@@ -5,7 +5,7 @@ local PATH = LDA.setBasePath('Applied-Energistics-2')
 --     {
 --         type = "assembling-machine",
 --         name = "terminal-entidade",
---         icon = PATH .. "graphics/entity/terminal.png",
+--         icon = PATH .. "graphics/entities/terminal.png",
 --         icon_size = 128,
 --         icon_mipmaps = 4,
 --         minable = { mining_time = 1, result = "terminal" },

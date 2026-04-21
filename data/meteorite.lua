@@ -22,7 +22,7 @@ data:extend(
         {
             type = "container",
             name = "crash-site-meteorite",
-            icon = PATH .. "graphics/entity/the-mysterious-cube.png",
+            icon = PATH .. "graphics/entities/the-mysterious-cube.png",
             flags = wreck_flags,
             hidden = true,
             max_health = 1350,
@@ -77,7 +77,7 @@ data:extend(
                 layers = {
                     -- createAnimationLayer(filename, width, height, hr_scale,shift,draw_as_shadow, custom_props)
                     utilsAnimations.createAnimationLayer(
-                        PATH .. "graphics/entity/crash-site-meteorite", -- filename
+                        PATH .. "graphics/entities/crash-site-meteorite", -- filename
                         780,
                         559,
                         nil,
@@ -90,7 +90,7 @@ data:extend(
                     ),
                     utilsAnimations.createAnimationLayer(
                         -- "__base__/graphics/entity/crash-site-chests/crash-site-chest-1-shadow", -- filename
-                        PATH .. "graphics/entity/crash-site-meteorite", -- filename
+                        PATH .. "graphics/entities/crash-site-meteorite", -- filename
                         210, -- width (Base)
                         128, -- height (Base)
                         nil,

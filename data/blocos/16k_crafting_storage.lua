@@ -5,7 +5,7 @@ data:extend({
     {
         type = "assembling-machine",
         name = "16k-crafting-storage-entidade",
-        icon = PATH .. "graphics/entity/16k_crafting_storage.png",
+        icon = PATH .. "graphics/entities/16k_crafting_storage.png",
         icon_size = 128,
         icon_mipmaps = 4,
         minable = { mining_time = 1, result = "16k-crafting-storage" },
@@ -104,10 +104,10 @@ data:extend({
             layers = {
                 {
                     frame_count = 1,
-                    filename = PATH .. "graphics/entity/16k_crafting_storage.png",
+                    filename = PATH .. "graphics/entities/16k_crafting_storage.png",
                     hr_version = {
                         frame_count = 1,
-                        filename = PATH .. "graphics/entity/16k_crafting_storage.png",
+                        filename = PATH .. "graphics/entities/16k_crafting_storage.png",
                         height = 128,
                         line_length = 1,
                         shift = { 0, 0.125 },
