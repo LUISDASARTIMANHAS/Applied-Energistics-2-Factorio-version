@@ -3,7 +3,7 @@ local PATH = LDA.setBasePath("Applied-Energistics-2")
 -- LDA.createTechnology(name, ingredients, prerequisites, unlocks, time, count, isUpgrade, icon_size)
 -- LDA.createTechnologyTrigger(name, unlocks, prerequisites, research_trigger)
 -- LDA.createTechnologyCraftEntityTrigger(name, unlocks, prerequisites, item, count)
--- LDA.createTechnologyMineEntityTrigger(name, unlocks, prerequisites, mine_entities)
+-- LDA.createTechnologyMineEntityTrigger(name, unlocks, prerequisites, mine_entity)
 
 
 data:extend(
@@ -19,7 +19,7 @@ data:extend(
             },
             -- prerequisites
             {"automation-3"},
-            -- mine_entities
+            -- mine_entity
             "crash-site-meteorite"
         ),
         -- energy-dusts

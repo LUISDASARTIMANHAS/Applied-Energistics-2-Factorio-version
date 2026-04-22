@@ -13,14 +13,14 @@ function MeteoriteLoot.getStarterLoot()
 end
 
 --- Insere os itens no inventário do meteorito.
---- @param entities Luaentities
+--- @param entity LuaEntity
 --- @return boolean
-function MeteoriteLoot.fillMeteorite(entities)
-    if not (entities and entities.valid) then
+function MeteoriteLoot.fillMeteorite(entity)
+    if not (entity and entity.valid) then
         return false
     end
 
-    local inventory = entities.get_inventory(defines.inventory.chest)
+    local inventory = entity.get_inventory(defines.inventory.chest)
     if not inventory then
         return false
     end

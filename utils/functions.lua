@@ -13,7 +13,7 @@ local LDA = require("__LDA-LIB__/init")
 -- LDA.createTechnology(name, ingredients, prerequisites, unlocks, time, count, isUpgrade, icon_size)
 -- LDA.createTechnologyTrigger(name, unlocks, prerequisites, research_trigger)
 -- LDA.createTechnologyCraftEntityTrigger(name, unlocks, prerequisites, item, count)
--- LDA.createTechnologyMineEntityTrigger(name, unlocks, prerequisites, mine_entities)
+-- LDA.createTechnologyMineEntityTrigger(name, unlocks, prerequisites, mine_entity)
 -- LDA.createAssemblerItemWithRecipe(name, time, qtde, ingredients, stack_size, alt_unlocks, isEnabled)
 
 -- category = "advanced-crafting" maquinas de montagem tier 2 e 3

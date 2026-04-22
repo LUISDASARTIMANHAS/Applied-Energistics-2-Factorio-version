@@ -67,7 +67,7 @@ local function createSmallWrecks(surface, center, count)
         )
 
         if valid_position then
-            surface.create_entities({
+            surface.create_entity({
                 name = wreck_name,
                 position = valid_position,
                 force = "neutral"
@@ -92,25 +92,25 @@ end
 --- Cria um meteorito com loot.
 --- @param surface LuaSurface
 --- @param position MapPosition
---- @return Luaentities|nil
+--- @return LuaEntity|nil
 function MeteoriteSpawn.createMeteorite(surface, position)
     if not (surface and position) then
         return nil
     end
 
-    local entities = surface.create_entities({
+    local entity = surface.create_entity({
         name = METEORITE_NAME,
         position = position,
         force = "neutral",
         raise_built = true
     })
 
-    if entities and entities.valid then
-        MeteoriteLoot.fillMeteorite(entities)
+    if entity and entity.valid then
+        MeteoriteLoot.fillMeteorite(entity)
         createMeteorImpactEffects(surface, position)
     end
 
-    return entities
+    return entity
 end
 
 --- Tenta spawnar meteorito perto de um jogador aleatório.
